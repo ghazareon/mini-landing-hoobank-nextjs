@@ -14,7 +14,7 @@
 	},
 	"bugs": {
 		"url": "https://github.com/ghazareon/mini-landing-hoobank-nextjs/issues/",
-		"email": "hayk.ghazaryanc@gmail.com"
+		"email": "ghazareon@gmail.com"
 	},
 	"scripts": {
 		"dev": "next dev --turbopack",
