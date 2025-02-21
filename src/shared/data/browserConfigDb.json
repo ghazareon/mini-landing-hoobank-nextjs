@@ -1,0 +1,9 @@
+{
+ "tags": [
+  { "name": "square70x70logo", "fileName": "msapplicationSquare70x70logo.pic.png" },
+  { "name": "square150x150logo", "fileName": "msapplicationSquare150x150logo.pic.png" },
+  { "name": "square150x150logo", "fileName": "msapplicationSquare150x150logo.pic.png" },
+  { "name": "square310x310logo", "fileName": "msapplicationSquare310x310logo.pic.png" },
+  { "name": "wide310x150logo", "fileName": "msapplicationWide310x150logo.pic.png" }
+ ]
+}

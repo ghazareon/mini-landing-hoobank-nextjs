@@ -1,0 +1,78 @@
+.px {
+  @apply px-sides-xl;
+  @apply xl:px-sides-xlx;
+  @apply xlx:px-sides-lg;
+  @apply lg:px-sides-lgx;
+  @apply lgx:px-sides-lgxx;
+  @apply lgxx:px-sides-md;
+  @apply md:px-sides-mdx;
+  @apply mdx:px-sides-mdxx;
+  @apply mdxx:px-sides-mdxxx;
+  @apply mdxxx:px-sides-mdxxxx;
+  @apply mdxxxx:px-sides-sm;
+}
+.pl {
+  @apply pl-sides-xl;
+  @apply xl:pl-sides-xlx;
+  @apply xlx:pl-sides-lg;
+  @apply lg:pl-sides-lgx;
+  @apply lgx:pl-sides-lgxx;
+  @apply lgxx:pl-sides-md;
+  @apply md:pl-sides-mdx;
+  @apply mdx:pl-sides-mdxx;
+  @apply mdxx:pl-sides-mdxxx;
+  @apply mdxxx:pl-sides-mdxxxx;
+  @apply mdxxxx:pl-sides-sm;
+}
+.pr {
+  @apply pr-sides-xl;
+  @apply xl:pr-sides-xlx;
+  @apply xlx:pr-sides-lg;
+  @apply lg:pr-sides-lgx;
+  @apply lgx:pr-sides-lgxx;
+  @apply lgxx:pr-sides-md;
+  @apply md:pr-sides-mdx;
+  @apply mdx:pr-sides-mdxx;
+  @apply mdxx:pr-sides-mdxxx;
+  @apply mdxxx:pr-sides-mdxxxx;
+  @apply mdxxxx:pr-sides-sm;
+}
+.mx {
+  @apply mx-sides-xl;
+  @apply xl:mx-sides-xlx;
+  @apply xlx:mx-sides-lg;
+  @apply lg:mx-sides-lgx;
+  @apply lgx:mx-sides-lgxx;
+  @apply lgxx:mx-sides-md;
+  @apply md:mx-sides-mdx;
+  @apply mdx:mx-sides-mdxx;
+  @apply mdxx:mx-sides-mdxxx;
+  @apply mdxxx:mx-sides-mdxxxx;
+  @apply mdxxxx:mx-sides-sm;
+}
+.ml {
+  @apply ml-sides-xl;
+  @apply xl:ml-sides-xlx;
+  @apply xlx:ml-sides-lg;
+  @apply lg:ml-sides-lgx;
+  @apply lgx:ml-sides-lgxx;
+  @apply lgxx:ml-sides-md;
+  @apply md:ml-sides-mdx;
+  @apply mdx:ml-sides-mdxx;
+  @apply mdxx:ml-sides-mdxxx;
+  @apply mdxxx:ml-sides-mdxxxx;
+  @apply mdxxxx:ml-sides-sm;
+}
+.mr {
+  @apply mr-sides-xl;
+  @apply xl:mr-sides-xlx;
+  @apply xlx:mr-sides-lg;
+  @apply lg:mr-sides-lgx;
+  @apply lgx:mr-sides-lgxx;
+  @apply lgxx:mr-sides-md;
+  @apply md:mr-sides-mdx;
+  @apply mdx:mr-sides-mdxx;
+  @apply mdxx:mr-sides-mdxxx;
+  @apply mdxxx:mr-sides-mdxxxx;
+  @apply mdxxxx:mr-sides-sm;
+}

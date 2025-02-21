@@ -1,0 +1,14 @@
+/*
+ * Author: Hayk Ghazaryan
+ * Email: hayk.ghazaryanc@gmail.com
+ */
+
+@function p($position: rel) {
+ @if $position == rel {
+  @return relative;
+ } @else if $position == abs {
+  @return absolute;
+ } @else if $position == fix {
+  @return fixed;
+ }
+}

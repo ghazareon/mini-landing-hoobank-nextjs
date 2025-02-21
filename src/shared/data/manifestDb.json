@@ -1,0 +1,32 @@
+{
+ "name": "project",
+ "short_name": "project",
+ "display": "browser",
+ "description": "project",
+ "direction": "ltr",
+ "categories": "project",
+ "lang": "en",
+ "orientation": "any",
+ "scope": "/",
+ "picFiles": [
+  "apple-touch-icon-512x512.pic.png",
+  "apple-touch-icon-384x384.pic.png",
+  "msapplicationSquare256x256logo.pic.png",
+  "android-icon-192x192.pic.png",
+  "apple-icon-180x180.pic.png",
+  "apple-touch-icon-168x168.pic.png",
+  "apple-icon-152x152.pic.png",
+  "android-chrome-144x144.pic.png",
+  "favicon-128x128.pic.png",
+  "apple-icon-120x120.pic.png",
+  "apple-icon-114x114.pic.png",
+  "android-chrome-96x96.pic.png",
+  "apple-icon-76x76.pic.png",
+  "android-chrome-72x72.pic.png",
+  "apple-icon-60x60.pic.png",
+  "apple-icon-57x57.pic.png",
+  "android-chrome-48x48.pic.png",
+  "favicon-32x32.pic.png",
+  "favicon-16x16.pic.png"
+ ]
+}

@@ -1,0 +1,39 @@
+.gap {
+  @apply gap-gutters-xl;
+  @apply xl:gap-gutters-xlx;
+  @apply xlx:gap-gutters-lg;
+  @apply lg:gap-gutters-lgx;
+  @apply lgx:gap-gutters-lgxx;
+  @apply lgxx:gap-gutters-md;
+  @apply md:gap-gutters-mdx;
+  @apply mdx:gap-gutters-mdxx;
+  @apply mdxx:gap-gutters-mdxxx;
+  @apply mdxxx:gap-gutters-mdxxxx;
+  @apply mdxxxx:gap-gutters-sm;
+}
+.gap-x {
+  @apply gap-x-gutters-xl;
+  @apply xl:gap-x-gutters-xlx;
+  @apply xlx:gap-x-gutters-lg;
+  @apply lg:gap-x-gutters-lgx;
+  @apply lgx:gap-x-gutters-lgxx;
+  @apply lgxx:gap-x-gutters-md;
+  @apply md:gap-x-gutters-mdx;
+  @apply mdx:gap-x-gutters-mdxx;
+  @apply mdxx:gap-x-gutters-mdxxx;
+  @apply mdxxx:gap-x-gutters-mdxxxx;
+  @apply mdxxxx:gap-x-gutters-sm;
+}
+.gap-y {
+  @apply gap-y-gutters-xl;
+  @apply xl:gap-y-gutters-xlx;
+  @apply xlx:gap-y-gutters-lg;
+  @apply lg:gap-y-gutters-lgx;
+  @apply lgx:gap-y-gutters-lgxx;
+  @apply lgxx:gap-y-gutters-md;
+  @apply md:gap-y-gutters-mdx;
+  @apply mdx:gap-y-gutters-mdxx;
+  @apply mdxx:gap-y-gutters-mdxxx;
+  @apply mdxxx:gap-y-gutters-mdxxxx;
+  @apply mdxxxx:gap-y-gutters-sm;
+}

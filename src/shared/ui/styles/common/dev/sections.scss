@@ -1,0 +1,107 @@
+.s1 {
+  background: url(../../img/tmp/sections/1-xl.png) no-repeat center top;
+  min-height: 84px;
+}
+
+.s1 {
+  @media (max-width: $xl) {
+    background: url(../../img/tmp/sections/1-sm.png) no-repeat center top;
+    min-height: 81px;
+  }
+}
+
+.s2 {
+  background: url(../../img/tmp/sections/2-xl.png) no-repeat center top;
+  min-height: 874px;
+}
+
+.s2 {
+  @media (max-width: $xl) {
+    background: url(../../img/tmp/sections/2-sm.png) no-repeat center top;
+    min-height: 950px;
+  }
+}
+
+.s3 {
+  background: url(../../img/tmp/sections/3-xl.png) no-repeat center top;
+  min-height: 62px;
+}
+
+.s3 {
+  @media (max-width: $xl) {
+    background: url(../../img/tmp/sections/3-sm.png) no-repeat center top;
+    min-height: 62px;
+  }
+}
+
+.s4 {
+  background: url(../../img/tmp/sections/4-xl.png) no-repeat center top;
+  min-height: 949px;
+}
+
+.s4 {
+  @media (max-width: $xl) {
+    background: url(../../img/tmp/sections/4-sm.png) no-repeat center top;
+    min-height: 1859px;
+  }
+}
+
+.s5 {
+  background: url(../../img/tmp/sections/5-xl.png) no-repeat center top;
+  min-height: 940px;
+}
+
+.s5 {
+  @media (max-width: $xl) {
+    background: url(../../img/tmp/sections/5-sm.png) no-repeat center top;
+    min-height: 1080px;
+  }
+}
+
+.s6 {
+  background: url(../../img/tmp/sections/6-xl.png) no-repeat center top;
+  min-height: 735px;
+}
+
+.s6 {
+  @media (max-width: $xl) {
+    background: url(../../img/tmp/sections/6-sm.png) no-repeat center top;
+    min-height: 468px;
+  }
+}
+
+.s7 {
+  background: url(../../img/tmp/sections/7-xl.png) no-repeat center top;
+  min-height: 782px;
+}
+
+.s7 {
+  @media (max-width: $xl) {
+    background: url(../../img/tmp/sections/7-sm.png) no-repeat center top;
+    min-height: 1900px;
+  }
+}
+
+.s8 {
+  background: url(../../img/tmp/sections/8-xl.png) no-repeat center top;
+  min-height: 787px;
+}
+
+.s8 {
+  @media (max-width: $xl) {
+    background: url(../../img/tmp/sections/8-sm.png) no-repeat center top;
+    min-height: 559px;
+  }
+}
+
+.s9 {
+  background: url(../../img/tmp/sections/9-xl.png) no-repeat center top;
+  min-height: 401px;
+}
+
+.s9 {
+  @media (max-width: $xl) {
+    background: url(../../img/tmp/sections/9-sm.png) no-repeat center top;
+    min-height: 1303px;
+  }
+}

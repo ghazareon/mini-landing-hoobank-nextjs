@@ -1,0 +1,106 @@
+/*
+ * Author: Hayk Ghazaryan
+ * Email: hayk.ghazaryanc@gmail.com
+ */
+
+@layer utilities {
+ .rel {
+  @apply relative
+									left-0
+									top-0;
+ }
+
+ .abs {
+  @apply absolute
+									left-0
+									top-0;
+ }
+
+ .fix-lt {
+  @apply fixed
+									left-0
+									top-0;
+ }
+
+ .fix-rt {
+  @apply fixed
+									right-0
+									top-0;
+ }
+
+ .abs-lb {
+  @apply absolute
+									bottom-0
+									left-0;
+ }
+
+ .abs-rt {
+  @apply absolute
+									right-0
+									top-0;
+ }
+
+ .abs-rb {
+  @apply absolute
+									bottom-0
+									right-0;
+ }
+
+ .svg-icon {
+  @apply inline-block
+									aspect-square
+									fill-current
+									stroke-current
+									stroke-0
+									text-0
+									leading-0;
+ }
+
+ .overlay {
+  @apply absolute
+									bottom-0
+									left-0
+									right-0
+									top-0
+							bg-black/40
+									text-0
+									leading-0;
+ }
+
+ .flex-xy-between-center {
+  @apply flex
+									items-center
+									justify-between;
+ }
+
+ .flex-xy-end-center {
+  @apply flex
+									items-center
+									justify-end;
+ }
+
+ .flex-xy-center {
+  @apply flex
+									items-center
+									justify-center;
+ }
+
+ .flex-dir-center {
+  @apply flex
+									flex-col
+									items-center;
+ }
+
+ .layer-center {
+  @apply absolute
+									left-[50%]
+									top-[50%]
+									block
+									translate-x-[-50%]
+									translate-y-[-50%];
+ }
+
+ .nowrap {
+  @apply whitespace-nowrap;
+ }
+}

@@ -1,0 +1,41 @@
+.shapes {
+  &--shape-1-height {
+    @apply aspect-[256/318] w-[25.6rem] h-auto;
+  }
+
+  &--shape-1 {
+    @apply aspect-[256/193] w-[25.6rem] h-auto;
+  }
+
+  &--shape-2-2 {
+    @apply aspect-[256/318] w-[25.6rem] h-auto;
+  }
+
+  &--shape-2 {
+    @apply aspect-[220/318] w-[22rem] h-auto;
+  }
+
+  &--shape-3-old {
+    @apply aspect-[460/589] w-[46rem] h-auto;
+  }
+
+  &--shape-3 {
+    @apply aspect-[461/590] w-[46.1rem] h-auto;
+  }
+
+  &--shape-4 {
+    @apply aspect-[185/244] w-[18.5rem] h-auto;
+  }
+
+  &--shape-5 {
+    @apply aspect-[460.01/304.01] w-[46.001rem] h-auto;
+  }
+
+  &--shape-6 {
+    @apply aspect-[288.01/491.79] w-[28.801rem] h-auto;
+  }
+
+  &--shape-img {
+    @apply aspect-[256/193] w-[25.6rem] h-auto;
+  }
+}

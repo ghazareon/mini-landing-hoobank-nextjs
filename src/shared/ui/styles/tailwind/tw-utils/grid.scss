@@ -1,0 +1,58 @@
+/*
+ * Author: Hayk Ghazaryan
+ * Email: hayk.ghazaryanc@gmail.com
+ */
+
+@layer utilities {
+ .r {
+  @apply grid grid-cols-12;
+ }
+
+ .c-1 {
+  @apply col-span-1;
+ }
+
+ .c-2 {
+  @apply col-span-2;
+ }
+
+ .c-3 {
+  @apply col-span-3;
+ }
+
+ .c-4 {
+  @apply col-span-4;
+ }
+
+ .c-5 {
+  @apply col-span-5;
+ }
+
+ .c-6 {
+  @apply col-span-6;
+ }
+
+ .c-7 {
+  @apply col-span-7;
+ }
+
+ .c-8 {
+  @apply col-span-8;
+ }
+
+ .c-9 {
+  @apply col-span-9;
+ }
+
+ .c-10 {
+  @apply col-span-10;
+ }
+
+ .c-11 {
+  @apply col-span-11;
+ }
+
+ .c-12 {
+  @apply col-span-12;
+ }
+}

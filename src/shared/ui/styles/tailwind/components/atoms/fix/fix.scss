@@ -1,0 +1,12 @@
+/*
+ * Author: Hayk Ghazaryan
+ * Email: hayk.ghazaryanc@gmail.com
+ */
+
+@import url("fix-generate.scss");
+
+.fix {
+ @apply fix-generate
+								rel
+								mx-auto;
+}

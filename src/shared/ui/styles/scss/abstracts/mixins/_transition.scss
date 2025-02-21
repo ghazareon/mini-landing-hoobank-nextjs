@@ -1,0 +1,11 @@
+/*
+ * Author: Hayk Ghazaryan
+ * Email: hayk.ghazaryanc@gmail.com
+ */
+
+@mixin transition($properties...) {
+ transition-property: $properties;
+ transition-duration: 0.16s;
+ transition-timing-function: linear;
+ will-change: $properties;
+}

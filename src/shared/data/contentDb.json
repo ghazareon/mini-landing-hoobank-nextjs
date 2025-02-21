@@ -1,0 +1,351 @@
+{
+ "components": {
+  "socPageLinks": [
+   {
+    "href": "#",
+    "icon": {
+     "prefix": "fb",
+     "name": "soc-page-fb",
+     "width": "22",
+     "height": "21.87"
+    }
+   },
+   {
+    "href": "#",
+    "icon": {
+     "prefix": "tw",
+     "name": "soc-page-tw",
+     "width": "22",
+     "height": "17.89"
+    }
+   },
+   {
+    "href": "#",
+    "icon": {
+     "prefix": "inst",
+     "name": "soc-page-inst",
+     "width": "21.98",
+     "height": "22"
+    }
+   },
+   {
+    "href": "#",
+    "icon": {
+     "prefix": "in",
+     "name": "soc-page-in",
+     "width": "22.01",
+     "height": "22.02"
+    }
+   }
+  ],
+
+  "menu": [
+   {
+    "id": 1,
+    "label": "Home",
+    "slug": "home"
+   },
+   {
+    "id": 2,
+    "label": "About Us",
+    "slug": "about-us"
+   },
+   {
+    "id": 3,
+    "label": "Our Classes",
+    "slug": "our-classes"
+   },
+   {
+    "id": 4,
+    "label": "Benefits",
+    "slug": "benefits"
+   },
+   {
+    "id": 5,
+    "label": "Prices",
+    "slug": "prices"
+   },
+   {
+    "id": 6,
+    "label": "Contact Us",
+    "slug": "contact-us"
+   }
+  ]
+ },
+
+ "sections": {
+  "cols-v3": {
+   "title": "Recently Added",
+   "link": {
+    "title": "See all",
+    "href": "#"
+   },
+   "posts": [
+    {
+     "title": "103/143 West Street, Crows Nest",
+     "link": "#",
+     "params": ["10 Bedroom", "150 M", "2 Garage"],
+     "author": "Posted by X Builder",
+     "badge": ["$45,545"],
+     "img": {
+      "source": [
+       {
+        "srcset": "apartment-1.webp",
+        "width": "158",
+        "height": "191"
+       }
+      ],
+      "default": {
+       "srcset": "apartment-1.jpg",
+       "width": "158",
+       "height": "191"
+      }
+     }
+    },
+
+    {
+     "title": "103/143 West Street, Crows Nest",
+     "link": "#",
+     "params": ["10 Bedroom", "150 M", "2 Garage"],
+     "author": "Posted by X Builder",
+     "badge": ["$45,545"],
+     "img": {
+      "source": [
+       {
+        "srcset": "apartment-2.webp",
+        "width": "158",
+        "height": "191"
+       }
+      ],
+      "default": {
+       "srcset": "apartment-2.jpg",
+       "width": "158",
+       "height": "191"
+      }
+     }
+    },
+
+    {
+     "title": "103/143 West Street, Crows Nest",
+     "link": "#",
+     "params": ["10 Bedroom", "150 M", "2 Garage"],
+     "author": "Posted by X Builder",
+     "badge": ["$45,545"],
+     "img": {
+      "source": [
+       {
+        "srcset": "apartment-3.webp",
+        "width": "158",
+        "height": "191"
+       }
+      ],
+      "default": {
+       "srcset": "apartment-3.jpg",
+       "width": "158",
+       "height": "191"
+      }
+     }
+    },
+
+    {
+     "title": "103/143 West Street, Crows Nest",
+     "link": "#",
+     "params": ["10 Bedroom", "150 M", "2 Garage"],
+     "author": "Posted by X Builder",
+     "badge": ["$45,545"],
+     "img": {
+      "source": [
+       {
+        "srcset": "apartment-4.webp",
+        "width": "158",
+        "height": "191"
+       }
+      ],
+      "default": {
+       "srcset": "apartment-4.jpg",
+       "width": "158",
+       "height": "191"
+      }
+     }
+    },
+
+    {
+     "title": "103/143 West Street, Crows Nest",
+     "link": "#",
+     "params": ["10 Bedroom", "150 M", "2 Garage"],
+     "author": "Posted by X Builder",
+     "badge": ["$45,545"],
+     "img": {
+      "source": [
+       {
+        "srcset": "apartment-5.webp",
+        "width": "158",
+        "height": "191"
+       }
+      ],
+      "default": {
+       "srcset": "apartment-5.jpg",
+       "width": "158",
+       "height": "191"
+      }
+     }
+    },
+
+    {
+     "title": "103/143 West Street, Crows Nest",
+     "link": "#",
+     "params": ["10 Bedroom", "150 M", "2 Garage"],
+     "author": "Posted by X Builder",
+     "badge": ["$45,545"],
+     "img": {
+      "source": [
+       {
+        "srcset": "apartment-6.webp",
+        "width": "158",
+        "height": "191"
+       }
+      ],
+      "default": {
+       "srcset": "apartment-6.jpg",
+       "width": "158",
+       "height": "191"
+      }
+     }
+    }
+   ]
+  },
+
+  "cols-v2": {
+   "title": "We are available in many well-known countries",
+   "list": [
+    {
+     "title": "USA",
+     "img": {
+      "webp": "statue-of-liberty-manhattan-new-york-united-state.webp",
+      "jpg": "statue-of-liberty-manhattan-new-york-united-state.jpg",
+      "alt": "Statue Of Liberty Manhattan New York United State",
+      "width": "278",
+      "height": "426"
+     }
+    },
+    {
+     "title": "SPAIN",
+     "img": {
+      "webp": "temple-of-the-sacred-heart-of-jesus-tibidabo-barcelona-catalonia.webp",
+      "jpg": "temple-of-the-sacred-heart-of-jesus-tibidabo-barcelona-catalonia.jpg",
+      "alt": "temple of the sacred heart of jesus tibidabo barcelona catalonia",
+      "width": "278",
+      "height": "426"
+     }
+    },
+    {
+     "title": "LONDON",
+     "img": {
+      "webp": "big-ben-Palace-of-Westminster-london-england.webp",
+      "jpg": "big-ben-Palace-of-Westminster-london-england.jpg",
+      "alt": "Big Ben Palace of Westminster London England",
+      "width": "278",
+      "height": "426"
+     }
+    },
+    {
+     "title": "PARIS",
+     "img": {
+      "webp": "tour-eiffel-paris-france.webp",
+      "jpg": "tour-eiffel-paris-france.jpg",
+      "alt": "Tour Eiffel Paris France",
+      "width": "278",
+      "height": "426"
+     }
+    }
+   ]
+  },
+  "wide-box-v1": {
+   "title": "Find your best Real Estate",
+   "descr": "We provide a complete service for the sale, purchase or rental of real estate.",
+   "btn": {
+    "href": "#",
+    "label": "CONTACT US"
+   }
+  },
+  "footer": {
+   "col1": {
+    "descr": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat."
+   },
+
+   "col2": {
+    "title": "Take a tour",
+    "list": [
+     {
+      "href": "#",
+      "label": "Features"
+     },
+     {
+      "href": "#",
+      "label": "Partners"
+     },
+     {
+      "href": "#",
+      "label": "Product"
+     },
+     {
+      "href": "#",
+      "label": "Support"
+     }
+    ]
+   },
+
+   "col3": {
+    "title": "Our Company",
+    "list": [
+     {
+      "href": "#",
+      "label": "About Us"
+     },
+     {
+      "href": "#",
+      "label": "Agents"
+     },
+     {
+      "href": "#",
+      "label": "Blog"
+     },
+     {
+      "href": "#",
+      "label": "Media"
+     },
+     {
+      "href": "#",
+      "label": "Contact Us"
+     }
+    ]
+   },
+
+   "col4": {
+    "title": "Subscribe",
+    "descr": "Subscribe to get latest property, blog news from us"
+   }
+  },
+  "misc": {
+   "nojs": "You need to enable JavaScript to run this app.",
+
+   "copyright": {
+    "title": "Copyright",
+    "symbol": "©",
+    "start": "2021",
+    "end": "current",
+    "reserved": "All Rights Reserved.",
+    "links": [
+     {
+      "label": "Terms and Conditions",
+      "href": "#"
+     },
+     {
+      "label": "Privacy Policy",
+      "href": "#"
+     }
+    ]
+   }
+  }
+ }
+}
