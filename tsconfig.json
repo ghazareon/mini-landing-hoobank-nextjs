@@ -1,0 +1,94 @@
+/*
+ * Author: Hayk Ghazaryan
+ * Email: hayk.ghazaryanc@gmail.com
+ */
+
+{
+	"compilerOptions": {
+		// "target": "ES2017",
+		"target": "es2021",
+		/* "useDefineForClassFields":         true, */
+
+		"lib": ["dom", "dom.iterable", "esnext", "ES2021.String"],
+		"allowJs": true,
+		"skipLibCheck": true,
+		"strict": true,
+		"noEmit": true,
+		"esModuleInterop": true,
+		"module": "esnext",
+		"moduleResolution": "bundler",
+		"resolveJsonModule": true,
+		"isolatedModules": true,
+		"jsx": "preserve",
+		"incremental": true,
+
+		"noUnusedLocals": false, // m
+		"noUnusedParameters": false, // m
+
+		"moduleDetection": "force",
+
+		"composite": true,
+		"allowImportingTsExtensions": true,
+		"allowSyntheticDefaultImports": true,
+
+		"noFallthroughCasesInSwitch": true,
+		"noUncheckedSideEffectImports": false,
+
+		"plugins": [{ "name": "next" }, { "name": "typescript-plugin-css-modules" }],
+
+		"paths": {
+			"@/src/*": ["./src/*"],
+			"@/server/*": ["./server/*"],
+			"@/public/*": ["./public/*"],
+			"@/npm/*": ["./node_modules/*"]
+		}
+	},
+
+	"include": [
+		"next-env.d.ts",
+		// "**/*.ts",
+		// "**/*.tsx",
+
+		"server/**/*.ts",
+		"server/**/*.tsx",
+		"server/**/*.js",
+		"server/**/*.jsx",
+		"server/**/*.cjs",
+		"server/**/*.cjsx",
+		"server/**/*.mts",
+		"server/**/*.mtsx",
+		"server/**/*.cts",
+		"server/**/*.ctsx",
+		"server/**/*.d.ts",
+		"server/**/*.d.ts",
+
+		"src/**/*.ts",
+		"src/**/*.tsx",
+		"src/**/*.js",
+		"src/**/*.jsx",
+		"src/**/*.cjs",
+		"src/**/*.cjsx",
+		"src/**/*.mts",
+		"src/**/*.mtsx",
+		"src/**/*.cts",
+		"src/**/*.ctsx",
+		"src/**/*.d.ts",
+
+		"vite.config.js",
+		"vite.config.cts",
+		"vite.config.mts",
+		"vite.config.ts",
+
+		"postcss.config.js",
+		"postcss.config.ts",
+		"postcss.config.mts",
+		"postcss.config.cts",
+
+		"tailwind.config.ts",
+		"tailwind.config.mts",
+		"tailwind.config.cts",
+
+		".next/types/**/*.ts"
+	],
+	"exclude": ["node_modules", "bower_components", "jspm_packages"]
+}

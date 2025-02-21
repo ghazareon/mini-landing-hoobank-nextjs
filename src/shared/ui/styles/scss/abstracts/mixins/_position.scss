@@ -1,0 +1,10 @@
+/*
+ * Author: Hayk Ghazaryan
+ * Email: hayk.ghazaryanc@gmail.com
+ */
+
+@mixin p($position: rel, $top: 0, $left: 0) {
+ position: position($position);
+ top: $top;
+ left: $left;
+}

@@ -1,0 +1,27 @@
+/*
+ * Author: Hayk Ghazaryan
+ * Email: hayk.ghazaryanc@gmail.com
+ */
+
+@mixin placeholder {
+ &.placeholder {
+  @content;
+ }
+
+ &:placeholder {
+  @content;
+ }
+
+ &::placeholder {
+  @content;
+ }
+
+ &:input-placeholder {
+  @content;
+ }
+
+ /* stylelint-disable-next-line selector-pseudo-element-no-unknown */
+ &::input-placeholder {
+  @content;
+ }
+}

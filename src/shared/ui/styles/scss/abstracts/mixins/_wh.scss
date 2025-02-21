@@ -1,0 +1,9 @@
+/*
+ * Author: Hayk Ghazaryan
+ * Email: hayk.ghazaryanc@gmail.com
+ */
+
+@mixin wh($width, $height: $width) {
+ width: $width;
+ height: $height;
+}

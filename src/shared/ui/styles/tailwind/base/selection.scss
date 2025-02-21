@@ -1,0 +1,20 @@
+/*
+ * Author: Hayk Ghazaryan
+ * Email: hayk.ghazaryanc@gmail.com
+ */
+
+body {
+ ::-moz-selection {
+  @apply bg-green-250
+								 text-slate-add-1;
+ }
+
+ ::selection {
+  /*
+					@apply bg-green-add-1
+												text-slate-add-1;
+		*/
+  @apply bg-green-250
+									text-slate-add-1;
+ }
+}

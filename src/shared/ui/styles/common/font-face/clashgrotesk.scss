@@ -1,0 +1,20 @@
+/*
+ * Author: Hayk Ghazaryan
+ * Email: hayk.ghazaryanc@gmail.com
+ */
+
+/* prettier-ignore */
+@font-face {
+	font-family: "ClashGrotesk";
+	src:  url("../../../assets/fonts/ClashGrotesk-Medium.woff2")                       format("woff2")
+			  , url("../../../assets/fonts/ClashGrotesk-Medium.woff")                        format("woff")
+			  , url("../../../assets/fonts/ClashGrotesk-Medium.eot?#iefix" )                 format("embedded-opentype")
+			  , url("../../../assets/fonts/ClashGrotesk-Medium.ttf")                         format("truetype")
+			  , url("../../../assets/fonts/ClashGrotesk-Medium.otf")                         format("opentype")
+			  , url("../../../assets/fonts/ClashGrotesk-Medium.f.svg#ClashGrotesk-Medium")   format("svg")
+			  ;
+
+	font-weight: 500;
+	font-style: normal;
+	font-display: block;
+}

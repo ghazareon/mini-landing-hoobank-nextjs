@@ -1,0 +1,65 @@
+.icons-brand {
+ &--3 {
+  @apply aspect-[67.1/60] h-auto w-[6.709999999999999rem];
+ }
+
+ &--cardio {
+  @apply aspect-[49.99/49.93] h-auto w-[4.9990000000000006rem];
+ }
+
+ &--confetti-1 {
+  @apply aspect-[8.65/11.33] h-auto w-[0.865rem];
+ }
+
+ &--deco-1 {
+  @apply aspect-[151/151] h-auto w-[15.1rem];
+ }
+
+ &--deco-2 {
+  @apply aspect-[176/176] h-auto w-[17.6rem];
+ }
+
+ &--deco-3 {
+  @apply aspect-[237.49/237.49] h-auto w-[23.749000000000002rem];
+ }
+
+ &--fat-loss-outline {
+  @apply aspect-[60/60.01] h-auto w-[6rem];
+ }
+
+ &--fitness-outline {
+  @apply aspect-[60.01/60] h-auto w-[6.0009999999999994rem];
+ }
+
+ &--membership {
+  @apply aspect-[50.02/50] h-auto w-[5.002000000000001rem];
+ }
+
+ &--muscle-outline {
+  @apply aspect-[60.01/60.01] h-auto w-[6.0009999999999994rem];
+ }
+
+ &--nutrition-outline {
+  @apply aspect-[67.1/60] h-auto w-[6.709999999999999rem];
+ }
+
+ &--nutrition {
+  @apply aspect-[60.02/60.01] h-auto w-[6.002000000000001rem];
+ }
+
+ &--pain-less {
+  @apply aspect-[59.99/60] h-auto w-[5.9990000000000006rem];
+ }
+
+ &--progress {
+  @apply aspect-[59.99/60] h-auto w-[5.9990000000000006rem];
+ }
+
+ &--stomach-fat {
+  @apply aspect-[59.87/59.99] h-auto w-[5.987rem];
+ }
+
+ &--workout {
+  @apply aspect-[59.99/60] h-auto w-[5.9990000000000006rem];
+ }
+}

@@ -1,0 +1,37 @@
+<!-- prettier-ignore -->
+<%
+	const { assets,
+									pic,
+									img,
+									styles,
+									twStyles,
+									svg,
+									view,
+									viewAtoms,
+									viewMolecules,
+									viewOrganisms,
+									viewTemplates } = paths.in;
+
+	const { assets: assetsOut,
+									pic: picOut,
+									img: imgOut,
+									css: cssOut,
+									svg: svgOut } = paths.out;
+
+	const { socPageLinks,
+									misc,
+									footer } = data.sections;
+
+	const svgSprite = `${svg}/${files.spriteIcons}`;
+	const svgBrandSprite = `${svg}/${files.spriteIconsBrand}`;
+%>
+
+<!doctype html>
+<html lang="en" translate="no" class="notranslate">
+	<!-- prettier-ignore -->
+	<%- include(`${viewTemplates}/head.html`); %>
+	<body>
+		<noscript><%= misc.nojs %></noscript>
+		<script type="module" defer src="scripts/main.js"></script>
+	</body>
+</html>

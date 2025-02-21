@@ -1,0 +1,43 @@
+/*
+ * Author: Hayk Ghazaryan
+ * Email: hayk.ghazaryanc@gmail.com
+ */
+
+body {
+ &::-webkit-scrollbar {
+  @apply h-[8px]
+									w-[8px];
+ }
+
+ &::-webkit-scrollbar-button {
+  @apply h-0
+									w-0;
+ }
+
+ &::-webkit-scrollbar-track {
+  @apply bg-white;
+
+  &:vertical:hover {
+  }
+ }
+
+ &::-webkit-scrollbar-thumb {
+  @apply cursor-pointer
+								bg-green-200;
+
+  &:vertical:hover {
+   background-color: #b8cd5d;
+  }
+ }
+
+ &::-webkit-scrollbar-track-piece {
+ }
+
+ &::-webkit-scrollbar-corner {
+  @apply h-0
+									w-0;
+ }
+
+ &::-webkit-resizer {
+ }
+}

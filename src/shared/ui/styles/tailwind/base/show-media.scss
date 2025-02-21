@@ -1,0 +1,55 @@
+body {
+ &:before {
+  @apply fixed
+									right-0
+									top-0
+									z-[1000]
+									block
+							bg-black
+									px-[20.01px]
+									py-[10.01px]
+									text-[20.01px]
+							text-white
+									content-[""];
+
+  @media (max-width: $xl) {
+   content: "xl";
+  }
+
+  @media (max-width: $xlx) {
+   content: "xlx";
+  }
+
+  @media (max-width: $lg) {
+   content: "lg";
+  }
+
+  @media (max-width: $lgx) {
+   content: "lgx";
+  }
+
+  @media (max-width: $lgxx) {
+   content: "lgxx";
+  }
+
+  @media (max-width: $md) {
+   content: "md";
+  }
+
+  @media (max-width: $mdx) {
+   content: "mdx";
+  }
+
+  @media (max-width: $mdxxx) {
+   content: "mdxxx";
+  }
+
+  @media (max-width: $mdxxxx) {
+   content: "mdxxxx";
+  }
+
+  @media (max-width: $sm) {
+   content: "sm";
+  }
+ }
+}

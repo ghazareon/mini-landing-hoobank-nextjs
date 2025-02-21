@@ -1,0 +1,27 @@
+/*
+ * Author: Hayk Ghazaryan
+ * Email: hayk.ghazaryanc@gmail.com
+ */
+
+@import url("base/media-query.scss");
+
+@import url("../common/dev/sections.scss");
+
+@import url("tw-utils/grid.scss");
+@import url("tw-utils/extends.scss");
+
+@import url("base/sides.scss");
+@import url("base/gap.scss");
+@import url("base/typography.scss");
+@import url("base/root.scss");
+@import url("base/main.scss");
+
+// @import url("base/show-media.scss");
+
+@import url("base/selection.scss");
+@import url("base/scroll.scss");
+@import url("base/text-gradient.scss");
+@import url("base/sprite-icons.scss");
+@import url("base/sprite-shapes.scss");
+
+@import url("components/atoms/main.scss");
