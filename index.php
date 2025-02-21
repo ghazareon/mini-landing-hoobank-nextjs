@@ -19,9 +19,9 @@
 
 <!doctype html>
 <html class="notranslate" lang="en" translate="no">
-<?php include_once 'src/php/header.php'; ?>
+<?php // include_once 'src/php/header.php'; ?>
 <body>
  <noscript>You need to enable JavaScript to run this app.</noscript>
-	<div class="wrap" data-scroll-container></div>
-	<?php include_once 'src/php/footer.php'; ?>
+	<!-- <div class="wrap" data-scroll-container></div> -->
+	<?php // include_once 'src/php/footer.php'; ?>
 </html>
