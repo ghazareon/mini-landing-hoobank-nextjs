@@ -1,0 +1,25 @@
+#
+# Author: Hayk Ghazaryan
+# Email: hayk.ghazaryanc@gmail.com
+#
+
+############
+############
+############
+svgo.config.js
+tsconfig.node.json
+tsconfig.app.json
+tsconfig.json
+tsconfig.next.json
+src/shared/ui/styles/tailwind/base/media-query.scss
+src/shared/ui/styles/tailwind/base/media-query.css
+svgo.config.mjs
+public/manifest.json
+public/browserconfig.xml
+jsconfig.json
+package.json
+tsconfig.vite.app.json
+tsconfig.vite.json
+tsconfig.vite.node.json
+tsconfig.json
+

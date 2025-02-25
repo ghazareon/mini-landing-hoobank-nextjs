@@ -25,3 +25,60 @@
 @import url("base/sprite-shapes.scss");
 
 @import url("components/atoms/main.scss");
+
+@tailwind utilities;
+@tailwind base;
+@tailwind components;
+
+.gap,
+.gap-x,
+.gap-y {
+ @apply transition-[column-gap,row-gap]
+								duration-[0.16s,0.16s]
+								ease-[linear,linear]
+								will-change-[column-gap,row-gap];
+}
+
+:root {
+ @apply cursor-default
+								font-primary
+								text-62-5p
+								font-400
+								tracking-normal;
+}
+
+html,
+body {
+ @apply bg-gray-425;
+}
+
+.main-header {
+ &__fix {
+  @apply flex
+									justify-between
+									py-[3rem]
+									align-middle;
+ }
+}
+
+.nav {
+ &__ul {
+  @apply flex;
+ }
+
+ &__li {
+  @apply ~px-[1.2rem]/[2.2rem];
+
+  &--current {
+   .nav__a {
+    @apply text-white/100;
+   }
+  }
+ }
+
+ &__a {
+  @apply text-[1.6rem]
+									font-[400]
+							text-white/70;
+ }
+}

@@ -3,7 +3,7 @@
 	"version": "0.1.0",
 	"private": true,
 	"homepage": "https://github.com/ghazareon/mini-landing-hoobank-nextjs",
-	"author": "Hayk Ghazaryan <ghazareon@gmail.com>",
+	"author": "Hayk Ghazaryan <hayk.ghazaryanc@gmail.com>",
 	"keywords": [
 		"Next.js",
 		"landing"
@@ -14,14 +14,77 @@
 	},
 	"bugs": {
 		"url": "https://github.com/ghazareon/mini-landing-hoobank-nextjs/issues/",
-		"email": "ghazareon@gmail.com"
+		"email": "hayk.ghazaryanc@gmail.com"
 	},
 	"scripts": {
-		"dev": "next dev --turbopack",
-		"build": "next build",
-		"start": "next start",
-		"lint": "next lint"
+
+
+		"============================ Build & Preview ======================": "",
+		"build:vite":            "npm-run-all postcss build:vite:run",
+		"build:vite:run":        "cross-env NODE_ENV=production vite build --config vite.config.ts",
+
+		"preview:vite:w":        "concurrently \"npm run build:w\" \"npm run preview:w:run\"",
+		"preview:vite:w:run":    "vite preview --port 3001",
+		"lint":                  "eslint -c eslint.vite.config.mjs .",
+
+		"============================ NextJS ===========================": "",
+		"dev:next":              "concurrently \"npm run postcss:w\" \"npm run dev:run:next\"",
+		"dev:run:next":          "next dev --turbopack",
+		"build:next":            "next build",
+		"start:next":            "next start",
+		"lint:next":             "next lint -c eslint.config.mjs",
+
+		"============================ CSS ===========================": "",
+		"postcss":               "npx postcss src/shared/ui/styles/tailwind/tw-in.scss -o src/shared/ui/assets/css/transpiled/tw-out.css --config postcss.config.ts",
+		"postcss:w":             "npx postcss src/shared/ui/styles/tailwind/tw-in.scss -o src/shared/ui/assets/css/transpiled/tw-out.css --watch --config postcss.config.ts",
+
+		"============================ Kill Port ===========================": "",
+		"kp:dev":                "kill-port --port 3000 && npm run kp:data",
+		"kp:build":              "kill-port --port 3001 && npm run kp:data",
+		"kp:data":               "kill-port --port 4001,4002",
+		"kp:next":               "kill-port --port 5000,5001,5002",
+		"kp:all":                "npm-run-all kp:dev kp:build kp:data",
+
+		"============================ Misc ===========================": "",
+		"data":                  "json-server src/shared/data/contentDb.json -p 4001",
+		"remove":                "rimraf build dist",
+		"cc":                    "npm cache verify",
+
+		"============================ Server tasks ===================": "",
+
+		"tasks":                 "npm-run-all gap sides media root:css tmp svg pic manifest bconfig color",
+		"grid":                  "npm-run-all gap sides media root:css tmp",
+		"gap":                   "tsx --tsconfig ./tsconfig.node.json ./server/tasks/createTwGap.ts",
+		"sides":                 "tsx --tsconfig ./tsconfig.node.json ./server/tasks/createTwSides.ts",
+		"media":                 "tsx --tsconfig ./tsconfig.node.json ./server/tasks/createMediaQueryVars.ts",
+		"root:css":              "tsx --tsconfig ./tsconfig.node.json ./server/tasks/createCssRoot.ts",
+		"tmp":                   "tsx --tsconfig ./tsconfig.node.json ./server/tasks/createTmp.ts",
+		"svg":                   "tsx --tsconfig ./tsconfig.node.json ./server/tasks/createSvgSprite.ts",
+		"pic":                   "tsx --tsconfig ./tsconfig.node.json ./server/tasks/createPic.ts",
+		"manifest":              "tsx --tsconfig ./tsconfig.node.json ./server/tasks/createManifest.ts",
+		"bconfig":               "tsx --tsconfig ./tsconfig.node.json ./server/tasks/createBrowserConfig.ts",
+		"color":                 "tsx --tsconfig ./tsconfig.node.json ./server/tasks/createTwColors.ts",
+
+		"============================ Server tasks Watch ================": "",
+		"tmp:w":                 "tsx --tsconfig ./tsconfig.node.json --watch ./server/tasks/createTmp.ts",
+		"gap:w":                 "tsx --tsconfig ./tsconfig.node.json --watch ./server/tasks/createTwGap.ts",
+		"sides:w":               "tsx --tsconfig ./tsconfig.node.json --watch ./server/tasks/createTwSides.ts",
+		"media:w":               "tsx --tsconfig ./tsconfig.node.json --watch ./server/tasks/createMediaQueryVars.ts",
+		"root:css:w":            "tsx --tsconfig ./tsconfig.node.json --watch ./server/tasks/createCssRoot.ts",
+		"svg:w":                 "tsx --tsconfig ./tsconfig.node.json --watch ./server/tasks/createSvgSprite.ts",
+		"pic:w":                 "tsx --tsconfig ./tsconfig.node.json --watch ./server/tasks/createPic.ts",
+		"manifest:w":            "tsx --tsconfig ./tsconfig.node.json --watch ./server/tasks/createManifest.ts",
+		"bconfig:w":             "tsx --tsconfig ./tsconfig.node.json --watch ./server/tasks/createBrowserConfig.ts",
+		"color:w":               "tsx --tsconfig ./tsconfig.node.json --watch ./server/tasks/createTwColors.ts"
 	},
+
+	"_moduleAliases": {
+		"@/server":       "./server",
+		"@/src":          "./src",
+		"@/public":       "./public",
+		"@/npm":          "./node_modules"
+	},
+
 	"dependencies": {
 		"@gsap/react": "^2.1.2",
 		"bootstrap": "^5.3.3",
@@ -30,7 +93,6 @@
 		"locomotive-scroll": "^4.1.4",
 		"next": "15.1.7",
 		"odometer": "^0.4.8",
-		"prettier-plugin-tailwindcss": "^0.6.11",
 		"react": "^19.0.0",
 		"react-dom": "^19.0.0",
 		"react-odometerjs": "^3.1.3",
@@ -151,6 +213,7 @@
 		"postcss-variables": "^1.1.1",
 		"postcss-zindex": "^7.0.0",
 		"prettier": "^3.5.1",
+		"prettier-plugin-tailwindcss": "^0.5.14",
 		"rimraf": "^6.0.1",
 		"sass": "^1.85.0",
 		"sass-svg-uri": "^2.0.0",
