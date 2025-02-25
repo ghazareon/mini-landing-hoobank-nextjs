@@ -5,6 +5,7 @@
 
 import { readFile } from "node:fs";
 import sharp from "sharp";
+
 import { picPaths } from "@/src/shared/config/const/paths";
 import { picData } from "@/src/shared/data/picData";
 

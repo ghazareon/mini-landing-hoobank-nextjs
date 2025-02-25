@@ -1,65 +1,41 @@
 .icons {
-  &--arrow-down {
-    @apply aspect-[12.06/6.23] w-[1.206rem] h-auto;
+  &--fb {
+    @apply aspect-[21/21] w-[2.1rem] h-auto;
   }
 
-  &--arrow-long-next {
-    @apply aspect-[75/14.72] w-[7.5rem] h-auto;
+  &--in {
+    @apply aspect-[20.99/20.99] w-[2.0989999999999998rem] h-auto;
   }
 
-  &--arrow-long-prev {
-    @apply aspect-[75/14.73] w-[7.5rem] h-auto;
+  &--inst {
+    @apply aspect-[21/21] w-[2.1rem] h-auto;
   }
 
-  &--arrow-small-top-right {
-    @apply aspect-[6.51/5.17] w-[0.651rem] h-auto;
+  &--percent {
+    @apply aspect-[9.19/9.19] w-[0.9189999999999999rem] h-auto;
   }
 
-  &--arrow-top-right {
-    @apply aspect-[15.1/11.43] w-[1.51rem] h-auto;
+  &--quote {
+    @apply aspect-[42.6/27.6] w-[4.26rem] h-auto;
   }
 
-  &--burger {
-    @apply aspect-[20/14] w-[2rem] h-auto;
+  &--secure {
+    @apply aspect-[27.19/32] w-[2.7190000000000003rem] h-auto;
   }
 
-  &--deco-1 {
-    @apply aspect-[23.76/23.7] w-[2.3760000000000003rem] h-auto;
-  }
-
-  &--deco-6 {
-    @apply aspect-[71.98/71.29] w-[7.198rem] h-auto;
-  }
-
-  &--deco-7 {
-    @apply aspect-[41.89/42] w-[4.189rem] h-auto;
-  }
-
-  &--global {
-    @apply aspect-[14.84/14.84] w-[1.484rem] h-auto;
-  }
-
-  &--magnifying {
-    @apply aspect-[21.5/21.5] w-[2.15rem] h-auto;
-  }
-
-  &--soc-fb {
-    @apply aspect-[6.89/12.8] w-[0.689rem] h-auto;
-  }
-
-  &--soc-in {
-    @apply aspect-[12.82/12.81] w-[1.282rem] h-auto;
-  }
-
-  &--soc-tw {
-    @apply aspect-[12.8/10.4] w-[1.28rem] h-auto;
+  &--shape-stamp {
+    @apply aspect-[26.67/26.68] w-[2.6670000000000003rem] h-auto;
   }
 
   &--star {
-    @apply aspect-[22.48/21.49] w-[2.248rem] h-auto;
+    @apply aspect-[32/30.4] w-[3.2rem] h-auto;
   }
 
-  &--sun {
-    @apply aspect-[31.19/32.01] w-[3.119rem] h-auto;
+  &--transfer {
+    @apply aspect-[32/32] w-[3.2rem] h-auto;
+  }
+
+  &--tw {
+    @apply aspect-[23/19] w-[2.3rem] h-auto;
   }
 }

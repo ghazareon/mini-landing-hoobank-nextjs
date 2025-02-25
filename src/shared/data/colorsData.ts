@@ -1,56 +1,102 @@
 /*
  * Author: Hayk Ghazaryan
  * Email: hayk.ghazaryanc@gmail.com
- * GitHub: https://github.com/ghazareon/mini-landing-hoobank-markup-gh
- * Date: December 2024
  */
 
 /* prettier-ignore  */
 export const colorsData = {
 
- grey: {
-  start: 50,
-  delta: 50,
+ gray: {
+  start: 100,
+  delta: 25,
   list: [
+			"#FDFDFE",
+			"#C4C4C4",
+			"#B8B8B8",
+			"#6D6D6D",
+			"#3F3E45",
 			"#424147",
 			"#393939",
-			"#3f3e45",
-			"#06080d",
-			"#00040e",
+			"#272727",
+			"#14101D",
+			"#11101D",
+			"#00030C",
+			"#00030D",
+			"#00040E",
+			"#00040F",
+			"#0A090B",
+			"#080915",
 		]
  },
 
+
  aqua: {
-  start: 50,
-  delta: 50,
+  start: 100,
+  delta: 25,
   list: [
-			"#def9fa",
-			"#bef3f5",
-			"#9dedf0",
-			"#7de7eb",
-			"#5ce1e6",
-			"#5ce1e6",
-			"#00f6ff",
-			"#33bbcf",
-			"#26d0ce",
-			"#0a2834",
-			"#02141b",
+			"#DEF9FA",
+			"#BEF3F5",
+			"#9DEDF0",
+			"#7DE7EB",
+			"#68E3E7",
+			"#5CE1E6",
+			"#00F6FF",
+			"#00F5FF",
+			"#00D9F5",
+			"#33BBCF",
 		]
  },
+
+ orange: {
+  start: 100,
+  delta: 25,
+  list: [
+			"#FFBC00",
+			"#F7981D",
+			"#ED7C00",
+		]
+ },
+
+ green: {
+  start: 100,
+  delta: 25,
+  list: [
+			"#1AE5BE",
+			"#00AC5B",
+			"#00AE1C",
+			"#00AE1B",
+			"#08977B",
+			"#09977C",
+		]
+ },
+
+ lightSky: {
+  start: 100,
+  delta: 25,
+  list: [
+			"#DFFFEF",
+			"#C0E0E9",
+		]
+ },
+
  violet: {
-  start: 50,
-  delta: 50,
+  start: 100,
+  delta: 25,
   list: [
-			"#fc67fa",
+			"#3C58BF",
+			"#C0E0E9",
 		]
  },
- blue: {
-  start: 50,
-  delta: 50,
+
+ red: {
+  start: 100,
+  delta: 25,
   list: [
-			"#1a2980"
+			"#BB2D2D",
+			"#7F3A44",
 		]
  },
+
 };
 
 /* prettier-ignore  */

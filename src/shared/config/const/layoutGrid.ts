@@ -8,26 +8,28 @@ import type { IObjNest, n } from "../../types";
 /* prettier-ignore */
 export const layoutGridBase = {
 
+
+
 	/* ----- xl ----- */
  xl: {
-  width:     1204,
-  gutters:   24,
-  sides:     32,
+  width:     1230,
+  gutters:   30,
+  sides:     30,
   breakPointSpace:  0
  },
 
  xlx: {
-  width:     1104,
-  gutters:   16,
-  sides:     32,
+  width:     1130,
+  gutters:   22,
+  sides:     30,
   breakPointSpace:  0
  },
 
 /* ----- lg ----- */
  lg: {
   width:     1024,
-  gutters:   24,
-  sides:     32,
+  gutters:   22,
+  sides:     25,
   breakPointSpace:  0
  },
 

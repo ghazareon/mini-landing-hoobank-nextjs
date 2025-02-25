@@ -1,107 +1,131 @@
 .s1 {
   background: url(../../img/tmp/sections/1-xl.png) no-repeat center top;
-  min-height: 84px;
+  min-height: 92px;
 }
 
 .s1 {
   @media (max-width: $xl) {
     background: url(../../img/tmp/sections/1-sm.png) no-repeat center top;
-    min-height: 81px;
+    min-height: 64px;
   }
 }
 
 .s2 {
   background: url(../../img/tmp/sections/2-xl.png) no-repeat center top;
-  min-height: 874px;
+  min-height: 700px;
 }
 
 .s2 {
   @media (max-width: $xl) {
     background: url(../../img/tmp/sections/2-sm.png) no-repeat center top;
-    min-height: 950px;
+    min-height: 991px;
   }
 }
 
 .s3 {
   background: url(../../img/tmp/sections/3-xl.png) no-repeat center top;
-  min-height: 62px;
+  min-height: 251px;
 }
 
 .s3 {
   @media (max-width: $xl) {
     background: url(../../img/tmp/sections/3-sm.png) no-repeat center top;
-    min-height: 62px;
+    min-height: 413px;
   }
 }
 
 .s4 {
   background: url(../../img/tmp/sections/4-xl.png) no-repeat center top;
-  min-height: 949px;
+  min-height: 619px;
 }
 
 .s4 {
   @media (max-width: $xl) {
     background: url(../../img/tmp/sections/4-sm.png) no-repeat center top;
-    min-height: 1859px;
+    min-height: 793px;
   }
 }
 
 .s5 {
   background: url(../../img/tmp/sections/5-xl.png) no-repeat center top;
-  min-height: 940px;
+  min-height: 566px;
 }
 
 .s5 {
   @media (max-width: $xl) {
     background: url(../../img/tmp/sections/5-sm.png) no-repeat center top;
-    min-height: 1080px;
+    min-height: 825px;
   }
 }
 
 .s6 {
   background: url(../../img/tmp/sections/6-xl.png) no-repeat center top;
-  min-height: 735px;
+  min-height: 609px;
 }
 
 .s6 {
   @media (max-width: $xl) {
     background: url(../../img/tmp/sections/6-sm.png) no-repeat center top;
-    min-height: 468px;
+    min-height: 723px;
   }
 }
 
 .s7 {
   background: url(../../img/tmp/sections/7-xl.png) no-repeat center top;
-  min-height: 782px;
+  min-height: 907px;
 }
 
 .s7 {
   @media (max-width: $xl) {
     background: url(../../img/tmp/sections/7-sm.png) no-repeat center top;
-    min-height: 1900px;
+    min-height: 864px;
   }
 }
 
 .s8 {
   background: url(../../img/tmp/sections/8-xl.png) no-repeat center top;
-  min-height: 787px;
+  min-height: 211px;
 }
 
 .s8 {
   @media (max-width: $xl) {
     background: url(../../img/tmp/sections/8-sm.png) no-repeat center top;
-    min-height: 559px;
+    min-height: 396px;
   }
 }
 
 .s9 {
   background: url(../../img/tmp/sections/9-xl.png) no-repeat center top;
-  min-height: 401px;
+  min-height: 433px;
 }
 
 .s9 {
   @media (max-width: $xl) {
     background: url(../../img/tmp/sections/9-sm.png) no-repeat center top;
-    min-height: 1303px;
+    min-height: 529px;
+  }
+}
+
+.s10 {
+  background: url(../../img/tmp/sections/10-xl.png) no-repeat center top;
+  min-height: 374px;
+}
+
+.s10 {
+  @media (max-width: $xl) {
+    background: url(../../img/tmp/sections/10-sm.png) no-repeat center top;
+    min-height: 881px;
+  }
+}
+
+.s11 {
+  background: url(../../img/tmp/sections/11-xl.png) no-repeat center top;
+  min-height: 115px;
+}
+
+.s11 {
+  @media (max-width: $xl) {
+    background: url(../../img/tmp/sections/11-sm.png) no-repeat center top;
+    min-height: 168px;
   }
 }

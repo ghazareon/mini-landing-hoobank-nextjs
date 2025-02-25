@@ -1,8 +1,6 @@
 /*
  * Author: Hayk Ghazaryan
  * Email: hayk.ghazaryanc@gmail.com
- * GitHub: https://github.com/ghazareon/mini-landing-hoobank-markup-gh
- * Date: December 2024
  */
 
 export const picData = {

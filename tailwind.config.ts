@@ -3,12 +3,11 @@
  * Email: hayk.ghazaryanc@gmail.com
  */
 
-/* prettier-ignore */ import type { Config }           from "tailwindcss";
-/* prettier-ignore */ import fluid, { extract }        from "fluid-tailwind";
-/* prettier-ignore */ import { toCssVar, removeSpaces,
-																															toRem, maxItem }        from "./src/shared/utils";
-/* prettier-ignore */ import { dir, ext, layoutGrid }  from "./src/shared/config/const";
-/* prettier-ignore */ import * as dt                   from "./src/shared/config/designTokens";
+import type { Config } from "tailwindcss";
+import fluid, { extract } from "fluid-tailwind";
+import { toCssVar, removeSpaces, toRem, maxItem } from "./src/shared/utils";
+import { dir, ext, layoutGrid } from "./src/shared/config/const";
+import * as dt from "./src/shared/config/designTokens";
 
 const {
  in: { src: srcIn, shared: sharedIn, ui: uiIn, components: componentsIn }
