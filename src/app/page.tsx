@@ -41,6 +41,7 @@ import "../shared/ui/assets/css/transpiled/tw-out.css";
 
 import {
  Article,
+ Br,
  Label,
  Picture,
  Select,
@@ -89,13 +90,14 @@ export default function Home() {
   <Div className="wrap">
    <Header className="main-header">
     <Div className="fix main-header__fix">
-     <Link href="#">
+     <Link href="#" className="logo logo--1">
       <Img
        src="assets/svg/logo.svg"
        alt=""
        title=""
        width="116.95"
        height="32"
+       className="logo__img"
       />
      </Link>
 
@@ -131,9 +133,60 @@ export default function Home() {
     </Div>
    </Header>
    <Main className="main">
-    <H1 className="">The Next Generation Payment Method.</H1>
+    {/* <H1 className="">The Next Generation Payment Method.</H1> */}
    </Main>
-   <Footer className="main-header"></Footer>
+
+   <Footer className="main-footer">
+    <Div className="fix main-footer__fix">
+     <Span className="cr">
+      Copyright © 2021-{new Date().getFullYear()}
+      <span className="brand-txt">
+       <span className="text-white">Hoo</span>
+       <span className="text-aqua-275">Bank</span>.
+      </span>
+      <Br />
+      All Rights Reserved.
+     </Span>
+
+     <Div className="soc-links">
+      <Link href="#" className="soc-links__it">
+       <SvgSprite
+        className="icons icons--inst"
+        svgName="inst"
+        width="21"
+        height="21"
+       />
+      </Link>
+
+      <Link href="#" className="soc-links__it">
+       <SvgSprite
+        className="icons icons--fb"
+        svgName="fb"
+        width="21"
+        height="21"
+       />
+      </Link>
+
+      <Link href="#" className="soc-links__it">
+       <SvgSprite
+        className="icons icons--tw"
+        svgName="tw"
+        width="21"
+        height="21"
+       />
+      </Link>
+
+      <Link href="#" className="soc-links__it">
+       <SvgSprite
+        className="icons icons--in"
+        svgName="in"
+        width="20.99"
+        height="20.99"
+       />
+      </Link>
+     </Div>
+    </Div>
+   </Footer>
   </Div>
  );
 }

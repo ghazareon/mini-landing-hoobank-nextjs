@@ -3,28 +3,30 @@
  * Email: hayk.ghazaryanc@gmail.com
  */
 
-import type { FC } from "react";
+import type { ElementType, FC, HTMLAttributes } from "react";
 
 import { s, IObj } from "@/src/shared/types";
 import { Svg, Use } from "@/src/app/components/electrons";
 import { svgPaths } from "@/src/shared/config/const/paths";
 import { files } from "@/src/shared/config/const/files";
 
-export interface SvgSpriteProps {
+export interface SvgSpriteProps extends HTMLAttributes<HTMLOrSVGElement> {
  svgName: s;
  svgFileName?: s;
  svgFilePath?: s;
- data?: IObj<s>;
+ role?: s;
+ [key: string]: any;
 }
 
 export const SvgSprite: FC<SvgSpriteProps> = ({
  svgName,
- svgFileName = files.svgSpriteName,
- svgFilePath = svgPaths.svgSpriteIn,
- data
+ svgFilePath = "assets/svg",
+ svgFileName = "sprite-icons.svg",
+ role = "presentation",
+ ...props
 }) => {
  return (
-  <Svg {...data}>
+  <Svg {...props} role={role}>
    <Use xlinkHref={`${svgFilePath}/${svgFileName}#${svgName}`}></Use>
   </Svg>
  );
