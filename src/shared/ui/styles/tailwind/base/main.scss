@@ -39,6 +39,7 @@ input {
 
 * {
  &:focus-visible {
-  outline: solid rgba(255, 0, 0, 1) 3px;
+  outline: solid rgba(0, 255, 255, 1) 3px;
+  border-radius: 2px;
  }
 }

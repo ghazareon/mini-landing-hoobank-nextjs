@@ -40,3 +40,4 @@ import { CoreUi } from "./CoreUi";
 /* prettier-ignore */ export const Label:      FC<CoreUiProps> = props => <CoreUi {...props} as="label" />;
 /* prettier-ignore */ export const Select:     FC<CoreUiProps> = props => <CoreUi {...props} as="select" />;
 /* prettier-ignore */ export const Option:     FC<CoreUiProps> = props => <CoreUi {...props} as="option" />;
+/* prettier-ignore */ export const Br:         FC<CoreUiProps> = props => <CoreUi {...props} as="br" />;

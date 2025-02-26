@@ -16,8 +16,6 @@
 @import url("base/root.scss");
 @import url("base/main.scss");
 
-// @import url("base/show-media.scss");
-
 @import url("base/selection.scss");
 @import url("base/scroll.scss");
 @import url("base/text-gradient.scss");
@@ -53,6 +51,7 @@ body {
 }
 
 .main-header {
+ // .main-header__fix
  &__fix {
   @apply flex
 									justify-between
@@ -62,23 +61,142 @@ body {
 }
 
 .nav {
+ // .nav__ul
  &__ul {
   @apply flex;
  }
 
+ // .nav__li
  &__li {
-  @apply ~px-[1.2rem]/[2.2rem];
+  @apply ~pl-[1.2rem]/[3.2rem];
 
+  // .nav__li--current
   &--current {
+   // .nav__li--current .nav__a
    .nav__a {
     @apply text-white/100;
    }
   }
  }
 
+ // .nav__a
  &__a {
-  @apply text-[1.6rem]
+  @apply whitespace-nowrap
+									text-[1.6rem]
 									font-[400]
 							text-white/70;
  }
+}
+
+.main-footer {
+ @apply block;
+
+ // .main-footer__fix
+ &__fix {
+  @apply flex
+									items-center
+									justify-between
+									border-t-[1px]
+							border-white/10
+									border-t-[solid]
+									py-[3rem]
+							text-white;
+
+  @media (max-width: $mdx) {
+   @apply flex-col-reverse
+										text-center;
+
+   // .main-footer__fix .cr
+   .cr {
+    @apply pt-[2rem];
+   }
+  }
+ }
+}
+
+.soc-links {
+ @apply inline-flex
+								gap-x-[3.1rem];
+
+ // .soc-links .icons
+ .icons {
+  @apply scale-100;
+
+  @apply transition-[transform]
+									duration-[0.16s]
+									ease-[ease-in-out]
+									will-change-[transform];
+ }
+
+ // .soc-links a
+ a {
+  @apply rel
+									z-[1];
+
+  // .soc-links a:hover
+  &:hover {
+   // .soc-links a:hover .icons
+   .icons {
+    @apply scale-[1.15];
+   }
+
+   // .soc-links a:hover:after
+   &:after {
+    @apply h-[4.8rem]
+											w-[4.8rem]
+											opacity-100;
+   }
+  }
+
+  // .soc-links a:after
+  &:after {
+   @apply absolute
+										left-[50%]
+										top-[50%]
+										z-[-1]
+										block
+										h-[6.51rem]
+										w-[6.51rem]
+										translate-x-[-50%]
+										translate-y-[-50%]
+										rounded-[50%]
+										opacity-0
+										content-[""];
+
+   @apply shadow-[0px_0px_53px_0px_#00f5ff];
+
+   @apply bg-grad-aqua-r-100;
+
+   @apply transition-[opacity,width,height]
+										duration-[0.16s,0.16s,0.16s]
+										ease-[linear,linear,linear]
+										will-change-[opacity,width,height];
+  }
+ }
+}
+
+.cr {
+ @apply body-1-1-v1
+						text-white/70;
+}
+
+.logo {
+ // .logo--1
+ &--1 {
+  @apply block
+									w-full
+									max-w-[11.695rem];
+ }
+
+ // .logo__img
+ &__img {
+  @apply h-auto
+									w-full;
+ }
+}
+
+.brand-txt {
+ @apply inline-flex
+								whitespace-nowrap
+								pl-[0.5rem];
 }
