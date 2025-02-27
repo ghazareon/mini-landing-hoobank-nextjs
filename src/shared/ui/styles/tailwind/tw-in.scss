@@ -183,7 +183,7 @@ body {
 									grow-0
 									overflow-hidden
 									rounded-[50%]
-									bg-white/10;
+							bg-white/10;
  }
 
  // .img-info__in
@@ -209,4 +209,149 @@ body {
 								text-white/70;
   }
  }
+}
+
+.s-500 {
+ @apply ~pt-[2.5rem]/[11.4rem]
+								~pb-[3.3rem]/[6.7rem];
+
+ @apply mdxx:pb-[3.3rem]
+								mdxx:pt-[2.5rem];
+
+ // .s-500__fix
+ &__fix {
+  @apply block;
+ }
+
+ // .s-500 .s
+ .s {
+  // .s-500 .s__t
+  &__t {
+   @apply pb-[2.2rem];
+  }
+
+  // .s-500 .s__d
+  &__d {
+   @apply max-w-[57rem]
+										pb-[4.90rem];
+  }
+ }
+}
+
+.grid-500 {
+ @apply gap-x
+								grid
+								w-full
+								grid-cols-[repeat(12,1fr)];
+
+ grid-template-areas: "it-1 it-1 it-1 it-1 it-1 it-1 it-1 it-2 it-2 it-2 it-2 it-2";
+
+ // .grid-500__it
+ &__it {
+  // .grid-500__it:nth-child(1)
+  &:nth-child(1) {
+   grid-area: it-1;
+  }
+
+  // .grid-500__it:nth-child(2)
+  &:nth-child(2) {
+   // .grid-500__it:nth-child(2) grid-area: it-2;
+   // .grid-500__it:nth-child(2) .box-500
+   grid-area: it-2;
+   .box-500 {
+    @apply mb-[2rem];
+   }
+  }
+ }
+}
+
+.btn {
+ // .btn--v1
+ &--v1 {
+  @apply btn-v1
+									inline-block
+									whitespace-nowrap
+									bg-grad-aqua-l-100
+							text-gray-400;
+
+  @apply rounded-[1.001rem]
+									px-[3.3rem]
+									pb-[1.8rem]
+									pt-[1.9rem];
+ }
+}
+
+.box-500 {
+ @apply rel
+								z-[1]
+								flex
+								min-h-[11.5rem]
+								w-full
+								max-w-[47rem]
+								gap-x-[1rem]
+								overflow-hidden
+								rounded-10
+								px-[2rem]
+								py-[1.8rem];
+
+ &:hover {
+  &:after {
+   @apply opacity-100;
+  }
+ }
+
+ // .box-500:after
+ &:after {
+  @apply absolute
+									inset-0
+									z-[-1]
+									block
+									bg-cover
+									bg-no-repeat
+									opacity-35
+									content-[""];
+
+  @apply transition-[opacity]
+									duration-[0.16s]
+									ease-[linear]
+									will-change-[opacity];
+
+  background-image: svg-load(../../../../../public/assets/svg/gradients/gradient-tab.svg);
+ }
+
+ // .box-500__ic
+ &__ic {
+  @apply block;
+ }
+
+ // .box-500__in
+ &__in {
+  @apply block;
+ }
+
+ // .box-500__t
+ &__t {
+  @apply title-5-12-v1
+									pb-[0.8rem]
+							text-white;
+ }
+
+ // .box-500__d
+ &__d {
+  @apply body-5-12-v1
+							text-white/70;
+ }
+}
+
+.symbol {
+ @apply flex
+								h-[6.4rem]
+								w-[6.4rem]
+								shrink-0
+								grow-0
+								items-center
+								justify-center
+								rounded-[50%]
+						bg-green-225/10
+						text-aqua-250;
 }
