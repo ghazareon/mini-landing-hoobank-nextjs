@@ -15,7 +15,7 @@ body {
  }
 
  &::-webkit-scrollbar-track {
-  @apply bg-white;
+  @apply bg-gray-425;
 
   &:vertical:hover {
   }
@@ -23,10 +23,10 @@ body {
 
  &::-webkit-scrollbar-thumb {
   @apply cursor-pointer
-								bg-green-200;
+								bg-aqua-325;
 
   &:vertical:hover {
-   background-color: #b8cd5d;
+   @apply bg-aqua-250;
   }
  }
 

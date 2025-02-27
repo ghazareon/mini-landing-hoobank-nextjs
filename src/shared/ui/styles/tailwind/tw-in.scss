@@ -39,164 +39,174 @@
 
 :root {
  @apply cursor-default
-								font-primary
 								text-62-5p
-								font-400
 								tracking-normal;
 }
 
 html,
 body {
- @apply bg-gray-425;
+ @apply bg-gray-425
+										font-primary
+										font-300;
 }
 
-.main-header {
- // .main-header__fix
+.s-700 {
+ // .s-700__fix
  &__fix {
-  @apply flex
-									justify-between
-									py-[3rem]
-									align-middle;
+  @apply ~pt-[4.5rem]/[13.6rem]
+									~pb-[2.5rem]/[5rem];
+
+  @apply mdxx:pb-[2.5rem]
+									mdxx:pt-[4.5rem];
  }
 }
 
-.nav {
- // .nav__ul
- &__ul {
-  @apply flex;
+.s {
+ // .s__t
+ &__t {
+  @apply heading-v1
+							text-white;
  }
 
- // .nav__li
- &__li {
-  @apply ~pl-[1.2rem]/[3.2rem];
-
-  // .nav__li--current
-  &--current {
-   // .nav__li--current .nav__a
-   .nav__a {
-    @apply text-white/100;
-   }
-  }
- }
-
- // .nav__a
- &__a {
-  @apply whitespace-nowrap
-									text-[1.6rem]
-									font-[400]
+ // .s__d
+ &__d {
+  @apply body-1-1-v1
 							text-white/70;
  }
 }
 
-.main-footer {
- @apply block;
-
- // .main-footer__fix
- &__fix {
+.group {
+ // .group-700
+ &-700 {
   @apply flex
 									items-center
 									justify-between
-									border-t-[1px]
-							border-white/10
-									border-t-[solid]
-									py-[3rem]
-							text-white;
+									gap-x-[4rem];
 
-  @media (max-width: $mdx) {
-   @apply flex-col-reverse
-										text-center;
+  @media (max-width: $lgxx) {
+   @apply flex-col
+  								items-start
+  								justify-start
+  								gap-x-0;
+  }
 
-   // .main-footer__fix .cr
-   .cr {
-    @apply pt-[2rem];
+  // .group-700 .s
+  .s {
+   // .group-700 .s__t
+   &__t {
+    @apply max-w-[41rem]
+											~pb-[2rem]/[8rem];
+
+    @apply lgxx:pb-[2rem];
+   }
+
+   // .group-700 .s__d
+   &__d {
+    @apply max-w-[45rem]
+											~pb-[2rem]/[8rem];
    }
   }
  }
 }
 
-.soc-links {
- @apply inline-flex
-								gap-x-[3.1rem];
+.list-700 {
+ @apply gap
+								flex;
+}
 
- // .soc-links .icons
- .icons {
-  @apply scale-100;
+.box-700 {
+ @apply rel
+								z-[1]
+								min-h-[40rem]
+								w-full
+								max-w-[37rem]
+								overflow-hidden
+								rounded-[2rem]
+								px-[4.01rem]
+								pb-[6.201rem]
+								pt-[6.01rem];
 
-  @apply transition-[transform]
-									duration-[0.16s]
-									ease-[ease-in-out]
-									will-change-[transform];
- }
-
- // .soc-links a
- a {
-  @apply rel
-									z-[1];
-
-  // .soc-links a:hover
-  &:hover {
-   // .soc-links a:hover .icons
-   .icons {
-    @apply scale-[1.15];
-   }
-
-   // .soc-links a:hover:after
-   &:after {
-    @apply h-[4.8rem]
-											w-[4.8rem]
-											opacity-100;
-   }
-  }
-
-  // .soc-links a:after
+ // .box-700:hover
+ &:hover {
+  // .box-700:hover:after
   &:after {
-   @apply absolute
-										left-[50%]
-										top-[50%]
-										z-[-1]
-										block
-										h-[6.51rem]
-										w-[6.51rem]
-										translate-x-[-50%]
-										translate-y-[-50%]
-										rounded-[50%]
-										opacity-0
-										content-[""];
-
-   @apply shadow-[0px_0px_53px_0px_#00f5ff];
-
-   @apply bg-grad-aqua-r-100;
-
-   @apply transition-[opacity,width,height]
-										duration-[0.16s,0.16s,0.16s]
-										ease-[linear,linear,linear]
-										will-change-[opacity,width,height];
+   @apply opacity-100;
   }
  }
-}
 
-.cr {
- @apply body-1-1-v1
-						text-white/70;
-}
+ // .box-700:after
+ &:after {
+  content: "";
+  @apply absolute
+									inset-0
+									z-[-1]
+									block
+									bg-cover
+									bg-no-repeat
+									opacity-35;
 
-.logo {
- // .logo--1
- &--1 {
-  @apply block
-									w-full
-									max-w-[11.695rem];
+  @apply transition-[opacity]
+									duration-[0.16s]
+									ease-[linear]
+									will-change-[opacity];
+
+  background-image: svg-load(
+   ../../../../../public/assets/svg/gradients/gradient-start.svg
+  );
  }
 
- // .logo__img
- &__img {
-  @apply h-auto
-									w-full;
+ // .box-700__d
+ &__d {
+  @apply body-1-1-v2
+									pb-[2.5rem]
+							text-white;
+ }
+
+ // .box-700__svg
+ &__svg {
+  @apply mb-[4.1rem]
+							text-aqua-250;
  }
 }
 
-.brand-txt {
- @apply inline-flex
-								whitespace-nowrap
-								pl-[0.5rem];
+.img-info {
+ @apply flex
+								gap-x-[1.6rem];
+
+ // .img-info__im
+ &__im {
+  @apply mt-[0.4rem]
+									block
+									h-[4.8rem]
+									w-[4.8rem]
+									shrink-0
+									grow-0
+									overflow-hidden
+									rounded-[50%]
+									bg-white/10;
+ }
+
+ // .img-info__in
+ &__in {
+  @apply no-underline;
+ }
+
+ // .img-info__in
+ &__in {
+  // .img-info__in-t
+  &-t {
+   @apply block
+										text-[2rem]
+										leading-[3.2rem]
+								text-white;
+  }
+
+  // .img-info__in-d
+  &-d {
+   @apply block
+										text-[1.6rem]
+										leading-[2.4rem]
+								text-white/70;
+  }
+ }
 }
