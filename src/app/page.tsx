@@ -33,10 +33,84 @@ import "@/src/shared/ui/assets/css/transpiled/tw-out.css";
 export default function Home() {
  return (
   <Div className="wrap">
-   <Header className="s-100">
+   <Header className="s-100 !hidden">
     <Div className="s-100__fix fix"></Div>
    </Header>
    <Main>
+    {/*  */}
+    <Section className="s-500">
+     <Div className="s-500__fix fix">
+      {/*  */}
+      <Div className="grid-500">
+       <Div className="grid-500__it">
+        <H2 className="s__t">You do the business, we’ll handle the money.</H2>
+        <P className="s__d">
+         With the right credit card, you can improve your financial life by
+         building credit, earning rewards and saving money. But with hundreds of
+         credit cards on the market.
+        </P>
+        <Link href="#" className="btn btn--v1">
+         Get Started
+        </Link>
+       </Div>
+       <Div className="grid-500__it">
+        {/*  */}
+        <Div className="box-500">
+         <Div className="box-500__ic">
+          <Div className="symbol">
+           <SvgSprite width="32" height="30.4" svgName="star" />
+          </Div>
+         </Div>
+         <Div className="box-500__in">
+          <H3 className="box-500__t">Rewards</H3>
+          <P className="box-500__d">
+           The best credit cards offer some tantalizing combinations of
+           promotions and prizes
+          </P>
+         </Div>
+        </Div>
+        {/*  */}
+
+        {/*  */}
+        <Div className="box-500">
+         <Div className="box-500__ic">
+          <Div className="symbol">
+           <SvgSprite width="32" height="30.4" svgName="secure" />
+          </Div>
+         </Div>
+         <Div className="box-500__in">
+          <H3 className="box-500__t">100% Secured</H3>
+          <P className="box-500__d">
+           We take proactive steps make sure your information and transactions
+           are secure.
+          </P>
+         </Div>
+        </Div>
+        {/*  */}
+
+        {/*  */}
+        <Div className="box-500">
+         <Div className="box-500__ic">
+          <Div className="symbol">
+           <SvgSprite width="32" height="30.4" svgName="transfer" />
+          </Div>
+         </Div>
+         <Div className="box-500__in">
+          <H3 className="box-500__t">Balance Transfer</H3>
+          <P className="box-500__d">
+           A balance transfer credit card can save you a lot of money in
+           interest charges.
+          </P>
+         </Div>
+        </Div>
+        {/*  */}
+       </Div>
+      </Div>
+      {/*  */}
+     </Div>
+    </Section>
+    {/*  */}
+
     <Section className="s-700">
      <Div className="s-700__fix fix">
       <Div className="group-700">
@@ -51,7 +125,7 @@ export default function Home() {
      </Div>
     </Section>
 
-    <Section className="s-800">
+    <Section className="s-800 !hidden">
      <Div className="s-800__fix fix"></Div>
     </Section>
     <Section className="s-900">
@@ -59,7 +133,7 @@ export default function Home() {
     </Section>
    </Main>
 
-   <Footer className="main-footer">
+   <Footer className="main-footer !hidden">
     <Section className="s-1000">
      <Div className="fix s-1000__fix"></Div>
     </Section>
