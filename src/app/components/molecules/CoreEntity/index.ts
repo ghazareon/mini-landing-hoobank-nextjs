@@ -5,6 +5,3 @@
 
 export type { CoreEntityProps, INestedData } from "./CoreEntity";
 export { CoreEntity } from "./CoreEntity";
-
-export type { SvgSpriteProps } from "./SvgSprite/";
-export { SvgSprite } from "./SvgSprite/";

@@ -1,1 +1,1 @@
-export { Lufga } from "./Poppins";
+export { Fonts } from "./Poppins";

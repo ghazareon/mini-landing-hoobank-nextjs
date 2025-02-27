@@ -22,7 +22,7 @@ import {
 import { MetaHead } from "@/src/app/components/templates";
 import { metaTagsNext } from "@/src/shared/data/headMeta";
 import appDb from "@/src/shared/data/appDb.json";
-import { Lufga } from "@/src/app/nextFonts";
+import { Fonts } from "@/src/app/nextFonts";
 
 export const metadata: Metadata = {
  title: "",
@@ -51,7 +51,7 @@ export default function RootLayout({
     <MetaHead data={metaTagsNext} />
     <Title>{appDb.appName}</Title>
    </Head>
-   <Body className={`${Lufga.variable}`}>
+   <Body className={Fonts.variable}>
     <Noscript></Noscript>
     {children}
    </Body>

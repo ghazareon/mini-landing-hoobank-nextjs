@@ -4,188 +4,68 @@
  */
 
 import type { ElementType, FC, HTMLAttributes, JSX, ReactNode } from "react";
-import type { s, IObj, IObjNest } from "@/src/shared/types";
-import type { CoreUiProps } from "@/src/app/components/electrons";
-
 import Link from "@/npm/next/link";
 import { clsx } from "clsx";
 
-import {
- CoreUi,
- Div,
- Main,
- Header,
- Footer,
- Section,
- Img,
- H1,
- P,
- H2,
- H3,
- Svg,
- Use,
- Span,
- Input,
- Form,
- Button,
- H4,
- Nav,
- Ul,
- Li,
- Figure,
- Figcaption
-} from "@/src/app/components/electrons";
-import { SvgSprite } from "@/src/app/components/molecules";
+import type { s, IObj, IObjNest } from "@/src/shared/types";
+import type { CoreUiProps } from "@/src/app/components/electrons";
 
-import "../shared/ui/assets/css/transpiled/tw-out.css";
+/* prettier-ignore */
+import {
+ CoreUi, Div, Main, Header, Footer, Section, Img, H1, P,
+ H2, H3, Svg, Use, Span, Input, Form, Button, H4, Nav, Ul,
+	Li, Figure, Figcaption, Article, Br, I, Label, Picture,
+	Select, Source } from "@/src/app/components/electrons";
+
+import { CoreEntity, SvgSprite } from "@/src/app/components/molecules";
 
 import {
- Article,
- Br,
- Label,
- Picture,
- Select,
- Source
-} from "./components/electrons/tags";
+ SocLinks,
+ SocLinksData,
+ Testimonials
+} from "@/src/app/components/organisms";
+import { Logo, Logo1Date } from "@/src/app/components/organisms";
 
-export interface INestedData {
- tagName: keyof JSX.IntrinsicElements | s;
- tagNest: INestedData | INestedData[] | s;
- tagAttrs?: Record<s, any>;
-}
+import { Fonts } from "@/src/app/nextFonts";
 
-export interface CoreEntityProps {
- data: INestedData;
-}
-
-export const CoreEntity: FC<CoreEntityProps> = ({ data }) => {
- const { tagName, tagAttrs, tagNest } = data;
-
- if (typeof tagNest === "string") {
-  return (
-   <CoreUi as={tagName} {...tagAttrs}>
-    {tagNest}
-   </CoreUi>
-  );
- } else if (Array.isArray(tagNest)) {
-  return (
-   <CoreUi as={tagName} {...tagAttrs}>
-    {tagNest.map((it, index) => (
-     <CoreEntity key={index} data={it} />
-    ))}
-   </CoreUi>
-  );
- } else if (typeof tagNest === "object") {
-  return (
-   <CoreUi as={tagName} {...tagAttrs}>
-    <CoreEntity data={tagNest} />
-   </CoreUi>
-  );
- }
- return "null";
-};
+import "@/src/shared/ui/assets/css/transpiled/tw-out.css";
 
 export default function Home() {
  return (
   <Div className="wrap">
-   <Header className="main-header">
-    <Div className="fix main-header__fix">
-     <Link href="#" className="logo logo--1">
-      <Img
-       src="assets/svg/logo.svg"
-       alt=""
-       title=""
-       width="116.95"
-       height="32"
-       className="logo__img"
-      />
-     </Link>
-
-     <Nav className="nav">
-      <Ul className="nav__ul">
-       <Li className="nav__li nav__li--current">
-        <Link className="nav__a" href="#">
-         About Us
-        </Link>
-       </Li>
-       <Li className="nav__li">
-        <Link className="nav__a" href="#">
-         Features
-        </Link>
-       </Li>
-       <Li className="nav__li">
-        <Link className="nav__a" href="#">
-         Solution
-        </Link>
-       </Li>
-       <Li className="nav__li">
-        <Link className="nav__a" href="#">
-         Testimonials
-        </Link>
-       </Li>
-       <Li className="nav__li">
-        <Link className="nav__a" href="#">
-         Get Started
-        </Link>
-       </Li>
-      </Ul>
-     </Nav>
-    </Div>
+   <Header className="s-100">
+    <Div className="s-100__fix fix"></Div>
    </Header>
-   <Main className="main">
-    {/* <H1 className="">The Next Generation Payment Method.</H1> */}
+   <Main>
+    <Section className="s-700">
+     <Div className="s-700__fix fix">
+      <Div className="group-700">
+       <H2 className="s__t">What people are saying about us</H2>
+       <P className="s__d">
+        Everything you need to accept card payments and grow your business
+        anywhere on the planet.
+       </P>
+      </Div>
+
+      <Testimonials />
+     </Div>
+    </Section>
+
+    <Section className="s-800">
+     <Div className="s-800__fix fix"></Div>
+    </Section>
+    <Section className="s-900">
+     <Div className="s-900__fix fix"></Div>
+    </Section>
    </Main>
 
    <Footer className="main-footer">
-    <Div className="fix main-footer__fix">
-     <Span className="cr">
-      Copyright © 2021-{new Date().getFullYear()}
-      <span className="brand-txt">
-       <span className="text-white">Hoo</span>
-       <span className="text-aqua-275">Bank</span>.
-      </span>
-      <Br />
-      All Rights Reserved.
-     </Span>
-
-     <Div className="soc-links">
-      <Link href="#" className="soc-links__it">
-       <SvgSprite
-        className="icons icons--inst"
-        svgName="inst"
-        width="21"
-        height="21"
-       />
-      </Link>
-
-      <Link href="#" className="soc-links__it">
-       <SvgSprite
-        className="icons icons--fb"
-        svgName="fb"
-        width="21"
-        height="21"
-       />
-      </Link>
-
-      <Link href="#" className="soc-links__it">
-       <SvgSprite
-        className="icons icons--tw"
-        svgName="tw"
-        width="21"
-        height="21"
-       />
-      </Link>
-
-      <Link href="#" className="soc-links__it">
-       <SvgSprite
-        className="icons icons--in"
-        svgName="in"
-        width="20.99"
-        height="20.99"
-       />
-      </Link>
-     </Div>
-    </Div>
+    <Section className="s-1000">
+     <Div className="fix s-1000__fix"></Div>
+    </Section>
+    <Section className="s-1100">
+     <Div className="fix s-1100__fix"></Div>
+    </Section>
    </Footer>
   </Div>
  );

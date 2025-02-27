@@ -1,3 +1,8 @@
+/*
+ * Author: Hayk Ghazaryan
+ * Email: hayk.ghazaryanc@gmail.com
+ */
+
 import type { FC } from "react";
 import type { CoreUiProps } from "./CoreUi";
 

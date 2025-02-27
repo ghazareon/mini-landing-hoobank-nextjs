@@ -5,8 +5,13 @@
 
 import localFont from "next/font/local";
 
-export const Lufga = localFont({
+export const Fonts = localFont({
  src: [
+  {
+   path: "../../shared/ui/assets/fonts/Poppins-Light.ttf",
+   weight: "300",
+   style: "normal"
+  },
   {
    path: "../../shared/ui/assets/fonts/Poppins-Regular.ttf",
    weight: "400",
@@ -17,7 +22,6 @@ export const Lufga = localFont({
    weight: "500",
    style: "normal"
   },
-
   {
    path: "../../shared/ui/assets/fonts/Poppins-SemiBold.ttf",
    weight: "600",

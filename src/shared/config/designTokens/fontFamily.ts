@@ -4,6 +4,5 @@
  */
 
 export const fontFamily = {
- primary: "Outfit, sans-serif",
- secondary: "ClashGrotesk, sans-serif"
+ primary: "Poppins, sans-serif"
 };

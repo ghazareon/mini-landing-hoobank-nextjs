@@ -1,3 +1,8 @@
+/*
+ * Author: Hayk Ghazaryan
+ * Email: hayk.ghazaryanc@gmail.com
+ */
+
 /* prettier-ignore */ export type { CoreUiProps }      from "./CoreUi";
 /* prettier-ignore */ export { CoreUi }                from "./CoreUi";
 
@@ -10,4 +15,6 @@
 																															Button, Form, Input,
 																															Noscript, LinkMeta,
 																															Article, Figure,
-																															Figcaption, Svg, Use }   from "./tags";
+																															Figcaption, Svg, Use,
+																															Br, Label, Picture, Select,
+																															Source }   from "./tags";

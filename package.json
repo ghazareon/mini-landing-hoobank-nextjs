@@ -18,7 +18,6 @@
 	},
 	"scripts": {
 
-
 		"============================ Build & Preview ======================": "",
 		"build:vite":            "npm-run-all postcss build:vite:run",
 		"build:vite:run":        "cross-env NODE_ENV=production vite build --config vite.config.ts",
@@ -29,7 +28,7 @@
 
 		"============================ NextJS ===========================": "",
 		"dev:next":              "concurrently \"npm run postcss:w\" \"npm run dev:run:next\"",
-		"dev:run:next":          "next dev --turbopack",
+		"dev:run:next":          "next dev -p 4000 --turbopack",
 		"build:next":            "next build",
 		"start:next":            "next start",
 		"lint:next":             "next lint -c eslint.config.mjs",
