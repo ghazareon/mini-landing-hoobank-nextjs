@@ -11,23 +11,23 @@ import { svgPaths } from "@/src/shared/config/const/paths";
 import { files } from "@/src/shared/config/const/files";
 
 export interface SvgSpriteProps extends HTMLAttributes<HTMLOrSVGElement> {
- svgName: s;
- svgFileName?: s;
- svgFilePath?: s;
+ name: s;
+ fileName?: s;
+ filePath?: s;
  role?: s;
  [key: string]: any;
 }
 
 export const SvgSprite: FC<SvgSpriteProps> = ({
- svgName,
- svgFilePath = "assets/svg",
- svgFileName = "sprite-icons.svg",
+ name,
+ filePath = "assets/svg",
+ fileName = "sprite-icons.svg",
  role = "presentation",
  ...props
 }) => {
  return (
   <Svg {...props} role={role}>
-   <Use xlinkHref={`${svgFilePath}/${svgFileName}#${svgName}`}></Use>
+   <Use xlinkHref={`${filePath}/${fileName}#${name}`}></Use>
   </Svg>
  );
 };

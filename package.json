@@ -17,15 +17,6 @@
 		"email": "hayk.ghazaryanc@gmail.com"
 	},
 	"scripts": {
-
-		"============================ Build & Preview ======================": "",
-		"build:vite":            "npm-run-all postcss build:vite:run",
-		"build:vite:run":        "cross-env NODE_ENV=production vite build --config vite.config.ts",
-
-		"preview:vite:w":        "concurrently \"npm run build:w\" \"npm run preview:w:run\"",
-		"preview:vite:w:run":    "vite preview --port 3001",
-		"lint":                  "eslint -c eslint.vite.config.mjs .",
-
 		"============================ NextJS ===========================": "",
 		"dev:next":              "concurrently \"npm run postcss:w\" \"npm run dev:run:next\"",
 		"dev:run:next":          "next dev -p 4000 --turbopack",
@@ -76,6 +67,7 @@
 		"bconfig:w":             "tsx --tsconfig ./tsconfig.node.json --watch ./server/tasks/createBrowserConfig.ts",
 		"color:w":               "tsx --tsconfig ./tsconfig.node.json --watch ./server/tasks/createTwColors.ts"
 	},
+
 
 	"_moduleAliases": {
 		"@/server":       "./server",
