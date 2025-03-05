@@ -32,6 +32,26 @@ export default async function Home() {
  return (
   <Div className="wrap">
    <Main>
+    <Section className="s-900">
+     <Div className="s-900__fix fix">
+      <Div className="box-900">
+       <Div className="grid-900">
+        <Div className="group-900">
+         <H2 className="h2-900">Let’s try our service now!</H2>
+         <P className="p-900">
+          Everything you need to accept card payments and grow your business
+          anywhere on the planet.
+         </P>
+        </Div>
+
+        <Link href="#" className="btn">
+         Get Started
+        </Link>
+       </Div>
+      </Div>
+     </Div>
+    </Section>
+
     <Section className="s-1000">
      <Div className="s-1000__fix fix">
       <Div className="grid-1000">
