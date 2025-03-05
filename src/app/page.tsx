@@ -43,9 +43,68 @@ export default async function Home() {
       </Div>
 
       <Div className="grid-700-v2">
-       <Article className="box-700"></Article>
-       <Article className="box-700"></Article>
-       <Article className="box-700"></Article>
+       <Article className="box-700">
+        <SvgSprite
+         name="quote"
+         width="42.6"
+         height="27.6"
+         className="box-700__svg"
+        />
+
+        <Div className="s__d s__d--s-700">
+         Money is only a tool. It will take you wherever you wish, but it will
+         not replace you as the driver.
+        </Div>
+
+        <Div className="img-info">
+         <Div className="img-info__c img-info__c--1"></Div>
+         <Div className="img-info__c img-info__c--2">
+          <H3 className="img-info__t">Herman Jensen</H3>
+          <P className="img-info__d">Founder & Leader</P>
+         </Div>
+        </Div>
+        {/*  */}
+       </Article>
+       <Article className="box-700">
+        <SvgSprite
+         name="quote"
+         width="42.6"
+         height="27.6"
+         className="box-700__svg"
+        />
+        <Div className="s__d s__d--s-700">
+         Money is only a tool. It will take you wherever you wish, but it will
+         not replace you as the driver.
+        </Div>
+
+        <Div className="img-info">
+         <Div className="img-info__c img-info__c--1"></Div>
+         <Div className="img-info__c img-info__c--2">
+          <H3 className="img-info__t">Herman Jensen</H3>
+          <P className="img-info__d">Founder & Leader</P>
+         </Div>
+        </Div>
+       </Article>
+       <Article className="box-700">
+        <SvgSprite
+         name="quote"
+         width="42.6"
+         height="27.6"
+         className="box-700__svg"
+        />
+        <Div className="s__d s__d--s-700">
+         Money is only a tool. It will take you wherever you wish, but it will
+         not replace you as the driver.
+        </Div>
+
+        <Div className="img-info">
+         <Div className="img-info__c img-info__c--1"></Div>
+         <Div className="img-info__c img-info__c--2">
+          <H3 className="img-info__t">Herman Jensen</H3>
+          <P className="img-info__d">Founder & Leader</P>
+         </Div>
+        </Div>
+       </Article>
       </Div>
      </Div>
     </Section>

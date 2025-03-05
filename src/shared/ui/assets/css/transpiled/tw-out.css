@@ -137,8 +137,9 @@
 .body-1-1-v1{
   font-weight:300;
   font-weight:var(--font-weight-300);
+  letter-spacing:0.1px;
   font-size:clamp(1.44rem,1.44rem + 0.29vw,1.8rem);
-  line-height:clamp(2.48rem,2.48rem + 0.5vw,3.1rem);
+  line-height:clamp(2.48rem,2.48rem + 0.59vw,3.2rem);
 }
 
 .body-1-1-v2{
@@ -197,6 +198,7 @@
   --opacity-0:0;
   --opacity-20:0.2;
   --opacity-30:0.3;
+  --opacity-50:0.5;
   --opacity-70:0.7;
   --opacity-100:1;
   --font-size-0:0;
@@ -853,8 +855,9 @@ body{
   color:rgba( 255 255 255   / 0.7);
   font-weight:300;
   font-weight:var(--font-weight-300);
+  letter-spacing:0.1px;
   font-size:clamp(1.44rem,1.44rem + 0.29vw,1.8rem);
-  line-height:clamp(2.48rem,2.48rem + 0.5vw,3.1rem);
+  line-height:clamp(2.48rem,2.48rem + 0.59vw,3.2rem);
 }
 
 @supports (color: rgba(0 0 0 / 0)){
@@ -1027,8 +1030,9 @@ body{
   padding-bottom:clamp(1.95rem,1.95rem + 1.59vw,3.9rem);
   font-weight:300;
   font-weight:var(--font-weight-300);
+  letter-spacing:0.1px;
   font-size:clamp(1.44rem,1.44rem + 0.29vw,1.8rem);
-  line-height:clamp(2.48rem,2.48rem + 0.5vw,3.1rem);
+  line-height:clamp(2.48rem,2.48rem + 0.59vw,3.2rem);
 }
 
 @supports (color: rgba(0 0 0 / 0)){
@@ -1140,8 +1144,9 @@ body{
   color:rgba( 255 255 255   / 0.7);
   font-weight:300;
   font-weight:var(--font-weight-300);
+  letter-spacing:0.1px;
   font-size:clamp(1.44rem,1.44rem + 0.29vw,1.8rem);
-  line-height:clamp(2.48rem,2.48rem + 0.5vw,3.1rem);
+  line-height:clamp(2.48rem,2.48rem + 0.59vw,3.2rem);
 }
 
 @supports (color: rgba(0 0 0 / 0)){
@@ -1152,6 +1157,7 @@ body{
 
 .s__d--s-700{
   max-width:45rem;
+  padding-bottom:2.6rem;
 }
 
 .s__d--s-900{
@@ -1389,18 +1395,99 @@ body{
   top:0px;
 }
 
+.box-700__svg{
+  margin-bottom:4.001rem;
+  --tw-text-opacity:1;
+  color:rgba( 51 187 207 / 1);
+}
+
+@supports (color: rgba(0 0 0 / 0)){
+.box-700__svg{
+    color:rgba( 51 187 207 / var(--tw-text-opacity, 1));
+  }
+}
+
 .box-700:after{
   position:absolute;
   inset:0px;
+  z-index:-1;
   display:block;
   border-radius:inherit;
+  opacity:0.3;
+  opacity:var(--opacity-30);
   --tw-content:"";
   content:"";
   content:var(--tw-content);
+  transition-property:opacity;
+  transition-timing-function:cubic-bezier(0.4, 0, 0.2, 1);
+  transition-duration:150ms;
+  transition-duration:0.16s;
+  transition-timing-function:linear;
+  will-change:opacity;
 
   background-image:url(
    "data:image/svg+xml;charset=utf-8,%3Csvg xmlns='http://www.w3.org/2000/svg' xmlns:xlink='http://www.w3.org/1999/xlink' viewBox='0 0 1170 298' preserveAspectRatio='none'%3E %3Cdefs%3E %3Cstyle%3E .cls-1 %7B fill: url(%23linear-gradient); %7D %3C/style%3E %3ClinearGradient id='linear-gradient' x1='365.84' y1='1872.76' x2='610.22' y2='-48.89' gradientTransform='translate(0 298.46) scale(1 -1)' gradientUnits='userSpaceOnUse'%3E %3Cstop offset='0' stop-color='%23fff' stop-opacity='0'/%3E %3Cstop offset='1' stop-color='%2314101d'/%3E %3C/linearGradient%3E %3C/defs%3E %3Crect class='cls-1' width='1170' height='298'/%3E %3C/svg%3E"
   );
+}
+
+.box-700:hover:after{
+  opacity:1;
+  opacity:var(--opacity-100);
+}
+
+.img-info{
+  display:flex;
+  -moz-column-gap:1.6rem;
+       column-gap:1.6rem;
+}
+
+.img-info__t{
+  font-size:2rem;
+  font-weight:400;
+  font-weight:var(--font-weight-400);
+  line-height:3.2rem;
+  --tw-text-opacity:1;
+  color:rgba( 255 255 255   / 1);
+}
+
+@supports (color: rgba(0 0 0 / 0)){
+.img-info__t{
+    color:rgba( 255 255 255   / var(--tw-text-opacity, 1));
+  }
+}
+
+.img-info__d{
+  font-size:1.6rem;
+  font-weight:400;
+  font-weight:var(--font-weight-400);
+  line-height:2.4rem;
+  color:rgba( 255 255 255   / 0.5);
+}
+
+@supports (color: rgba(0 0 0 / 0)){
+.img-info__d{
+    color:rgba( 255 255 255   / var(--opacity-50));
+  }
+}
+
+.img-info__c--1{
+  margin-top:0.4rem;
+  height:4.8rem;
+  width:4.8rem;
+  flex-shrink:0;
+  flex-grow:0;
+  border-radius:50%;
+  background-color:rgba( 255 255 255   / 0.2);
+}
+
+@supports (color: rgba(0 0 0 / 0)){
+.img-info__c--1{
+    background-color:rgba( 255 255 255   / var(--opacity-20));
+  }
+}
+
+.img-info__c--2{
+  text-decoration-line:none;
 }
 
 @media (max-width: 76.875rem){
