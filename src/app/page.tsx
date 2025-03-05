@@ -32,6 +32,24 @@ export default async function Home() {
  return (
   <Div className="wrap">
    <Main>
+    <Section className="s-700">
+     <Div className="s-700__fix fix">
+      <Div className="grid-700">
+       <H2 className="s__t s__t--s-700">What people are saying about us</H2>
+       <P className="s__d s__d--s-700">
+        Everything you need to accept card payments and grow your business
+        anywhere on the planet.
+       </P>
+      </Div>
+
+      <Div className="grid-700-v2">
+       <Article className="box-700"></Article>
+       <Article className="box-700"></Article>
+       <Article className="box-700"></Article>
+      </Div>
+     </Div>
+    </Section>
+
     <Section className="s-800">
      <Div className="s-800__fix fix">
       <Div className="grid-800">
@@ -95,6 +113,8 @@ export default async function Home() {
 
     <Section className="s-1000">
      <Div className="s-1000__fix fix">
+      <I className="break-line"></I>
+
       <Div className="grid-1000">
        <Div className="grid-1000__it">
         <Link href="#" className="logo logo--2">
@@ -192,12 +212,13 @@ export default async function Home() {
 
     <Section className="s-1100">
      <Div className="s-1100__fix fix">
+      <I className="break-line"></I>
       <Div className="grid-1100">
        <Div className="s-1100__txt">
-        Copyright © 2021-{new Date().getFullYear()}&nbsp;
+        © 2021-{new Date().getFullYear()}&nbsp;
         <Span className="logo-txt">
-         <Span>Hoo</Span>
-         <Span>Bank</Span>.
+         <Span className="logo-txt__p1">Hoo</Span>
+         <Span className="logo-txt__p2">Bank</Span>.
         </Span>
         <Br />
         All Rights Reserved.
