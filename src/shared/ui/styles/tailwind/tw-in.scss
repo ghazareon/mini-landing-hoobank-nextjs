@@ -277,3 +277,96 @@ body {
   }
  }
 }
+
+.s-900 {
+ &__fix {
+  @apply ~pt-[2.5rem]/[5.01rem]
+									~pb-[3.01rem]/[8.01rem];
+ }
+
+ .h2-900 {
+  @apply max-w-[61rem]
+									~pb-[1.4rem]/[2.4rem];
+ }
+
+ .p-900 {
+  @apply w-full
+									max-w-[44.5rem]
+									pb-[2rem];
+ }
+}
+
+.box-900 {
+ @apply rel
+								z-[1]
+								block
+								overflow-hidden
+								rounded-[2rem]
+								~pt-[2.6rem]/[7.2rem]
+								~pr-[4rem]/[10rem]
+								~pb-[2.6rem]/[7.2rem]
+								~pl-[3.85rem]/[9.7rem];
+
+ &:after {
+  @apply absolute
+									inset-0
+									z-[-1]
+									content-[""];
+
+  background-image: svg-load(
+   ../../../../../public/assets/svg/gradients/gradient-start.svg
+  );
+ }
+}
+
+.h2-900 {
+ @apply heading-v1
+						text-white;
+}
+
+.p-900 {
+ @apply body-1-1-v1
+						text-white/70;
+}
+
+.grid-900 {
+ @apply flex
+								items-center
+								justify-between;
+
+ @media (max-width: $lg) {
+  @apply flex-col
+									items-center
+									justify-start
+									gap-x-0;
+ }
+}
+
+.btn {
+ @apply btn-v1
+								inline-block
+								scale-100
+								whitespace-nowrap
+								rounded-[1rem]
+								bg-grad-aqua-l-100
+						text-gray-400;
+
+ @apply ~pt-[0.95rem]/[1.9rem]
+								~pr-[1.65rem]/[3.3rem]
+								~pb-[0.9rem]/[1.8rem]
+								~pl-[1.65rem]/[3.3rem];
+
+ @apply transition-[box-shadow,transform]
+								duration-[0.16s,0.16s]
+								ease-[ease-out,ease-out]
+								will-change-[box-shadow,transform];
+
+ &:hover {
+  @apply scale-[1.08]
+									shadow-[0px_0px_39px_1px_rgba(0,247,255,0.65)];
+ }
+
+ &:active {
+  @apply scale-[1.0];
+ }
+}
