@@ -32,13 +32,54 @@ export default async function Home() {
  return (
   <Div className="wrap">
    <Main>
+    <Section className="s-800">
+     <Div className="s-800__fix fix">
+      <Div className="grid-800">
+       <Img
+        src="assets/svg/logos/airbnb.svg"
+        width="192.21"
+        height="59.99"
+        alt="logo airbnb"
+        className="logo-it logo-it--airbnb"
+       />
+       <Img
+        src="assets/svg/logos/binance.svg"
+        width="192.24"
+        height="38.63"
+        alt="logo binance"
+        className="logo-it logo-it--binance"
+       />
+       <Img
+        src="assets/svg/logos/coinbase.svg"
+        width="189.01"
+        height="41.25"
+        alt="logo coinbase"
+        className="logo-it logo-it--coinbase"
+       />
+       <Img
+        src="assets/svg/logos/dropbox.svg"
+        width="192.25"
+        height="37.86"
+        alt="logo dropbox"
+        className="logo-it logo-it--dropbox"
+       />
+      </Div>
+
+      <Div className="pagination">
+       <Div className="pagination__it pagination__it--current"></Div>
+       <Div className="pagination__it"></Div>
+       <Div className="pagination__it"></Div>
+      </Div>
+     </Div>
+    </Section>
+
     <Section className="s-900">
      <Div className="s-900__fix fix">
       <Div className="box-900">
        <Div className="grid-900">
         <Div className="group-900">
-         <H2 className="h2-900">Let’s try our service now!</H2>
-         <P className="p-900">
+         <H2 className="s__t s__t--s-900">Let’s try our service now!</H2>
+         <P className="s__d s__d--s-900">
           Everything you need to accept card payments and grow your business
           anywhere on the planet.
          </P>
@@ -55,7 +96,7 @@ export default async function Home() {
     <Section className="s-1000">
      <Div className="s-1000__fix fix">
       <Div className="grid-1000">
-       <Div className="__it">
+       <Div className="grid-1000__it">
         <Link href="#" className="logo logo--2">
          <Img
           src="assets/svg/logo-2.svg"
@@ -69,56 +110,79 @@ export default async function Home() {
          A new way to make the payments easy, reliable and secure.
         </Div>
        </Div>
-       <Div className="__it">
-        <H4 className="h4-1000">Usefull Links</H4>
-
-        <Ul className="l-1000">
-         <Li>
-          <Link href="#">Content</Link>
+       <Div className="grid-1000__it">
+        <H4 className="h4-1000 h4-1000--s-1000">Usefull Links</H4>
+        <Ul className="l-1000 l-1000--s-1000">
+         <Li className="l-1000__li">
+          <Link className="l-1000__a" href="#">
+           Content
+          </Link>
          </Li>
-         <Li>
-          <Link href="#">How it Works</Link>
+         <Li className="l-1000__li">
+          <Link href="#" className="l-1000__a">
+           How it Works
+          </Link>
          </Li>
-         <Li>
-          <Link href="#">Create</Link>
+         <Li className="l-1000__li">
+          <Link href="#" className="l-1000__a">
+           Create
+          </Link>
          </Li>
-         <Li>
-          <Link href="#">Explore</Link>
+         <Li className="l-1000__li">
+          <Link href="#" className="l-1000__a">
+           Explore
+          </Link>
          </Li>
-         <Li>
-          <Link href="#">Terms & Services</Link>
-         </Li>
-        </Ul>
-       </Div>
-       <Div className="__it">
-        <H4 className="h4-1000">Community</H4>
-
-        <Ul className="l-1000">
-         <Li>
-          <Link href="#">Help Center</Link>
-         </Li>
-         <Li>
-          <Link href="#">Partners</Link>
-         </Li>
-         <Li>
-          <Link href="#">Suggestions</Link>
-         </Li>
-         <Li>
-          <Link href="#">Blog</Link>
-         </Li>
-         <Li>
-          <Link href="#">Newsletters</Link>
+         <Li className="l-1000__li">
+          <Link href="#" className="l-1000__a">
+           Terms & Services
+          </Link>
          </Li>
         </Ul>
        </Div>
-       <Div className="__it">
-        <H4 className="h4-1000">Partner</H4>
-        <Ul className="l-1000">
-         <Li>
-          <Link href="#">Our Partner</Link>
+       <Div className="grid-1000__it">
+        <H4 className="h4-1000 h4-1000--s-1000">Community</H4>
+
+        <Ul className="l-1000 l-1000--s-1000">
+         <Li className="l-1000__li">
+          <Link href="#" className="l-1000__a">
+           Help Center
+          </Link>
          </Li>
-         <Li>
-          <Link href="#">Become a Partner</Link>
+         <Li className="l-1000__li">
+          <Link href="#" className="l-1000__a">
+           Partners
+          </Link>
+         </Li>
+         <Li className="l-1000__li">
+          <Link href="#" className="l-1000__a">
+           Suggestions
+          </Link>
+         </Li>
+         <Li className="l-1000__li">
+          <Link href="#" className="l-1000__a">
+           Blog
+          </Link>
+         </Li>
+         <Li className="l-1000__li">
+          <Link href="#" className="l-1000__a">
+           Newsletters
+          </Link>
+         </Li>
+        </Ul>
+       </Div>
+       <Div className="grid-1000__it">
+        <H4 className="h4-1000 h4-1000--s-1000">Partner</H4>
+        <Ul className="l-1000 l-1000--s-1000">
+         <Li className="l-1000__li">
+          <Link href="#" className="l-1000__a">
+           Our Partner
+          </Link>
+         </Li>
+         <Li className="l-1000__li">
+          <Link href="#" className="l-1000__a">
+           Become a Partner
+          </Link>
          </Li>
         </Ul>
        </Div>
