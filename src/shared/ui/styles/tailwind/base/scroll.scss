@@ -5,8 +5,8 @@
 
 body {
  &::-webkit-scrollbar {
-  @apply h-[8px]
-									w-[8px];
+  @apply h-[4px]
+									w-[4px];
  }
 
  &::-webkit-scrollbar-button {

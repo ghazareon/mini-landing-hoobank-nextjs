@@ -26,121 +26,117 @@ import {
 } from "@/src/app/components/organisms";
 import { Logo, Logo1Date } from "@/src/app/components/organisms";
 
-import { Fonts } from "@/src/app/nextFonts";
-
 import "@/src/shared/ui/assets/css/transpiled/tw-out.css";
 
-export default function Home() {
+export default async function Home() {
  return (
   <Div className="wrap">
-   <Header className="s-100 !hidden">
-    <Div className="s-100__fix fix"></Div>
-   </Header>
    <Main>
-    {/*  */}
-    <Section className="s-500">
-     <Div className="s-500__fix fix">
-      {/*  */}
-      <Div className="grid-500">
-       <Div className="grid-500__it">
-        <H2 className="s__t">You do the business, we’ll handle the money.</H2>
-        <P className="s__d">
-         With the right credit card, you can improve your financial life by
-         building credit, earning rewards and saving money. But with hundreds of
-         credit cards on the market.
-        </P>
-        <Link href="#" className="btn btn--v1">
-         Get Started
+    <Section className="s-1000">
+     <Div className="s-1000__fix fix">
+      <Div className="grid-1000">
+       <Div className="__it">
+        <Link href="#" className="logo logo--2">
+         <Img
+          src="assets/svg/logo-2.svg"
+          alt=""
+          width="264.79"
+          height="72.14"
+         />
+        </Link>
+
+        <Div className="s-1000__txt">
+         A new way to make the payments easy, reliable and secure.
+        </Div>
+       </Div>
+       <Div className="__it">
+        <H4 className="h4-1000">Usefull Links</H4>
+
+        <Ul className="l-1000">
+         <Li>
+          <Link href="#">Content</Link>
+         </Li>
+         <Li>
+          <Link href="#">How it Works</Link>
+         </Li>
+         <Li>
+          <Link href="#">Create</Link>
+         </Li>
+         <Li>
+          <Link href="#">Explore</Link>
+         </Li>
+         <Li>
+          <Link href="#">Terms & Services</Link>
+         </Li>
+        </Ul>
+       </Div>
+       <Div className="__it">
+        <H4 className="h4-1000">Community</H4>
+
+        <Ul className="l-1000">
+         <Li>
+          <Link href="#">Help Center</Link>
+         </Li>
+         <Li>
+          <Link href="#">Partners</Link>
+         </Li>
+         <Li>
+          <Link href="#">Suggestions</Link>
+         </Li>
+         <Li>
+          <Link href="#">Blog</Link>
+         </Li>
+         <Li>
+          <Link href="#">Newsletters</Link>
+         </Li>
+        </Ul>
+       </Div>
+       <Div className="__it">
+        <H4 className="h4-1000">Partner</H4>
+        <Ul className="l-1000">
+         <Li>
+          <Link href="#">Our Partner</Link>
+         </Li>
+         <Li>
+          <Link href="#">Become a Partner</Link>
+         </Li>
+        </Ul>
+       </Div>
+      </Div>
+     </Div>
+    </Section>
+
+    <Section className="s-1100">
+     <Div className="s-1100__fix fix">
+      <Div className="grid-1100">
+       <Div className="s-1100__txt">
+        Copyright © 2021-{new Date().getFullYear()}&nbsp;
+        <Span className="logo-txt">
+         <Span>Hoo</Span>
+         <Span>Bank</Span>.
+        </Span>
+        <Br />
+        All Rights Reserved.
+       </Div>
+
+       <Div className="soc-pages">
+        <Link href="#" className="soc-page">
+         <SvgSprite name="inst" width="21" height="21" />
+        </Link>
+        <Link href="#" className="soc-page">
+         <SvgSprite name="fb" width="21" height="21" />
+        </Link>
+        <Link href="#" className="soc-page">
+         <SvgSprite name="tw" width="23" height="19" />
+        </Link>
+        <Link href="#" className="soc-page">
+         <SvgSprite name="in" width="20.99" height="20.99" />
         </Link>
        </Div>
-       <Div className="grid-500__it">
-        {/*  */}
-        <Div className="box-500">
-         <Div className="box-500__ic">
-          <Div className="symbol">
-           <SvgSprite width="32" height="30.4" svgName="star" />
-          </Div>
-         </Div>
-         <Div className="box-500__in">
-          <H3 className="box-500__t">Rewards</H3>
-          <P className="box-500__d">
-           The best credit cards offer some tantalizing combinations of
-           promotions and prizes
-          </P>
-         </Div>
-        </Div>
-        {/*  */}
-
-        {/*  */}
-        <Div className="box-500">
-         <Div className="box-500__ic">
-          <Div className="symbol">
-           <SvgSprite width="32" height="30.4" svgName="secure" />
-          </Div>
-         </Div>
-         <Div className="box-500__in">
-          <H3 className="box-500__t">100% Secured</H3>
-          <P className="box-500__d">
-           We take proactive steps make sure your information and transactions
-           are secure.
-          </P>
-         </Div>
-        </Div>
-        {/*  */}
-
-        {/*  */}
-        <Div className="box-500">
-         <Div className="box-500__ic">
-          <Div className="symbol">
-           <SvgSprite width="32" height="30.4" svgName="transfer" />
-          </Div>
-         </Div>
-         <Div className="box-500__in">
-          <H3 className="box-500__t">Balance Transfer</H3>
-          <P className="box-500__d">
-           A balance transfer credit card can save you a lot of money in
-           interest charges.
-          </P>
-         </Div>
-        </Div>
-        {/*  */}
-       </Div>
       </Div>
-      {/*  */}
      </Div>
-    </Section>
-    {/*  */}
-
-    <Section className="s-700">
-     <Div className="s-700__fix fix">
-      <Div className="group-700">
-       <H2 className="s__t">What people are saying about us</H2>
-       <P className="s__d">
-        Everything you need to accept card payments and grow your business
-        anywhere on the planet.
-       </P>
-      </Div>
-
-      <Testimonials />
-     </Div>
-    </Section>
-
-    <Section className="s-800 !hidden">
-     <Div className="s-800__fix fix"></Div>
-    </Section>
-    <Section className="s-900">
-     <Div className="s-900__fix fix"></Div>
     </Section>
    </Main>
-
-   <Footer className="main-footer !hidden">
-    <Section className="s-1000">
-     <Div className="fix s-1000__fix"></Div>
-    </Section>
-    <Section className="s-1100">
-     <Div className="fix s-1100__fix"></Div>
-    </Section>
-   </Footer>
   </Div>
  );
 }

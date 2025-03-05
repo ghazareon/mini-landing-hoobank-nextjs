@@ -6,15 +6,15 @@
 const sprite = "assets/svg/sprite-icons.svg";
 export const SocLinksData = {
  tagName: "div",
- tagAttrs: { className: "list-v1" },
+ tagAttrs: { className: "list-1100" },
  tagNest: [
   {
    tagName: "a",
-   tagAttrs: { href: "#", className: "list-v1__it", target: "_blank" },
+   tagAttrs: { href: "#", className: "list-1100__it", target: "_blank" },
    tagNest: [
     {
      tagName: "i",
-     tagAttrs: { className: "list-v1__anim-area" }
+     tagAttrs: { className: "list-1100__anim-area" }
     },
     {
      tagName: "svg",
@@ -34,11 +34,11 @@ export const SocLinksData = {
   },
   {
    tagName: "a",
-   tagAttrs: { href: "#", className: "list-v1__it", target: "_blank" },
+   tagAttrs: { href: "#", className: "list-1100__it", target: "_blank" },
    tagNest: [
     {
      tagName: "i",
-     tagAttrs: { className: "list-v1__anim-area" }
+     tagAttrs: { className: "list-1100__anim-area" }
     },
     {
      tagName: "svg",
@@ -58,11 +58,11 @@ export const SocLinksData = {
   },
   {
    tagName: "a",
-   tagAttrs: { href: "#", className: "list-v1__it", target: "_blank" },
+   tagAttrs: { href: "#", className: "list-1100__it", target: "_blank" },
    tagNest: [
     {
      tagName: "i",
-     tagAttrs: { className: "list-v1__anim-area" }
+     tagAttrs: { className: "list-1100__anim-area" }
     },
     {
      tagName: "svg",
@@ -82,11 +82,11 @@ export const SocLinksData = {
   },
   {
    tagName: "a",
-   tagAttrs: { href: "#", className: "list-v1__it", target: "_blank" },
+   tagAttrs: { href: "#", className: "list-1100__it", target: "_blank" },
    tagNest: [
     {
      tagName: "i",
-     tagAttrs: { className: "list-v1__anim-area" }
+     tagAttrs: { className: "list-1100__anim-area" }
     },
     {
      tagName: "svg",

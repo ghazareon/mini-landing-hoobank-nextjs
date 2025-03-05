@@ -50,308 +50,230 @@ body {
 										font-300;
 }
 
-.s-700 {
- // .s-700__fix
- &__fix {
-  @apply ~pt-[4.5rem]/[13.6rem]
-									~pb-[2.5rem]/[5rem];
+.logo-txt {
+ > span {
+  &:nth-child(1) {
+   @apply text-white;
+  }
 
-  @apply mdxx:pb-[2.5rem]
-									mdxx:pt-[4.5rem];
+  &:nth-child(2) {
+   @apply text-aqua-250;
+  }
  }
 }
 
-.s {
- // .s__t
- &__t {
-  @apply heading-v1
-							text-white;
+.s-1100 {
+ &__fix {
+  @apply pb-[2.9rem];
  }
 
- // .s__d
- &__d {
+ &__txt {
+  @apply ~pt-[1.5rem]/[3rem];
   @apply body-1-1-v1
 							text-white/70;
  }
+
+ .soc-pages {
+  @apply mr-[-1.5rem];
+  @apply ~pt-[1.8rem]/[3.6rem];
+ }
 }
 
-.group {
- // .group-700
- &-700 {
-  @apply flex
-									items-center
-									justify-between
-									gap-x-[4rem];
+.grid-1100 {
+ @apply flex
+								justify-between;
 
-  @media (max-width: $lgxx) {
-   @apply flex-col
-  								items-start
-  								justify-start
-  								gap-x-0;
+ @media (max-width: $lgxx) {
+  @apply flex-col
+									items-center;
+
+  .s-1100__txt {
+   @apply text-center;
   }
 
-  // .group-700 .s
-  .s {
-   // .group-700 .s__t
-   &__t {
-    @apply max-w-[41rem]
-											~pb-[2rem]/[8rem];
-
-    @apply lgxx:pb-[2rem];
-   }
-
-   // .group-700 .s__d
-   &__d {
-    @apply max-w-[45rem]
-											~pb-[2rem]/[8rem];
-   }
+  .soc-pages {
+   @apply mr-0;
   }
  }
 }
 
-.list-700 {
- @apply gap
-								flex;
+.soc-pages {
+ @apply flex
+								items-start
+						text-white;
 }
 
-.box-700 {
+.soc-page {
  @apply rel
 								z-[1]
-								min-h-[40rem]
-								w-full
-								max-w-[37rem]
-								overflow-hidden
-								rounded-[2rem]
-								px-[4.01rem]
-								pb-[6.201rem]
-								pt-[6.01rem];
+								inline-block
+								shrink-0
+								grow-0
+								rounded-[50%]
+								p-[1.5rem];
 
- // .box-700:hover
+ &,
+ > svg {
+  @apply transition-[transform]
+									duration-[0.16s]
+									ease-[linear]
+									will-change-[transform];
+ }
+
+ &:after {
+  @apply absolute
+									bottom-[-0.901rem]
+									left-[-0.901rem]
+									right-[-0.901rem]
+									top-[-0.901rem]
+									z-[-1]
+									block
+									rounded-[50%]
+									bg-grad-aqua-r-100
+									opacity-0
+									shadow-[0px_0px_39px_1px_rgba(0,247,255,1)]
+									content-[""];
+
+  @apply transition-[opacity,transform]
+									duration-[0.16s,0.16s]
+									ease-[linear,linear]
+									will-change-[opacity,transform];
+ }
+
  &:hover {
-  // .box-700:hover:after
   &:after {
-   @apply opacity-100;
+   @apply scale-[0.65]
+										opacity-100;
+  }
+
+  > svg {
+   @apply scale-[0.8];
   }
  }
 
- // .box-700:after
- &:after {
-  content: "";
-  @apply absolute
-									inset-0
-									z-[-1]
-									block
-									bg-cover
-									bg-no-repeat
-									opacity-35;
-
-  @apply transition-[opacity]
-									duration-[0.16s]
-									ease-[linear]
-									will-change-[opacity];
-
-  background-image: svg-load(
-   ../../../../../public/assets/svg/gradients/gradient-start.svg
-  );
- }
-
- // .box-700__d
- &__d {
-  @apply body-1-1-v2
-									pb-[2.5rem]
-							text-white;
- }
-
- // .box-700__svg
- &__svg {
-  @apply mb-[4.1rem]
-							text-aqua-250;
+ &:active {
+  @apply scale-[0.8];
  }
 }
 
-.img-info {
- @apply flex
-								gap-x-[1.6rem];
+.grid-1000 {
+ @apply grid
+								grid-cols-[repeat(12,1fr)];
+ grid-template-areas: "it-1 it-1 it-1 it-1 it-1 it-2 it-2 it-2 it-3 it-3 it-4 it-4";
 
- // .img-info__im
- &__im {
-  @apply mt-[0.4rem]
-									block
-									h-[4.8rem]
-									w-[4.8rem]
-									shrink-0
-									grow-0
-									overflow-hidden
-									rounded-[50%]
-							bg-white/10;
- }
+ @apply gap;
 
- // .img-info__in
- &__in {
-  @apply no-underline;
- }
-
- // .img-info__in
- &__in {
-  // .img-info__in-t
-  &-t {
-   @apply block
-										text-[2rem]
-										leading-[3.2rem]
-								text-white;
+ .__it {
+  &:nth-child(1) {
+   grid-area: it-1;
+   @apply ~pt-[3.6rem]/[7.2rem];
   }
 
-  // .img-info__in-d
-  &-d {
-   @apply block
-										text-[1.6rem]
-										leading-[2.4rem]
+  &:nth-child(2) {
+   grid-area: it-2;
+  }
+
+  &:nth-child(3) {
+   grid-area: it-3;
+  }
+
+  &:nth-child(4) {
+   grid-area: it-4;
+  }
+
+  &:nth-child(2),
+  &:nth-child(3),
+  &:nth-child(4) {
+   @apply ~pt-[3.65rem]/[7.3rem];
+  }
+ }
+
+ @media (max-width: $lgx) {
+  grid-template-areas:
+   "it-2 it-2 it-2 it-2 it-3 it-3 it-3 it-3 it-4 it-4 it-4 it-4"
+   "it-1 it-1 it-1 it-1 it-1 it-1 it-1 it-1 it-1 it-1 it-1 it-1";
+
+  @apply grid-cols-[repeat(12,1fr)];
+
+  .__it {
+   &:nth-child(1) {
+    @apply pt-0;
+    .s-1000__txt,
+    .logo {
+     @apply mx-auto
+												text-center;
+    }
+   }
+  }
+ }
+
+ @media (max-width: $mdxxx) {
+  grid-template-areas:
+   ". it-2 it-2 it-2 it-2 it-2 it-3 it-3 it-3 it-3 it-3 ."
+   ". it-4 it-4 it-4 it-4 it-4 it-4 it-4 it-4 it-4 it-4 ."
+   ". it-1 it-1 it-1 it-1 it-1 it-1 it-1 it-1 it-1 it-1 .";
+
+  .__it {
+   &:nth-child(4) {
+    @apply pt-0;
+   }
+  }
+ }
+
+ @media (max-width: calc($sm + 50px)) {
+  grid-template-areas:
+   ". . . it-2 it-2 it-2 it-2 it-2 it-2 it-2 it-2 it-2"
+   ". . . it-3 it-3 it-3 it-3 it-3 it-3 it-3 it-3 it-3"
+   ". . . it-4 it-4 it-4 it-4 it-4 it-4 it-4 it-4 it-4"
+   "it-1 it-1 it-1 it-1 it-1 it-1 it-1 it-1 it-1 it-1 it-1 it-1";
+
+  .__it {
+   &:nth-child(3) {
+    @apply pt-0;
+   }
+  }
+ }
+}
+
+.logo {
+ @apply block w-full;
+
+ &--2 {
+  @apply max-w-[26.479rem];
+ }
+}
+
+.s-1000 {
+ &__txt {
+  @apply body-1-1-v1
+									w-full
+									max-w-[31.2rem]
+									text-white/70
+									~pt-[1.95rem]/[3.9rem]
+									~pb-[1.95rem]/[3.9rem];
+ }
+
+ .h4-1000 {
+  @apply pb-[2.502rem];
+ }
+
+ .l-1000 {
+  @apply ~pb-[3.6rem]/[7rem];
+  @apply mdxxx:pb-[1.65rem];
+ }
+}
+
+.h4-1000 {
+ @apply title-1-4-v1
+						text-white;
+}
+
+.l-1000 {
+ > li {
+  @apply pb-[1.2rem];
+  > a {
+   @apply link-v1
 								text-white/70;
   }
  }
-}
-
-.s-500 {
- @apply ~pt-[2.5rem]/[11.4rem]
-								~pb-[3.3rem]/[6.7rem];
-
- @apply mdxx:pb-[3.3rem]
-								mdxx:pt-[2.5rem];
-
- // .s-500__fix
- &__fix {
-  @apply block;
- }
-
- // .s-500 .s
- .s {
-  // .s-500 .s__t
-  &__t {
-   @apply pb-[2.2rem];
-  }
-
-  // .s-500 .s__d
-  &__d {
-   @apply max-w-[57rem]
-										pb-[4.90rem];
-  }
- }
-}
-
-.grid-500 {
- @apply gap-x
-								grid
-								w-full
-								grid-cols-[repeat(12,1fr)];
-
- grid-template-areas: "it-1 it-1 it-1 it-1 it-1 it-1 it-1 it-2 it-2 it-2 it-2 it-2";
-
- // .grid-500__it
- &__it {
-  // .grid-500__it:nth-child(1)
-  &:nth-child(1) {
-   grid-area: it-1;
-  }
-
-  // .grid-500__it:nth-child(2)
-  &:nth-child(2) {
-   // .grid-500__it:nth-child(2) grid-area: it-2;
-   // .grid-500__it:nth-child(2) .box-500
-   grid-area: it-2;
-   .box-500 {
-    @apply mb-[2rem];
-   }
-  }
- }
-}
-
-.btn {
- // .btn--v1
- &--v1 {
-  @apply btn-v1
-									inline-block
-									whitespace-nowrap
-									bg-grad-aqua-l-100
-							text-gray-400;
-
-  @apply rounded-[1.001rem]
-									px-[3.3rem]
-									pb-[1.8rem]
-									pt-[1.9rem];
- }
-}
-
-.box-500 {
- @apply rel
-								z-[1]
-								flex
-								min-h-[11.5rem]
-								w-full
-								max-w-[47rem]
-								gap-x-[1rem]
-								overflow-hidden
-								rounded-10
-								px-[2rem]
-								py-[1.8rem];
-
- &:hover {
-  &:after {
-   @apply opacity-100;
-  }
- }
-
- // .box-500:after
- &:after {
-  @apply absolute
-									inset-0
-									z-[-1]
-									block
-									bg-cover
-									bg-no-repeat
-									opacity-35
-									content-[""];
-
-  @apply transition-[opacity]
-									duration-[0.16s]
-									ease-[linear]
-									will-change-[opacity];
-
-  background-image: svg-load(../../../../../public/assets/svg/gradients/gradient-tab.svg);
- }
-
- // .box-500__ic
- &__ic {
-  @apply block;
- }
-
- // .box-500__in
- &__in {
-  @apply block;
- }
-
- // .box-500__t
- &__t {
-  @apply title-5-12-v1
-									pb-[0.8rem]
-							text-white;
- }
-
- // .box-500__d
- &__d {
-  @apply body-5-12-v1
-							text-white/70;
- }
-}
-
-.symbol {
- @apply flex
-								h-[6.4rem]
-								w-[6.4rem]
-								shrink-0
-								grow-0
-								items-center
-								justify-center
-								rounded-[50%]
-						bg-green-225/10
-						text-aqua-250;
 }
