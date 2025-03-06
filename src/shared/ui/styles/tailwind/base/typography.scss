@@ -59,8 +59,9 @@
 
 .body-1-1-v1 {
  @apply font-300
+								tracking-[0.1px]
 								~text-[1.44rem]/[1.8rem]
-								~leading-[2.48rem]/[3.1rem];
+								~leading-[2.48rem]/[3.2rem];
 
  @apply mdxx:text-[1.44rem]
  							mdxx:leading-[2.48rem];
