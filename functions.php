@@ -244,3 +244,12 @@ function remove_block_css() {
 // <style>img:is([sizes="auto" i], [sizes^="auto," i]) { contain-intrinsic-size: 3000px 1500px }</style>
 add_filter('wp_lazy_loading_enabled', '__return_false');
 add_filter('wp_img_tag_add_auto_sizes', '__return_false');
+
+
+function add_file_types_to_uploads($file_types){
+	$new_filetypes = array();
+	$new_filetypes['svg'] = 'image/svg+xml';
+	$file_types = array_merge($file_types, $new_filetypes );
+	return $file_types;
+	}
+	add_filter('upload_mimes', 'add_file_types_to_uploads');
