@@ -7,7 +7,7 @@ import type { ElementType, FC, HTMLAttributes, JSX, ReactNode } from "react";
 import Link from "@/npm/next/link";
 import { clsx } from "clsx";
 
-import type { s, IObj, IObjNest } from "@/src/shared/types";
+import type { s, IObj, IObjNest, n, CatIt } from "@/src/shared/types";
 import type { CoreUiProps } from "@/src/app/components/electrons";
 
 /* prettier-ignore */
@@ -19,23 +19,41 @@ import {
 
 import { CoreEntity, SvgSprite } from "@/src/app/components/molecules";
 
-import {
- SocLinks,
- SocLinksData,
- Testimonials
-} from "@/src/app/components/organisms";
+import { SocPages, Testimonials } from "@/src/app/components/organisms";
+
 import { Logo, Logo1Date } from "@/src/app/components/organisms";
 
 import "@/src/shared/ui/assets/css/transpiled/tw-out.css";
 
+import { SocPagesData } from "@/src/app/components/organisms/SocPages/SocPagesData";
+
+/* export async function getEntities(name: s, perPage: n = 100) {
+ const res = await fetch(
+  `${process.env.DB_HOST}/${process.env.REST_PATH}/${name}?per_page=${perPage}`,
+  { cache: "no-store" }
+ );
+ return res.json();
+} */
+
+/* export const getCatIdBySlug = async (data: CatIt[], slug: s) =>
+ data.filter((it: CatIt) => it.slug === slug)[0].id; */
+
+/*
+export const getPostsByCatId = async getEntities("posts", )
+*/
+
 export default async function Home() {
+ /*  console.log(
+  await getCatIdBySlug(await getEntities("categories"), "soc-pages")
+ ); */
+
  return (
   <Div className="wrap">
    <Main>
     <Section className="s-700">
      <Div className="s-700__fix fix">
       <Div className="grid-700">
-       <H2 className="s__t s__t--s-700">What people are saying about us</H2>
+       <H2 className="s__t s__t--s-700">What people ares aying about us</H2>
        <P className="s__d s__d--s-700">
         Everything you need to accept card payments and grow your business
         anywhere on the planet.
@@ -284,19 +302,63 @@ export default async function Home() {
        </Div>
 
        <Div className="soc-pages">
-        <Link href="#" className="soc-page">
-         <SvgSprite name="inst" width="21" height="21" />
+        <Link href="#" className="soc-page soc-page--inst">
+         <Img
+          src="assets/svg/icons/inst.svg"
+          width="21"
+          height="21"
+          alt=""
+          className="soc-page__ic soc-page__ic--inst"
+         />
         </Link>
-        <Link href="#" className="soc-page">
-         <SvgSprite name="fb" width="21" height="21" />
+
+        <Link href="#" className="soc-page soc-page--fb">
+         <Img
+          src="assets/svg/icons/fb.svg"
+          width="21"
+          height="21"
+          alt=""
+          className="soc-page__ic soc-page__ic--fb"
+         />
         </Link>
-        <Link href="#" className="soc-page">
-         <SvgSprite name="tw" width="23" height="19" />
+
+        <Link href="#" className="soc-page soc-page--tw">
+         <Img
+          src="assets/svg/icons/tw.svg"
+          width="23"
+          height="19"
+          alt=""
+          className="soc-page__ic soc-page__ic--tw"
+         />
         </Link>
-        <Link href="#" className="soc-page">
-         <SvgSprite name="in" width="20.99" height="20.99" />
+
+        <Link href="#" className="soc-page soc-page--tw">
+         <Img
+          src="assets/svg/icons/in.svg"
+          width="20.99"
+          height="20.99"
+          alt=""
+          className="soc-page__ic soc-page__ic--in"
+         />
         </Link>
        </Div>
+
+       {/* <SocPages data={SocPagesData} /> */}
+
+       {/* <Div className="soc-pages">
+        <Link href="#" className="soc-page soc-page--inst">
+         <SvgSprite name="inst" width="21" height="21" className="soc-page__ic-svg" />
+        </Link>
+        <Link href="#" className="soc-page soc-page--fb">
+         <SvgSprite name="fb" width="21" height="21" className="soc-page__ic-svg" />
+        </Link>
+        <Link href="#" className="soc-page soc-page--tw">
+         <SvgSprite name="tw" width="23" height="19" className="soc-page__ic-svg" />
+        </Link>
+        <Link href="#" className="soc-page soc-page--in">
+         <SvgSprite name="in" width="20.99" height="20.99" className="soc-page__ic-svg"/>
+        </Link>
+       </Div> */}
       </Div>
      </Div>
     </Section>

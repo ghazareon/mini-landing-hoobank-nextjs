@@ -505,6 +505,10 @@ body::-webkit-resizer{
   flex-grow:1;
 }
 
+.filter{
+  filter:var(--tw-blur) var(--tw-brightness) var(--tw-contrast) var(--tw-grayscale) var(--tw-hue-rotate) var(--tw-invert) var(--tw-saturate) var(--tw-sepia) var(--tw-drop-shadow);
+}
+
 *, ::before, ::after{
   --tw-translate-x:0;
   --tw-translate-y:0;
@@ -516,6 +520,15 @@ body::-webkit-resizer{
   --tw-ring-offset-shadow:0 0 #0000;
   --tw-ring-shadow:0 0 #0000;
   --tw-shadow:0 0 #0000;
+  --tw-blur:;
+  --tw-brightness:;
+  --tw-contrast:;
+  --tw-grayscale:;
+  --tw-hue-rotate:;
+  --tw-invert:;
+  --tw-saturate:;
+  --tw-sepia:;
+  --tw-drop-shadow:;
 }
 
 ::backdrop{
@@ -529,6 +542,15 @@ body::-webkit-resizer{
   --tw-ring-offset-shadow:0 0 #0000;
   --tw-ring-shadow:0 0 #0000;
   --tw-shadow:0 0 #0000;
+  --tw-blur:;
+  --tw-brightness:;
+  --tw-contrast:;
+  --tw-grayscale:;
+  --tw-hue-rotate:;
+  --tw-invert:;
+  --tw-saturate:;
+  --tw-sepia:;
+  --tw-drop-shadow:;
 }
 
 /* ! tailwindcss v3.4.17 | MIT License | https://tailwindcss.com */
@@ -901,7 +923,10 @@ body{
   top:0px;
 }
 
-.soc-page,
+.soc-page .icons,
+ .soc-page__ic-svg,
+ .soc-page__ic,
+ .soc-page,
  .soc-page > svg{
   transition-property:transform;
   transition-timing-function:cubic-bezier(0.4, 0, 0.2, 1);
@@ -955,7 +980,9 @@ body{
   opacity:var(--opacity-100);
 }
 
-.soc-page:hover > svg{
+.soc-page:hover .icons,
+  .soc-page:hover .soc-page__ic,
+  .soc-page:hover > svg{
   --tw-scale-x:0.8;
   --tw-scale-y:0.8;
   transform:translate(var(--tw-translate-x), var(--tw-translate-y)) rotate(var(--tw-rotate)) skewX(var(--tw-skew-x)) skewY(var(--tw-skew-y)) scaleX(0.8) scaleY(0.8);
@@ -968,6 +995,10 @@ body{
   transform:translate(var(--tw-translate-x), var(--tw-translate-y)) rotate(var(--tw-rotate)) skewX(var(--tw-skew-x)) skewY(var(--tw-skew-y)) scaleX(0.8) scaleY(0.8);
   transform:translate(var(--tw-translate-x), var(--tw-translate-y)) rotate(var(--tw-rotate)) skewX(var(--tw-skew-x)) skewY(var(--tw-skew-y)) scaleX(var(--tw-scale-x)) scaleY(var(--tw-scale-y));
 }
+
+.soc-page__ic{
+  filter:brightness(0) saturate(100%) invert(100%) sepia(14%) saturate(3036%) hue-rotate(182deg) brightness(111%) contrast(96%);
+ }
 
 .grid-1000{
   display:grid;
@@ -1132,7 +1163,7 @@ body{
 }
 
 .s__t--s-700{
-  max-width:41rem;
+  max-width:48rem;
 }
 
 .s__t--s-900{

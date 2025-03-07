@@ -33,3 +33,27 @@ export interface ITag<T> {
 }
 
 export type tagsNum = ITag<s> & { id: n };
+
+export interface Links {
+ self: IObj<s> | IObj<s[]>;
+ collection: IObj<s>[];
+ about: IObj<s>[];
+ "wp:post_type": IObj<s>[];
+ curies: IObj<s>[];
+}
+
+export interface CatIt {
+ id: s;
+ count: s;
+ description: s;
+ link: s;
+ name: s;
+ slug: s;
+ taxonomy: s;
+ parent: n;
+ meta: any[];
+ acf: any[];
+ _links: Links;
+}
+
+export type Entities = CatIt[];

@@ -4,5 +4,3 @@
  */
 
 export { SocPages } from "./SocPages";
-export { Logo, Logo1Date } from "./Logo";
-export { Testimonials, type ITestimonials } from "./Testimonials";

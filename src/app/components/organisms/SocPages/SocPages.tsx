@@ -7,6 +7,6 @@ import { FC } from "@/npm/@types/react";
 import type { CoreEntityProps } from "@/src/app/components/molecules";
 import { CoreEntity } from "@/src/app/components/molecules";
 
-export const SocLinks: FC<CoreEntityProps> = ({ data }) => (
+export const SocPages: FC<CoreEntityProps> = ({ data }) => (
  <CoreEntity data={data} />
 );

@@ -133,6 +133,9 @@ body {
 								rounded-[50%]
 								p-[1.5rem];
 
+ .icons,
+ &__ic-svg,
+ &__ic,
  &,
  > svg {
   @apply transition-[transform]
@@ -167,6 +170,8 @@ body {
 										opacity-100;
   }
 
+  .icons,
+  .soc-page__ic,
   > svg {
    @apply scale-[0.8];
   }
@@ -174,6 +179,11 @@ body {
 
  &:active {
   @apply scale-[0.8];
+ }
+
+ &__ic {
+  filter: brightness(0) saturate(100%) invert(100%) sepia(14%) saturate(3036%)
+   hue-rotate(182deg) brightness(111%) contrast(96%);
  }
 }
 
@@ -339,7 +349,8 @@ body {
 						text-white;
 
  &--s-700 {
-  @apply max-w-[41rem];
+  @apply max-w-[48rem];
+
   @media (max-width: $lgx) {
    @apply pb-[3rem]
 										text-center;
