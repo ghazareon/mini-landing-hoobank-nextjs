@@ -50,7 +50,27 @@ export default async function Home() {
  return (
   <Div className="wrap">
    <Main>
-    {/*  */}
+    <Section className="s-300">
+     <Div className="s-300__fix fix">
+      <Div className="grid-300">
+       <Div className="info-caption">
+        <Div className="info-caption__i">3800+</Div>
+        <Div className="info-caption__c">USER ACTIVE</Div>
+       </Div>
+       <I className="breaker"></I>
+       <Div className="info-caption">
+        <Div className="info-caption__i">230+</Div>
+        <Div className="info-caption__c">TRUSTED BY COMPANY</Div>
+       </Div>
+       <I className="breaker"></I>
+       <Div className="info-caption">
+        <Div className="info-caption__i">$230M+</Div>
+        <Div className="info-caption__c">TRANSACTION</Div>
+       </Div>
+      </Div>
+     </Div>
+    </Section>
+
     <Section className="s-500">
      <Div className="s-500__fix fix">
       <Div className="grid-500">
@@ -142,7 +162,7 @@ export default async function Home() {
       </Div>
      </Div>
     </Section>
-    {/*  */}
+
     <Section className="s-700">
      <Div className="s-700__fix fix">
       <Div className="grid-700">
