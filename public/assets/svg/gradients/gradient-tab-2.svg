@@ -1,0 +1,24 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 470 115" preserveAspectRatio="none">
+ <defs>
+  <style>
+   .cls-1 {
+    fill: url(#linear-gradient);
+    isolation: isolate;
+    opacity: 0.9;
+   }
+  </style>
+  <linearGradient
+   id="linear-gradient"
+   x1="153.65"
+   y1="724.35"
+   x2="244.36"
+   y2="-18.14"
+   gradientTransform="translate(0 116) scale(1 -1)"
+   gradientUnits="userSpaceOnUse"
+  >
+   <stop offset="0" stop-color="#fff" />
+   <stop offset="1" stop-color="#14101d" />
+  </linearGradient>
+ </defs>
+ <rect class="cls-1" width="470" height="115" />
+</svg>
