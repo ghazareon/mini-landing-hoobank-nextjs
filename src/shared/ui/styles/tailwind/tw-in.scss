@@ -891,3 +891,68 @@ body {
    hue-rotate(134deg) brightness(106%) contrast(104%);
  }
 }
+
+.s-300 {
+ &__fix {
+  @apply ~py-[4.9rem]/[9.7rem];
+
+  @media (max-width: $xlx) {
+   .info-caption {
+    @apply flex-col;
+   }
+
+   .grid-300 {
+    @apply justify-center
+											~gap-x-[2.5rem]/[5rem];
+   }
+
+   .info-caption {
+    &__i,
+    &__c {
+     @apply text-center;
+    }
+   }
+  }
+
+  @media (max-width: $mdx) {
+   .breaker {
+    @apply hidden;
+   }
+
+   .grid-300 {
+    @apply flex-col
+											gap-x-0
+											~gap-y-[2.5rem]/[5rem];
+   }
+  }
+ }
+}
+
+.info-caption {
+ @apply inline-flex
+								items-center
+								gap-x-[2.501rem];
+
+ &__i {
+  @apply title-1-3-v1
+							text-white;
+ }
+ &__c {
+  @apply caption-1-3-v1
+									text-gradient
+									bg-grad-aqua-r-100;
+ }
+}
+
+.grid-300 {
+ @apply flex
+								items-center
+								justify-between;
+}
+
+.breaker {
+ @apply block
+								h-[1.4rem]
+								w-px
+						bg-white/60;
+}
