@@ -885,8 +885,9 @@ body {
 
  // .icon-box__img
  &__img {
-  width: 47%;
-  height: auto;
+  @apply h-auto
+									w-[47%];
+
   filter: brightness(0) saturate(100%) invert(78%) sepia(64%) saturate(3030%)
    hue-rotate(134deg) brightness(106%) contrast(104%);
  }
@@ -955,4 +956,82 @@ body {
 								h-[1.4rem]
 								w-px
 						bg-white/60;
+}
+
+.collage-200 {
+ @apply rel
+								block
+								aspect-[611/666]
+								w-full
+								max-w-[61.1rem]
+								bg-cover;
+
+ &__img-1 {
+  @apply absolute
+									left-[7.2%]
+									top-[7.8%]
+									z-[3]
+									block
+									h-auto
+									max-w-[63.02120717781403%];
+ }
+
+ &__img-2 {
+  @apply absolute
+									left-[11.4%]
+									top-[21.6%]
+									z-[2]
+									block
+									h-auto
+									max-w-[63.02120717781403%];
+ }
+
+ &__img-3 {
+  @apply absolute
+									left-[9.1%]
+									top-[34.3%]
+									z-[1]
+									block
+									h-auto
+									max-w-[61.95921696574225%]
+									opacity-80;
+ }
+
+ &__img-4 {
+  @apply absolute
+									bottom-0
+									right-0
+									block
+									h-auto
+									w-full
+									max-w-[90.18003273322422%];
+ }
+}
+
+.ball {
+ @apply absolute
+								block
+								aspect-[1/1]
+								shrink-0
+								grow-0
+								rounded-[50%]
+								bg-grad-aqua-r-100;
+
+ &--1 {
+  @apply left-[0.2rem]
+									top-[0.1rem]
+									w-[16.53027823240589%];
+ }
+
+ &--2 {
+  @apply left-[10.4746317512275%]
+									top-[66.21621621621622%]
+									w-[5.400981996726678%];
+ }
+
+ &--3 {
+  @apply left-[61.21112929623568%]
+									top-[55.70570570570571%]
+									w-[11.29296235679214%];
+ }
 }
