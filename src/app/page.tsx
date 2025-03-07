@@ -50,6 +50,55 @@ export default async function Home() {
  return (
   <Div className="wrap">
    <Main>
+    {/*  */}
+    <Div className="collage-200">
+     <Div className="ball ball--1"></Div>
+     <Div className="ball ball--2"></Div>
+     <Div className="ball ball--3"></Div>
+
+     <Img
+      src="assets/svg/collage/1.svg"
+      className="collage-200__img-1"
+      width="386.32"
+      height="223.24"
+      loading="lazy"
+      decoding="async"
+     />
+
+     <Img
+      src="assets/svg/collage/2.svg"
+      className="collage-200__img-2"
+      width="386.16"
+      height="223.24"
+      loading="lazy"
+      decoding="async"
+     />
+
+     <Img
+      src="assets/svg/collage/3.svg"
+      className="collage-200__img-3"
+      width="379.81"
+      height="219.58"
+      loading="lazy"
+      decoding="async"
+     />
+
+     <Img
+      alt=""
+      loading="lazy"
+      decoding="async"
+      height="318"
+      src="assets/img/hand/hand-1x.png"
+      width="256"
+      className="collage-200__img-4"
+      srcSet="assets/img/hand/hand-1x.webp,
+														assets/img/hand/hand-2x.webp 2x,
+														assets/img/hand/hand-3x.webp 3x,
+														assets/img/hand/hand-4x.webp 4x"
+     />
+    </Div>
+    {/*  */}
+
     <Section className="s-300">
      <Div className="s-300__fix fix">
       <Div className="grid-300">

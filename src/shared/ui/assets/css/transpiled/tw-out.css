@@ -202,6 +202,7 @@
   --opacity-50:0.5;
   --opacity-60:0.6;
   --opacity-70:0.7;
+  --opacity-80:0.8;
   --opacity-100:1;
   --font-size-0:0;
   --font-size-62-5p:62.5%;
@@ -1694,10 +1695,11 @@ body{
 }
 
 .icon-box__img{
-  width:47%;
   height:auto;
+  width:47%;
+
   filter:brightness(0) saturate(100%) invert(78%) sepia(64%) saturate(3030%) hue-rotate(134deg) brightness(106%) contrast(104%);
- }
+}
 
 .s-300__fix{
   padding-top:clamp(4.9rem,4.9rem + 3.9vw,9.7rem);
@@ -1765,6 +1767,96 @@ body{
 .breaker{
     background-color:rgba( 255 255 255   / var(--opacity-60));
   }
+}
+
+.collage-200{
+  display:block;
+  aspect-ratio:611/666;
+  width:100%;
+  max-width:61.1rem;
+  background-size:cover;
+  position:relative;
+  left:0px;
+  top:0px;
+}
+
+.collage-200__img-1{
+  position:absolute;
+  left:7.2%;
+  top:7.8%;
+  z-index:3;
+  display:block;
+  height:auto;
+  max-width:63.02120717781403%;
+}
+
+.collage-200__img-2{
+  position:absolute;
+  left:11.4%;
+  top:21.6%;
+  z-index:2;
+  display:block;
+  height:auto;
+  max-width:63.02120717781403%;
+}
+
+.collage-200__img-3{
+  position:absolute;
+  left:9.1%;
+  top:34.3%;
+  z-index:1;
+  display:block;
+  height:auto;
+  max-width:61.95921696574225%;
+  opacity:0.8;
+  opacity:var(--opacity-80);
+}
+
+.collage-200__img-4{
+  position:absolute;
+  bottom:0px;
+  right:0px;
+  display:block;
+  height:auto;
+  width:100%;
+  max-width:90.18003273322422%;
+}
+
+.ball{
+  position:absolute;
+  display:block;
+  aspect-ratio:1/1;
+  flex-shrink:0;
+  flex-grow:0;
+  border-radius:50%;
+  background-image:radial-gradient(
+    64.33% 64.33% at 71.16% 35.69%,
+    #def9fa 0.89%,
+    #bef3f5 17.23%,
+    #9dedf0 42.04%,
+    #7de7eb 55.12%,
+    #5ce1e6 71.54%,
+    #33bbcf 100%
+  );
+  background-image:var(--background-image-grad-aqua-r-100);
+}
+
+.ball--1{
+  left:0.2rem;
+  top:0.1rem;
+  width:16.53027823240589%;
+}
+
+.ball--2{
+  left:10.4746317512275%;
+  top:66.21621621621622%;
+  width:5.400981996726678%;
+}
+
+.ball--3{
+  left:61.21112929623568%;
+  top:55.70570570570571%;
+  width:11.29296235679214%;
 }
 
 @media (max-width: 76.875rem){
