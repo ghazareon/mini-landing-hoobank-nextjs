@@ -1096,3 +1096,68 @@ body {
 									ring-0;
  }
 }
+
+.unique-btn {
+ @apply rel
+								z-10
+								flex
+								aspect-[1]
+								h-[14.01rem]
+								w-[14.01rem]
+								items-center
+								justify-center
+								rounded-[50.01%]
+								text-[1.8rem]
+								font-500
+								leading-[2.7rem]
+								text-white;
+
+ &__txt {
+  display: block;
+  position: relative;
+  top: 0;
+  right: 0;
+  @apply text-gradient
+									bg-grad-aqua-r-100;
+ }
+
+ &__ic {
+  @apply absolute
+									right-[0.5rem]
+									top-[0.7rem]
+									h-auto
+							text-aqua-325;
+ }
+
+ &:after {
+  @apply absolute
+									inset-0
+									block
+									rounded-[inherit]
+									border-[3px]
+									border-solid
+									border-transparent
+									content-[""];
+
+  background: radial-gradient(
+    64.33% 64.33% at 71.16% 35.69%,
+    #def9fa 0.89%,
+    #bef3f5 17.23%,
+    #9dedf0 42.04%,
+    #7de7eb 55.12%,
+    #5ce1e6 71.54%,
+    #33bbcf 100%
+   )
+   border-box;
+
+  -webkit-mask:
+   linear-gradient(#fff 0 0) padding-box,
+   linear-gradient(#fff 0 0);
+
+  mask:
+   linear-gradient(#fff 0 0) padding-box,
+   linear-gradient(#fff 0 0);
+  -webkit-mask-composite: destination-out;
+  mask-composite: exclude;
+ }
+}
