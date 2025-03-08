@@ -102,6 +102,12 @@ export default async function Home() {
          most likely to fit your needs. We examine annual percentage rates,
          annual fees.
         </P>
+
+        <Div className="app-store-btns">
+         <Link href="#" className="app-store-btn" target="_blank"></Link>
+         <Link href="#" className="app-store-btn" target="_blank"></Link>
+        </Div>
+
         <Link href="#" className="btn btn--s-200">
          Get Started
         </Link>
