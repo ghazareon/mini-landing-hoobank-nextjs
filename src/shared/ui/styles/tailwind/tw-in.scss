@@ -895,7 +895,12 @@ body {
 
 .s-300 {
  &__fix {
-  @apply ~py-[4.9rem]/[9.7rem];
+  @apply ~pt-[3.9rem]/[9.7rem]
+									~pb-[3.9rem]/[9.7rem];
+
+  @media (max-width: $mdxx) {
+   @apply pb-[0.01rem] pt-[4.01rem];
+  }
 
   @media (max-width: $xlx) {
    .info-caption {
@@ -959,10 +964,8 @@ body {
 }
 
 .collage-200 {
- @apply rel
-								block
+ @apply block
 								aspect-[611/666]
-								w-full
 								max-w-[61.1rem]
 								bg-cover;
 
@@ -1040,14 +1043,14 @@ body {
  @apply rel
 								z-[1]
 								inline-flex
-								items-center
 								gap-x-[1rem]
 								overflow-hidden
 								rounded-[1.01rem]
 								pb-[0.7rem]
 								pl-[1rem]
 								pr-[2rem]
-								pt-[0.6rem];
+								pt-[0.6rem]
+								text-left;
 
  &:after {
   @apply absolute
@@ -1100,24 +1103,25 @@ body {
 .unique-btn {
  @apply rel
 								z-10
-								flex
-								aspect-[1]
-								h-[14.01rem]
-								w-[14.01rem]
+								inline-flex
+								aspect-[1/1]
+								shrink-0
+								grow-0
 								items-center
 								justify-center
 								rounded-[50.01%]
 								text-[1.8rem]
 								font-500
 								leading-[2.7rem]
-								text-white;
+								text-white
+								~w-[12.01rem]/[14.01rem];
 
  &__txt {
-  display: block;
-  position: relative;
-  top: 0;
-  right: 0;
   @apply text-gradient
+									relative
+									right-0
+									top-0
+									block
 									bg-grad-aqua-r-100;
  }
 
@@ -1160,4 +1164,142 @@ body {
   -webkit-mask-composite: destination-out;
   mask-composite: exclude;
  }
+}
+
+.s-200 {
+ @apply overflow-hidden;
+ &__fix {
+  /*   @apply pb-[6.3rem]
+									pt-[15.7rem]; */
+ }
+}
+
+.grid-200 {
+ @apply gap-x
+								grid
+								grid-cols-[repeat(12,1fr)];
+
+ grid-template-areas:
+  "it-1 it-1 it-1 it-1 it-1 it-1 it-1 it-4 it-4 it-4 it-4 it-4"
+  "it-2 it-2 it-2 it-2 it-2 it-2 it-2 it-4 it-4 it-4 it-4 it-4"
+  "it-3 it-3 it-3 it-3 it-3 it-3 it-3 it-4 it-4 it-4 it-4 it-4"
+  "it-5 it-5 it-5 it-5 it-5 it-5 it-5 it-4 it-4 it-4 it-4 it-4";
+
+ @media (max-width: $lg) {
+  @apply grid-cols-[repeat(6,1fr)];
+  grid-template-areas:
+   "it-1 it-1 it-1 it-1 it-1 it-1"
+   "it-2 it-2 it-2 it-2 it-2 it-2"
+   "it-4 it-4 it-4 it-4 it-4 it-4"
+   "it-3 it-3 it-3 it-3 it-3 it-3"
+   "it-5 it-5 it-5 it-5 it-5 it-5";
+
+  &__it {
+   @apply text-center;
+
+   .main-descr {
+    @apply mx-auto;
+   }
+
+   &:nth-child(3) {
+    .btn {
+     @apply !inline-block;
+    }
+   }
+
+   &:nth-child(4) {
+    .collage-200 {
+     @apply relative
+												inset-x-0
+												top-0
+												mt-0
+												w-full;
+    }
+   }
+  }
+
+  .collage-200 {
+   @apply relative
+										right-0
+										top-0
+										mx-auto
+										mb-[2rem];
+  }
+
+  .badge {
+   @apply mx-auto
+										mb-[3.02rem];
+  }
+
+  .unique-btn {
+   @apply hidden;
+  }
+ }
+
+ &__it {
+  @apply min-h-max;
+
+  .unique-btn {
+   @apply absolute
+										left-[inherit]
+										right-[2.3rem]
+										top-0;
+  }
+
+  .badge {
+   @apply mb-[0.4rem];
+  }
+
+  .main-title {
+   @apply ~pb-[2rem]/[4rem];
+  }
+
+  .main-descr {
+   @apply max-w-[48.3rem]
+										~mb-[2rem]/[4rem];
+  }
+
+  &:nth-child(1) {
+   grid-area: it-1;
+   @apply ~pt-[4.1rem]/[15.7rem];
+  }
+
+  &:nth-child(2) {
+   @apply rel;
+   grid-area: it-2;
+  }
+
+  &:nth-child(3) {
+   grid-area: it-3;
+   .btn {
+    @apply hidden;
+   }
+  }
+
+  &:nth-child(4) {
+   grid-area: it-4;
+
+   @apply relative
+										right-0
+										top-0;
+
+   .collage-200 {
+    @apply absolute
+											bottom-[initial]
+											left-[-1.7rem]
+											top-[3.501rem]
+											w-[130%];
+   }
+  }
+ }
+}
+
+.main-descr {
+ @apply body-1-1-v1
+						text-white/70;
+}
+
+.main-title {
+ @apply display-v1
+						text-white;
 }
