@@ -1005,6 +1005,7 @@ body {
 									bottom-0
 									right-0
 									block
+									aspect-[551/201]
 									h-auto
 									w-full
 									max-w-[90.18003273322422%];
@@ -1302,4 +1303,12 @@ body {
 .main-title {
  @apply display-v1
 						text-white;
+}
+
+.app-store-btn {
+ @apply flex
+								h-[4.5rem]
+								w-[13.01rem]
+								items-center
+								justify-center;
 }
