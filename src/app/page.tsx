@@ -50,89 +50,116 @@ export default async function Home() {
  return (
   <Div className="wrap">
    <Main>
-    <Link href="#" className="unique-btn">
-     <Span className="unique-btn__txt">
-      Get
-      <Br />
-      Started
-      <SvgSprite
-       name="arrow-top-right"
-       width="12.45"
-       height="11.36"
-       className="unique-btn__ic"
-      />
-     </Span>
-    </Link>
+    <Section className="s-200">
+     <Div className="s-200__fix fix">
+      {/*  */}
+      <Div className="grid-200">
+       <Div className="grid-200__it">
+        <Div className="badge">
+         <Div className="symbol">
+          <SvgSprite
+           name="percent"
+           width="9.19"
+           height="9.19"
+           className="symbol__front"
+          />
+          <SvgSprite
+           name="shape-stamp"
+           width="26.67"
+           height="26.68"
+           className="symbol__back"
+          />
+         </Div>
+         <Div className="badge__txt">
+          <Span className="text-white">20%</Span> DISCOUNT FOR
+          <Span className="text-white">&nbsp;1 MONTH</Span> ACCOUNT
+         </Div>
+        </Div>
+       </Div>
+       <Div className="grid-200__it">
+        <H1 className="main-title">
+         The Next Generation Payment Method.
+         {/*  */}
+         <Link href="#" className="unique-btn">
+          <Span className="unique-btn__txt">
+           Get
+           <Br />
+           Started
+           <SvgSprite
+            name="arrow-top-right"
+            width="12.45"
+            height="11.36"
+            className="unique-btn__ic"
+           />
+          </Span>
+         </Link>
+         {/*  */}
+        </H1>
+       </Div>
+       <Div className="grid-200__it">
+        <P className="main-descr">
+         Our team of experts uses a methodology to identify the credit cards
+         most likely to fit your needs. We examine annual percentage rates,
+         annual fees.
+        </P>
+        <Link href="#" className="btn btn--s-200">
+         Get Started
+        </Link>
+       </Div>
+       <Div className="grid-200__it">
+        {/*  */}
+        <Div className="collage-200">
+         <Div className="ball ball--1"></Div>
+         <Div className="ball ball--2"></Div>
+         <Div className="ball ball--3"></Div>
 
-    <Div className="badge">
-     <Div className="symbol">
-      <SvgSprite
-       name="percent"
-       width="9.19"
-       height="9.19"
-       className="symbol__front"
-      />
-      <SvgSprite
-       name="shape-stamp"
-       width="26.67"
-       height="26.68"
-       className="symbol__back"
-      />
-     </Div>
-     <Div className="badge__txt">
-      <Span className="text-white">20%</Span> DISCOUNT FOR{" "}
-      <Span className="text-white">1 MONTH</Span> ACCOUNT
-     </Div>
-    </Div>
+         <Img
+          src="assets/svg/collage/1.svg"
+          className="collage-200__img-1"
+          width="386.32"
+          height="223.24"
+          loading="lazy"
+          decoding="async"
+         />
 
-    {/*  */}
-    <Div className="collage-200">
-     <Div className="ball ball--1"></Div>
-     <Div className="ball ball--2"></Div>
-     <Div className="ball ball--3"></Div>
+         <Img
+          src="assets/svg/collage/2.svg"
+          className="collage-200__img-2"
+          width="386.16"
+          height="223.24"
+          loading="lazy"
+          decoding="async"
+         />
 
-     <Img
-      src="assets/svg/collage/1.svg"
-      className="collage-200__img-1"
-      width="386.32"
-      height="223.24"
-      loading="lazy"
-      decoding="async"
-     />
+         <Img
+          src="assets/svg/collage/3.svg"
+          className="collage-200__img-3"
+          width="379.81"
+          height="219.58"
+          loading="lazy"
+          decoding="async"
+         />
 
-     <Img
-      src="assets/svg/collage/2.svg"
-      className="collage-200__img-2"
-      width="386.16"
-      height="223.24"
-      loading="lazy"
-      decoding="async"
-     />
-
-     <Img
-      src="assets/svg/collage/3.svg"
-      className="collage-200__img-3"
-      width="379.81"
-      height="219.58"
-      loading="lazy"
-      decoding="async"
-     />
-
-     <Img
-      alt=""
-      loading="lazy"
-      decoding="async"
-      height="318"
-      src="assets/img/hand/hand-1x.png"
-      width="256"
-      className="collage-200__img-4"
-      srcSet="assets/img/hand/hand-1x.webp,
+         <Img
+          alt=""
+          loading="lazy"
+          decoding="async"
+          height="318"
+          src="assets/img/hand/hand-1x.png"
+          width="256"
+          className="collage-200__img-4"
+          srcSet="assets/img/hand/hand-1x.webp,
 														assets/img/hand/hand-2x.webp 2x,
 														assets/img/hand/hand-3x.webp 3x,
 														assets/img/hand/hand-4x.webp 4x"
-     />
-    </Div>
-    {/*  */}
+         />
+        </Div>
+        {/*  */}
+       </Div>
+      </Div>
+      {/*  */}
+     </Div>
+    </Section>
 
     <Section className="s-300">
      <Div className="s-300__fix fix">
@@ -247,7 +274,7 @@ export default async function Home() {
      </Div>
     </Section>
 
-    <Section className="s-700">
+    <Section className="s-700 !hidden">
      <Div className="s-700__fix fix">
       <Div className="grid-700">
        <H2 className="s__t s__t--s-700">What people ares aying about us</H2>
