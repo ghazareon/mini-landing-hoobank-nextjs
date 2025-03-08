@@ -232,6 +232,7 @@
     #272727 0%,
     #11101d 100%
   );
+  --z-index-10:10;
 }
 
 html{
@@ -512,6 +513,17 @@ body::-webkit-resizer{
   flex-grow:1;
 }
 
+.text-white{
+  --tw-text-opacity:1;
+  color:rgba( 255 255 255   / 1);
+}
+
+@supports (color: rgba(0 0 0 / 0)){
+.text-white{
+    color:rgba( 255 255 255   / var(--tw-text-opacity, 1));
+  }
+}
+
 .filter{
   filter:var(--tw-blur) var(--tw-brightness) var(--tw-contrast) var(--tw-grayscale) var(--tw-hue-rotate) var(--tw-invert) var(--tw-saturate) var(--tw-sepia) var(--tw-drop-shadow);
 }
@@ -524,6 +536,10 @@ body::-webkit-resizer{
   --tw-skew-y:0;
   --tw-scale-x:1;
   --tw-scale-y:1;
+  --tw-ring-inset:;
+  --tw-ring-offset-width:0px;
+  --tw-ring-offset-color:#fff;
+  --tw-ring-color:rgb(59 130 246 / 0.5);
   --tw-ring-offset-shadow:0 0 #0000;
   --tw-ring-shadow:0 0 #0000;
   --tw-shadow:0 0 #0000;
@@ -546,6 +562,10 @@ body::-webkit-resizer{
   --tw-skew-y:0;
   --tw-scale-x:1;
   --tw-scale-y:1;
+  --tw-ring-inset:;
+  --tw-ring-offset-width:0px;
+  --tw-ring-offset-color:#fff;
+  --tw-ring-color:rgb(59 130 246 / 0.5);
   --tw-ring-offset-shadow:0 0 #0000;
   --tw-ring-shadow:0 0 #0000;
   --tw-shadow:0 0 #0000;
@@ -1859,6 +1879,103 @@ body{
   width:11.29296235679214%;
 }
 
+.badge{
+  z-index:1;
+  display:inline-flex;
+  align-items:center;
+  -moz-column-gap:1rem;
+       column-gap:1rem;
+  overflow:hidden;
+  border-radius:1.01rem;
+  padding-bottom:0.7rem;
+  padding-left:1rem;
+  padding-right:2rem;
+  padding-top:0.6rem;
+  position:relative;
+  left:0px;
+  top:0px;
+}
+
+.badge:after{
+  position:absolute;
+  inset:0px;
+  z-index:-1;
+  display:block;
+  --tw-content:"";
+  content:"";
+  content:var(--tw-content);
+
+  background-image:url(
+   "data:image/svg+xml;charset=utf-8,%3Csvg xmlns='http://www.w3.org/2000/svg' xmlns:xlink='http://www.w3.org/1999/xlink' viewBox='0 0 311.96 99.33' preserveAspectRatio='none'%3E %3Cdefs%3E %3Cstyle%3E .cls-1 %7B fill: url(%23linear-gradient); %7D %3C/style%3E %3ClinearGradient id='linear-gradient' x1='110.9' y1='150.46' x2='201.05' y2='-49.08' gradientTransform='translate(0 100.35) scale(1 -1)' gradientUnits='userSpaceOnUse'%3E %3Cstop offset='0' stop-color='%23272727'/%3E %3Cstop offset='1' stop-color='%2311101d'/%3E %3C/linearGradient%3E %3C/defs%3E %3Crect class='cls-1' width='311.96' height='99.33'/%3E %3C/svg%3E"
+  );
+}
+
+.badge__txt{
+  display:inline-block;
+  color:rgba( 255 255 255   / 0.7);
+  font-weight:400;
+  font-weight:var(--font-weight-400);
+  font-size:clamp(1.44rem,1.44rem + 0.29vw,1.8rem);
+  line-height:clamp(2.16rem,2.16rem + 0.44vw,2.7rem);
+}
+
+@supports (color: rgba(0 0 0 / 0)){
+.badge__txt{
+    color:rgba( 255 255 255   / var(--opacity-70));
+  }
+}
+
+.symbol{
+  display:block;
+  aspect-ratio:1 / 1;
+  width:26.68px;
+  position:relative;
+  left:0px;
+  top:0px;
+}
+
+.symbol__front{
+  position:absolute;
+  left:50%;
+  top:50%;
+  z-index:10;
+  z-index:var(--z-index-10);
+  --tw-translate-x:-50%;
+  --tw-translate-y:-50%;
+  transform:translate(-50%, -50%) rotate(var(--tw-rotate)) skewX(var(--tw-skew-x)) skewY(var(--tw-skew-y)) scaleX(var(--tw-scale-x)) scaleY(var(--tw-scale-y));
+  transform:translate(var(--tw-translate-x), var(--tw-translate-y)) rotate(var(--tw-rotate)) skewX(var(--tw-skew-x)) skewY(var(--tw-skew-y)) scaleX(var(--tw-scale-x)) scaleY(var(--tw-scale-y));
+  --tw-text-opacity:1;
+  color:rgba( 0 245 255 / 1);
+}
+
+@supports (color: rgba(0 0 0 / 0)){
+.symbol__front{
+    color:rgba( 0 245 255 / var(--tw-text-opacity, 1));
+  }
+}
+
+.symbol__back{
+  position:absolute;
+  bottom:0px;
+  left:0px;
+  top:0px;
+  z-index:1;
+  height:100%;
+  width:100%;
+  --tw-text-opacity:1;
+  color:rgba( 39 39 39 / 1);
+  --tw-ring-offset-shadow:var(--tw-ring-inset) 0 0 0 var(--tw-ring-offset-width) var(--tw-ring-offset-color);
+  --tw-ring-shadow:var(--tw-ring-inset) 0 0 0 calc(0px + var(--tw-ring-offset-width)) var(--tw-ring-color);
+  box-shadow:var(--tw-ring-offset-shadow), var(--tw-ring-shadow), 0 0 #0000;
+  box-shadow:var(--tw-ring-offset-shadow), var(--tw-ring-shadow), var(--tw-shadow, 0 0 #0000);
+}
+
+@supports (color: rgba(0 0 0 / 0)){
+.symbol__back{
+    color:rgba( 39 39 39 / var(--tw-text-opacity, 1));
+  }
+}
+
 @media (max-width: 76.875rem){
 
 .s1{
@@ -2667,6 +2784,10 @@ body{
    .info-caption__c{
     font-size:1.6rem;
     line-height:2.08rem;
+  }
+   .badge__txt{
+    font-size:1.44rem;
+    line-height:2.16rem;
   }
 }
 
