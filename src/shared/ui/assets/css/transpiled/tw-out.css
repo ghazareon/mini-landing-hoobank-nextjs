@@ -362,6 +362,12 @@ body::-webkit-resizer{
  -webkit-text-fill-color:transparent;
 }
 
+.icons--arrow-top-right{
+  aspect-ratio:12.45/11.36;
+  height:auto;
+  width:1.2449999999999999rem;
+}
+
 .icons--fb{
   aspect-ratio:21/21;
   height:auto;
@@ -503,10 +509,6 @@ body::-webkit-resizer{
 
 .block{
   display:block;
-}
-
-.\!hidden{
-  display:none !important;
 }
 
 .grow{
@@ -1974,6 +1976,96 @@ body{
 .symbol__back{
     color:rgba( 39 39 39 / var(--tw-text-opacity, 1));
   }
+}
+
+.unique-btn{
+  z-index:10;
+  z-index:var(--z-index-10);
+  display:flex;
+  aspect-ratio:1;
+  height:14.01rem;
+  width:14.01rem;
+  align-items:center;
+  justify-content:center;
+  border-radius:50.01%;
+  font-size:1.8rem;
+  font-weight:500;
+  font-weight:var(--font-weight-500);
+  line-height:2.7rem;
+  --tw-text-opacity:1;
+  color:rgba( 255 255 255   / 1);
+  position:relative;
+  left:0px;
+  top:0px;
+}
+
+@supports (color: rgba(0 0 0 / 0)){
+.unique-btn{
+    color:rgba( 255 255 255   / var(--tw-text-opacity, 1));
+  }
+}
+
+.unique-btn__txt{
+  display:block;
+  position:relative;
+  top:0;
+  right:0;
+  background-image:radial-gradient(
+    64.33% 64.33% at 71.16% 35.69%,
+    #def9fa 0.89%,
+    #bef3f5 17.23%,
+    #9dedf0 42.04%,
+    #7de7eb 55.12%,
+    #5ce1e6 71.54%,
+    #33bbcf 100%
+  );
+  background-image:var(--background-image-grad-aqua-r-100);
+ -webkit-background-clip:text;
+ -webkit-text-fill-color:transparent;
+ }
+
+.unique-btn__ic{
+  position:absolute;
+  right:0.5rem;
+  top:0.7rem;
+  height:auto;
+  --tw-text-opacity:1;
+  color:rgba( 51 187 207 / 1);
+}
+
+@supports (color: rgba(0 0 0 / 0)){
+.unique-btn__ic{
+    color:rgba( 51 187 207 / var(--tw-text-opacity, 1));
+  }
+}
+
+.unique-btn:after{
+  position:absolute;
+  inset:0px;
+  display:block;
+  border-radius:inherit;
+  border-width:3px;
+  border-style:solid;
+  border-color:transparent;
+  --tw-content:"";
+  content:"";
+  content:var(--tw-content);
+
+  background:radial-gradient(
+    64.33% 64.33% at 71.16% 35.69%,
+    #def9fa 0.89%,
+    #bef3f5 17.23%,
+    #9dedf0 42.04%,
+    #7de7eb 55.12%,
+    #5ce1e6 71.54%,
+    #33bbcf 100%
+   ) border-box;
+
+  -webkit-mask:linear-gradient(#fff 0 0) padding-box, linear-gradient(#fff 0 0);
+
+  mask:linear-gradient(#fff 0 0) padding-box, linear-gradient(#fff 0 0);
+  -webkit-mask-composite:destination-out;
+  mask-composite:exclude;
 }
 
 @media (max-width: 76.875rem){

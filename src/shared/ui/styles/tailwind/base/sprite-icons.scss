@@ -1,4 +1,8 @@
 .icons {
+  &--arrow-top-right {
+    @apply aspect-[12.45/11.36] w-[1.2449999999999999rem] h-auto;
+  }
+
   &--fb {
     @apply aspect-[21/21] w-[2.1rem] h-auto;
   }

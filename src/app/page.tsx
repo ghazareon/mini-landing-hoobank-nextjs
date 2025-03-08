@@ -50,6 +50,20 @@ export default async function Home() {
  return (
   <Div className="wrap">
    <Main>
+    <Link href="#" className="unique-btn">
+     <Span className="unique-btn__txt">
+      Get
+      <Br />
+      Started
+      <SvgSprite
+       name="arrow-top-right"
+       width="12.45"
+       height="11.36"
+       className="unique-btn__ic"
+      />
+     </Span>
+    </Link>
+
     <Div className="badge">
      <Div className="symbol">
       <SvgSprite
