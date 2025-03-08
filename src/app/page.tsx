@@ -50,6 +50,27 @@ export default async function Home() {
  return (
   <Div className="wrap">
    <Main>
+    <Div className="badge">
+     <Div className="symbol">
+      <SvgSprite
+       name="percent"
+       width="9.19"
+       height="9.19"
+       className="symbol__front"
+      />
+      <SvgSprite
+       name="shape-stamp"
+       width="26.67"
+       height="26.68"
+       className="symbol__back"
+      />
+     </Div>
+     <Div className="badge__txt">
+      <Span className="text-white">20%</Span> DISCOUNT FOR{" "}
+      <Span className="text-white">1 MONTH</Span> ACCOUNT
+     </Div>
+    </Div>
+
     {/*  */}
     <Div className="collage-200">
      <Div className="ball ball--1"></Div>

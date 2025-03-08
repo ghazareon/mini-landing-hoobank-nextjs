@@ -1035,3 +1035,64 @@ body {
 									w-[11.29296235679214%];
  }
 }
+
+.badge {
+ @apply rel
+								z-[1]
+								inline-flex
+								items-center
+								gap-x-[1rem]
+								overflow-hidden
+								rounded-[1.01rem]
+								pb-[0.7rem]
+								pl-[1rem]
+								pr-[2rem]
+								pt-[0.6rem];
+
+ &:after {
+  @apply absolute
+									inset-0
+									z-[-1]
+									block
+									content-[""];
+
+  background-image: svg-load(
+   ../../../../../public/assets/svg/gradients/gradient-badge.svg
+  );
+ }
+
+ &__txt {
+  @apply badge-v1
+									inline-block
+									text-white/70;
+ }
+}
+
+.symbol {
+ @apply rel
+								block
+								aspect-square
+								w-[26.68px];
+
+ &__front {
+  @apply absolute
+									left-[50%]
+									top-[50%]
+									z-10
+									translate-x-[-50%]
+									translate-y-[-50%]
+							text-aqua-275;
+ }
+
+ &__back {
+  @apply absolute
+									bottom-0
+									left-0
+									top-0
+									z-[1]
+									h-full
+									w-full
+							text-gray-275
+									ring-0;
+ }
+}
