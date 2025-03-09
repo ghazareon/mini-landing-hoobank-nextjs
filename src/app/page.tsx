@@ -90,8 +90,7 @@ export default async function Home() {
        </Div>
        <Div className="grid-200__it">
         <H1 className="main-title">
-         The Next Generation Payment Method.
-         {/*  */}
+         The Next <Span>Generation</Span> Payment Method.
          <Link href="#" className="unique-btn">
           <Span className="unique-btn__txt">
            Get
@@ -105,7 +104,6 @@ export default async function Home() {
            />
           </Span>
          </Link>
-         {/*  */}
         </H1>
        </Div>
        <Div className="grid-200__it">
@@ -114,9 +112,31 @@ export default async function Home() {
          most likely to fit your needs. We examine annual percentage rates,
          annual fees.
         </P>
-        <Link href="#" className="btn btn--s-200">
-         Get Started
-        </Link>
+
+        <Div className="app-store-btns">
+         <Link href="#" className="app-store-btn" target="_blank">
+          <Img
+           src="assets/svg/logos/app-store.svg"
+           width="108.75"
+           height="27.53"
+           className="btn-img btn-img--app-store"
+          />
+         </Link>
+         <Link href="#" className="app-store-btn" target="_blank">
+          <Img
+           src="assets/svg/logos/google-play.svg"
+           width="101.25"
+           height="24.2"
+           className="btn-img btn-img--google-play"
+          />
+         </Link>
+        </Div>
+
+        <Div className="btn-cell">
+         <Link href="#" className="btn btn--s-200">
+          Get Started
+         </Link>
+        </Div>
        </Div>
        <Div className="grid-200__it">
         {/*  */}
@@ -369,14 +389,14 @@ export default async function Home() {
         src="assets/svg/logos/airbnb.svg"
         width="192.21"
         height="59.99"
-        alt="logo airbnb"
+        alt="airbnb"
         className="logo-it logo-it--airbnb"
        />
        <Img
         src="assets/svg/logos/binance.svg"
         width="192.24"
         height="38.63"
-        alt="logo binance"
+        alt="binance"
         className="logo-it logo-it--binance"
        />
        <Img
@@ -423,180 +443,165 @@ export default async function Home() {
      </Div>
     </Section>
 
-    <Section className="s-1000">
-     <Div className="s-1000__fix fix">
-      <I className="break-line"></I>
+    <Footer>
+     <Section className="s-1000">
+      <Div className="s-1000__fix fix">
+       <I className="break-line"></I>
 
-      <Div className="grid-1000">
-       <Div className="grid-1000__it">
-        <Link href="#" className="logo logo--2">
-         <Img
-          src="assets/svg/logo-2.svg"
-          alt=""
-          width="264.79"
-          height="72.14"
-         />
-        </Link>
+       <Div className="grid-1000">
+        <Div className="grid-1000__it">
+         <Link href="#" className="logo logo--2">
+          <Img
+           src="assets/svg/logo-2.svg"
+           alt=""
+           width="264.79"
+           height="72.14"
+          />
+         </Link>
 
-        <Div className="s-1000__txt">
-         A new way to make the payments easy, reliable and secure.
+         <Div className="s-1000__txt">
+          A new way to make the payments easy, reliable and secure.
+         </Div>
+        </Div>
+        <Div className="grid-1000__it">
+         <H4 className="h4-1000 h4-1000--s-1000">Usefull Links</H4>
+         <Ul className="l-1000 l-1000--s-1000">
+          <Li className="l-1000__li">
+           <Link className="l-1000__a" href="#">
+            Content
+           </Link>
+          </Li>
+          <Li className="l-1000__li">
+           <Link href="#" className="l-1000__a">
+            How it Works
+           </Link>
+          </Li>
+          <Li className="l-1000__li">
+           <Link href="#" className="l-1000__a">
+            Create
+           </Link>
+          </Li>
+          <Li className="l-1000__li">
+           <Link href="#" className="l-1000__a">
+            Explore
+           </Link>
+          </Li>
+          <Li className="l-1000__li">
+           <Link href="#" className="l-1000__a">
+            Terms & Services
+           </Link>
+          </Li>
+         </Ul>
+        </Div>
+        <Div className="grid-1000__it">
+         <H4 className="h4-1000 h4-1000--s-1000">Community</H4>
+
+         <Ul className="l-1000 l-1000--s-1000">
+          <Li className="l-1000__li">
+           <Link href="#" className="l-1000__a">
+            Help Center
+           </Link>
+          </Li>
+          <Li className="l-1000__li">
+           <Link href="#" className="l-1000__a">
+            Partners
+           </Link>
+          </Li>
+          <Li className="l-1000__li">
+           <Link href="#" className="l-1000__a">
+            Suggestions
+           </Link>
+          </Li>
+          <Li className="l-1000__li">
+           <Link href="#" className="l-1000__a">
+            Blog
+           </Link>
+          </Li>
+          <Li className="l-1000__li">
+           <Link href="#" className="l-1000__a">
+            Newsletters
+           </Link>
+          </Li>
+         </Ul>
+        </Div>
+        <Div className="grid-1000__it">
+         <H4 className="h4-1000 h4-1000--s-1000">Partner</H4>
+         <Ul className="l-1000 l-1000--s-1000">
+          <Li className="l-1000__li">
+           <Link href="#" className="l-1000__a">
+            Our Partner
+           </Link>
+          </Li>
+          <Li className="l-1000__li">
+           <Link href="#" className="l-1000__a">
+            Become a Partner
+           </Link>
+          </Li>
+         </Ul>
         </Div>
        </Div>
-       <Div className="grid-1000__it">
-        <H4 className="h4-1000 h4-1000--s-1000">Usefull Links</H4>
-        <Ul className="l-1000 l-1000--s-1000">
-         <Li className="l-1000__li">
-          <Link className="l-1000__a" href="#">
-           Content
-          </Link>
-         </Li>
-         <Li className="l-1000__li">
-          <Link href="#" className="l-1000__a">
-           How it Works
-          </Link>
-         </Li>
-         <Li className="l-1000__li">
-          <Link href="#" className="l-1000__a">
-           Create
-          </Link>
-         </Li>
-         <Li className="l-1000__li">
-          <Link href="#" className="l-1000__a">
-           Explore
-          </Link>
-         </Li>
-         <Li className="l-1000__li">
-          <Link href="#" className="l-1000__a">
-           Terms & Services
-          </Link>
-         </Li>
-        </Ul>
-       </Div>
-       <Div className="grid-1000__it">
-        <H4 className="h4-1000 h4-1000--s-1000">Community</H4>
+      </Div>
+     </Section>
 
-        <Ul className="l-1000 l-1000--s-1000">
-         <Li className="l-1000__li">
-          <Link href="#" className="l-1000__a">
-           Help Center
-          </Link>
-         </Li>
-         <Li className="l-1000__li">
-          <Link href="#" className="l-1000__a">
-           Partners
-          </Link>
-         </Li>
-         <Li className="l-1000__li">
-          <Link href="#" className="l-1000__a">
-           Suggestions
-          </Link>
-         </Li>
-         <Li className="l-1000__li">
-          <Link href="#" className="l-1000__a">
-           Blog
-          </Link>
-         </Li>
-         <Li className="l-1000__li">
-          <Link href="#" className="l-1000__a">
-           Newsletters
-          </Link>
-         </Li>
-        </Ul>
-       </Div>
-       <Div className="grid-1000__it">
-        <H4 className="h4-1000 h4-1000--s-1000">Partner</H4>
-        <Ul className="l-1000 l-1000--s-1000">
-         <Li className="l-1000__li">
-          <Link href="#" className="l-1000__a">
-           Our Partner
-          </Link>
-         </Li>
-         <Li className="l-1000__li">
-          <Link href="#" className="l-1000__a">
-           Become a Partner
-          </Link>
-         </Li>
-        </Ul>
+     <Section className="s-1100">
+      <Div className="s-1100__fix fix">
+       <I className="break-line"></I>
+       <Div className="grid-1100">
+        <Div className="s-1100__txt">
+         © 2021-{new Date().getFullYear()}&nbsp;
+         <Span className="logo-txt">
+          <Span className="logo-txt__p1">Hoo</Span>
+          <Span className="logo-txt__p2">Bank</Span>.
+         </Span>
+         <Br />
+         All Rights Reserved.
+        </Div>
+
+        <Div className="soc-pages">
+         <Link href="#" className="soc-page soc-page--inst">
+          <Img
+           src="assets/svg/icons/inst.svg"
+           width="21"
+           height="21"
+           alt=""
+           className="soc-page__ic soc-page__ic--inst"
+          />
+         </Link>
+
+         <Link href="#" className="soc-page soc-page--fb">
+          <Img
+           src="assets/svg/icons/fb.svg"
+           width="21"
+           height="21"
+           alt=""
+           className="soc-page__ic soc-page__ic--fb"
+          />
+         </Link>
+
+         <Link href="#" className="soc-page soc-page--tw">
+          <Img
+           src="assets/svg/icons/tw.svg"
+           width="23"
+           height="19"
+           alt=""
+           className="soc-page__ic soc-page__ic--tw"
+          />
+         </Link>
+
+         <Link href="#" className="soc-page soc-page--tw">
+          <Img
+           src="assets/svg/icons/in.svg"
+           width="20.99"
+           height="20.99"
+           alt=""
+           className="soc-page__ic soc-page__ic--in"
+          />
+         </Link>
+        </Div>
        </Div>
       </Div>
-     </Div>
-    </Section>
-
-    <Section className="s-1100">
-     <Div className="s-1100__fix fix">
-      <I className="break-line"></I>
-      <Div className="grid-1100">
-       <Div className="s-1100__txt">
-        © 2021-{new Date().getFullYear()}&nbsp;
-        <Span className="logo-txt">
-         <Span className="logo-txt__p1">Hoo</Span>
-         <Span className="logo-txt__p2">Bank</Span>.
-        </Span>
-        <Br />
-        All Rights Reserved.
-       </Div>
-
-       <Div className="soc-pages">
-        <Link href="#" className="soc-page soc-page--inst">
-         <Img
-          src="assets/svg/icons/inst.svg"
-          width="21"
-          height="21"
-          alt=""
-          className="soc-page__ic soc-page__ic--inst"
-         />
-        </Link>
-
-        <Link href="#" className="soc-page soc-page--fb">
-         <Img
-          src="assets/svg/icons/fb.svg"
-          width="21"
-          height="21"
-          alt=""
-          className="soc-page__ic soc-page__ic--fb"
-         />
-        </Link>
-
-        <Link href="#" className="soc-page soc-page--tw">
-         <Img
-          src="assets/svg/icons/tw.svg"
-          width="23"
-          height="19"
-          alt=""
-          className="soc-page__ic soc-page__ic--tw"
-         />
-        </Link>
-
-        <Link href="#" className="soc-page soc-page--tw">
-         <Img
-          src="assets/svg/icons/in.svg"
-          width="20.99"
-          height="20.99"
-          alt=""
-          className="soc-page__ic soc-page__ic--in"
-         />
-        </Link>
-       </Div>
-
-       {/* <SocPages data={SocPagesData} /> */}
-
-       {/* <Div className="soc-pages">
-        <Link href="#" className="soc-page soc-page--inst">
-         <SvgSprite name="inst" width="21" height="21" className="soc-page__ic-svg" />
-        </Link>
-        <Link href="#" className="soc-page soc-page--fb">
-         <SvgSprite name="fb" width="21" height="21" className="soc-page__ic-svg" />
-        </Link>
-        <Link href="#" className="soc-page soc-page--tw">
-         <SvgSprite name="tw" width="23" height="19" className="soc-page__ic-svg" />
-        </Link>
-        <Link href="#" className="soc-page soc-page--in">
-         <SvgSprite name="in" width="20.99" height="20.99" className="soc-page__ic-svg"/>
-        </Link>
-       </Div> */}
-      </Div>
-     </Div>
-    </Section>
+     </Section>
+    </Footer>
    </Main>
   </Div>
  );
