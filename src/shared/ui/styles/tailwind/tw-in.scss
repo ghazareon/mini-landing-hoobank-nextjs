@@ -1352,3 +1352,96 @@ body {
 								align-middle
 						text-aqua-250;
 }
+
+.app-store-btns {
+ @apply inline-flex
+								gap-x-[3.2rem]
+								pb-[1.01rem];
+
+ @media (max-width: $mdxxx) {
+  @apply flex-col gap-y-[2rem];
+ }
+}
+
+.app-store-btn {
+ @apply rel
+								z-[1]
+								flex
+								h-[4.5rem]
+								w-[13rem]
+								scale-100
+								items-center
+								justify-center
+								rounded-[0.7rem]
+						bg-black;
+
+ @apply transition-[transform,box-shadow]
+								duration-[0.16s,0.16s]
+								ease-[linear,linear]
+								will-change-[transform,box-shadow];
+
+ &:after {
+  @apply absolute
+									inset-0
+									z-[-1]
+									block
+									rounded-[inherit]
+									bg-grad-aqua-r-100
+									opacity-0
+									content-[""];
+
+  @apply transition-[opacity]
+									duration-[0.16s]
+									ease-[linear]
+									will-change-[opacity];
+ }
+
+ &:hover {
+  @apply translate-y-[-5px]
+									scale-[1.05];
+
+  @apply shadow-[0px_0px_39px_1px_rgba(0,247,255,0.5)];
+
+  &:after {
+   @apply opacity-100;
+  }
+ }
+}
+
+.btn-img {
+ &--google-play {
+  @apply h-[2.753rem]
+									w-[10.875rem];
+ }
+
+ &--app-store {
+  @apply h-[2.42rem]
+									w-[10.125rem];
+ }
+}
+
+.logo-it {
+ &--airbnb {
+  @apply h-[5.999rem]
+									w-[19.221rem];
+ }
+
+ &--binance {
+  @apply h-[3.863rem]
+									w-[19.224rem];
+ }
+
+ &--coinbase {
+  @apply h-[4.125rem]
+									w-[18.901rem];
+ }
+
+ &--dropbox {
+  @apply h-[3.786rem]
+									w-[19.225rem];
+ }
+}
+
+.wrap {
+ @apply overflow-x-hidden;
+}
