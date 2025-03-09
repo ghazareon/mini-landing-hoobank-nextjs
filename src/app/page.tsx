@@ -107,6 +107,7 @@ export default async function Home() {
            src="assets/svg/logos/app-store.svg"
            width="108.75"
            height="27.53"
+           className="btn-img btn-img--app-store"
           />
          </Link>
          <Link href="#" className="app-store-btn" target="_blank">
@@ -114,6 +115,7 @@ export default async function Home() {
            src="assets/svg/logos/google-play.svg"
            width="101.25"
            height="24.2"
+           className="btn-img btn-img--google-play"
           />
          </Link>
         </Div>
@@ -376,14 +378,14 @@ export default async function Home() {
         src="assets/svg/logos/airbnb.svg"
         width="192.21"
         height="59.99"
-        alt="logo airbnb"
+        alt="airbnb"
         className="logo-it logo-it--airbnb"
        />
        <Img
         src="assets/svg/logos/binance.svg"
         width="192.24"
         height="38.63"
-        alt="logo binance"
+        alt="binance"
         className="logo-it logo-it--binance"
        />
        <Img
