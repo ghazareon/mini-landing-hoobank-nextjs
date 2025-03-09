@@ -473,7 +473,7 @@ body {
    "it-3 it-3 it-3 it-3 it-3 it-3 it-4 it-4 it-4 it-4 it-4 it-4";
 
   .logo-it {
-   justify-self: center;
+   @apply justify-self-center;
 
    &:nth-child(1) {
     grid-area: it-1;
@@ -521,7 +521,7 @@ body {
 
   filter: brightness(0) saturate(100%) invert(72%) sepia(18%) saturate(2709%)
    hue-rotate(137deg) brightness(103%) contrast(111%)
-   drop-shadow(0 0 39px rgb(0, 245, 255));
+   drop-shadow(0 0 15px rgb(0, 245, 255));
  }
 
  &--airbnb {
@@ -726,6 +726,10 @@ body {
 
   &:nth-child(3) {
    grid-area: it-3;
+
+   @media (max-width: $mdxxx) {
+    text-align: center;
+   }
   }
 
   &:nth-child(4) {
@@ -999,6 +1003,7 @@ body {
 								z-[1]
 								inline-flex
 								gap-x-[1rem]
+								self-center
 								overflow-hidden
 								rounded-[1.01rem]
 								pb-[0.7rem]
@@ -1030,7 +1035,8 @@ body {
  @apply rel
 								block
 								aspect-square
-								w-[2.668rem];
+								w-[2.668rem]
+								self-start;
 
  &__front {
   @apply absolute
@@ -1183,6 +1189,11 @@ body {
 
   .main-title {
    @apply ~pb-[2rem]/[4rem];
+
+   & > span {
+    @apply text-gradient
+											bg-grad-aqua-r-100;
+   }
   }
 
   .main-descr {
@@ -1296,6 +1307,10 @@ body {
  @apply inline-flex
 								gap-x-[3.2rem]
 								pb-[1.01rem];
+
+ @media (max-width: $mdxxx) {
+  @apply flex-col gap-y-[2rem];
+ }
 }
 
 .app-store-btn {
@@ -1335,7 +1350,7 @@ body {
   @apply translate-y-[-5px]
 									scale-[1.05];
 
-  @apply shadow-[0px_0px_39px_1px_rgba(0,247,255,1)];
+  @apply shadow-[0px_0px_39px_1px_rgba(0,247,255,0.5)];
 
   &:after {
    @apply opacity-100;
