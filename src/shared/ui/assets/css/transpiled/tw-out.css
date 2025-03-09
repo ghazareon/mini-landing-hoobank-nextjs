@@ -517,6 +517,10 @@ body::-webkit-resizer{
   display:block;
 }
 
+.\!hidden{
+  display:none !important;
+}
+
 .grow{
   flex-grow:1;
 }
