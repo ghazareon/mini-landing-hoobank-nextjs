@@ -1303,3 +1303,53 @@ body {
  @apply display-v1
 						text-white;
 }
+
+.card-600-1 {
+ @apply block
+								aspect-[191/158]
+								w-full
+								max-w-[19.1rem]
+								rounded-[1rem]
+								p-[2.01rem]
+								text-center;
+
+ background-image: svg-load(
+  ../../../../../public/assets/svg/gradients/gradient-start.svg
+ );
+
+ &__t {
+  @apply block
+									pb-[0.4rem]
+									text-[1.6rem]
+									font-600
+									leading-[2.6rem]
+							text-white;
+ }
+
+ &__d {
+  @apply text-center
+									text-[1.2rem]
+									font-400
+									leading-[1.9rem]
+									tracking-[0.01em]
+							text-white/70;
+ }
+
+ &__symbol-box {
+  @apply mb-[1.6rem]
+									block;
+ }
+}
+
+.symbol-box {
+ @apply mx-auto
+								flex
+								h-[3.4rem]
+								w-[3.4rem]
+								items-center
+								justify-center
+								rounded-[1rem]
+						bg-gray-350
+								align-middle
+						text-aqua-250;
+}

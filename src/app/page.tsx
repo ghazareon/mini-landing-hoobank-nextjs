@@ -50,9 +50,21 @@ export default async function Home() {
  return (
   <Div className="wrap">
    <Main>
-    <Section className="s-200">
+    <Div className="card-600-1">
+     <Div className="symbol-box card-600-1__symbol-box">
+      <SvgSprite
+       className="card-600-1__ic"
+       name="scan"
+       width="22"
+       height="18.01"
+      />
+     </Div>
+     <Div className="card-600-1__t">Scan Credit Cards</Div>
+     <Div className="card-600-1__d">Scan yourcredit card in 4 minutes.</Div>
+    </Div>
+
+    <Section className="s-200 !hidden">
      <Div className="s-200__fix fix">
-      {/*  */}
       <Div className="grid-200">
        <Div className="grid-200__it">
         <Div className="badge">
@@ -157,11 +169,10 @@ export default async function Home() {
         {/*  */}
        </Div>
       </Div>
-      {/*  */}
      </Div>
     </Section>
 
-    <Section className="s-300">
+    <Section className="s-300 !hidden">
      <Div className="s-300__fix fix">
       <Div className="grid-300">
        <Div className="info-caption">
@@ -182,7 +193,7 @@ export default async function Home() {
      </Div>
     </Section>
 
-    <Section className="s-500">
+    <Section className="s-500 !hidden">
      <Div className="s-500__fix fix">
       <Div className="grid-500">
        <Div className="grid-500__it">
@@ -351,7 +362,7 @@ export default async function Home() {
      </Div>
     </Section>
 
-    <Section className="s-800">
+    <Section className="s-800 !hidden">
      <Div className="s-800__fix fix">
       <Div className="grid-800">
        <Img
@@ -392,7 +403,7 @@ export default async function Home() {
      </Div>
     </Section>
 
-    <Section className="s-900">
+    <Section className="s-900 !hidden">
      <Div className="s-900__fix fix">
       <Div className="box-900">
        <Div className="grid-900">
@@ -412,7 +423,7 @@ export default async function Home() {
      </Div>
     </Section>
 
-    <Section className="s-1000">
+    <Section className="s-1000 !hidden">
      <Div className="s-1000__fix fix">
       <I className="break-line"></I>
 
@@ -511,7 +522,7 @@ export default async function Home() {
      </Div>
     </Section>
 
-    <Section className="s-1100">
+    <Section className="s-1100 !hidden">
      <Div className="s-1100__fix fix">
       <I className="break-line"></I>
       <Div className="grid-1100">

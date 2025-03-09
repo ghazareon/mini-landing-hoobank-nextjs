@@ -23,6 +23,10 @@
     @apply aspect-[42.6/27.6] w-[4.26rem] h-auto;
   }
 
+  &--scan {
+    @apply aspect-[22/18.01] w-[2.2rem] h-auto;
+  }
+
   &--secure {
     @apply aspect-[27.19/32] w-[2.7190000000000003rem] h-auto;
   }
