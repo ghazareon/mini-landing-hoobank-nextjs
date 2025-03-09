@@ -79,7 +79,6 @@ export default async function Home() {
        <Div className="grid-200__it">
         <H1 className="main-title">
          The Next Generation Payment Method.
-         {/*  */}
          <Link href="#" className="unique-btn">
           <Span className="unique-btn__txt">
            Get
@@ -93,7 +92,6 @@ export default async function Home() {
            />
           </Span>
          </Link>
-         {/*  */}
         </H1>
        </Div>
        <Div className="grid-200__it">
@@ -104,13 +102,27 @@ export default async function Home() {
         </P>
 
         <Div className="app-store-btns">
-         <Link href="#" className="app-store-btn" target="_blank"></Link>
-         <Link href="#" className="app-store-btn" target="_blank"></Link>
+         <Link href="#" className="app-store-btn" target="_blank">
+          <Img
+           src="assets/svg/logos/app-store.svg"
+           width="108.75"
+           height="27.53"
+          />
+         </Link>
+         <Link href="#" className="app-store-btn" target="_blank">
+          <Img
+           src="assets/svg/logos/google-play.svg"
+           width="101.25"
+           height="24.2"
+          />
+         </Link>
         </Div>
 
-        <Link href="#" className="btn btn--s-200">
-         Get Started
-        </Link>
+        <Div className="btn-cell">
+         <Link href="#" className="btn btn--s-200">
+          Get Started
+         </Link>
+        </Div>
        </Div>
        <Div className="grid-200__it">
         {/*  */}
