@@ -50,9 +50,21 @@ export default async function Home() {
  return (
   <Div className="wrap">
    <Main>
+    <Div className="card-600-1">
+     <Div className="symbol-box card-600-1__symbol-box">
+      <SvgSprite
+       className="card-600-1__ic"
+       name="scan"
+       width="22"
+       height="18.01"
+      />
+     </Div>
+     <Div className="card-600-1__t">Scan Credit Cards</Div>
+     <Div className="card-600-1__d">Scan yourcredit card in 4 minutes.</Div>
+    </Div>
+
     <Section className="s-200">
      <Div className="s-200__fix fix">
-      {/*  */}
       <Div className="grid-200">
        <Div className="grid-200__it">
         <Div className="badge">
@@ -157,7 +169,6 @@ export default async function Home() {
         {/*  */}
        </Div>
       </Div>
-      {/*  */}
      </Div>
     </Section>
 
@@ -274,7 +285,7 @@ export default async function Home() {
      </Div>
     </Section>
 
-    <Section className="s-700 !hidden">
+    <Section className="s-700">
      <Div className="s-700__fix fix">
       <Div className="grid-700">
        <H2 className="s__t s__t--s-700">What people ares aying about us</H2>
