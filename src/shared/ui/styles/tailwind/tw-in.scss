@@ -449,14 +449,15 @@ body {
 								~pb-[0.9rem]/[1.8rem]
 								~pl-[1.65rem]/[3.3rem];
 
- @apply transition-[box-shadow,transform]
-								duration-[0.16s,0.16s]
-								ease-[ease-out,ease-out]
-								will-change-[box-shadow,transform];
+ @apply transition-[box-shadow,transform,color]
+								duration-[0.12s,0.12s,0.14s]
+								ease-[ease-out,ease-out,linear]
+								will-change-[box-shadow,transform,color];
 
  // .btn:hover
  &:hover {
   @apply scale-[1.08]
+							text-white
 									shadow-[0px_0px_39px_1px_rgba(0,247,255,0.65)];
  }
 
@@ -1114,35 +1115,23 @@ body {
 								text-[1.8rem]
 								font-500
 								leading-[2.7rem]
-								text-white
+						text-white
 								~w-[12.01rem]/[14.01rem];
 
- &__txt {
-  @apply text-gradient
-									relative
-									right-0
-									top-0
-									block
-									bg-grad-aqua-r-100;
- }
-
- &__ic {
-  @apply absolute
-									right-[0.5rem]
-									top-[0.7rem]
-									h-auto
-							text-aqua-325;
- }
+ @apply transition-[box-shadow,transform]
+								duration-[0.16s,0.12s]
+								ease-[linear,linear]
+								will-change-[box-shadow,transform];
 
  &:after {
   @apply absolute
-									inset-0
-									block
-									rounded-[inherit]
-									border-[3px]
-									border-solid
-									border-transparent
-									content-[""];
+																inset-0
+																block
+																rounded-[inherit]
+																border-[3px]
+																border-solid
+																border-transparent
+																content-[""];
 
   background: radial-gradient(
     64.33% 64.33% at 71.16% 35.69%,
@@ -1165,10 +1154,55 @@ body {
   -webkit-mask-composite: destination-out;
   mask-composite: exclude;
  }
+
+ &:before {
+  @apply absolute
+									inset-0
+									right-0
+									top-0
+									block
+									h-full
+									w-full
+									rounded-[50%]
+									bg-grad-aqua-r-100
+									opacity-0
+									content-[""];
+
+  @apply transition-[opacity]
+									duration-[0.16s]
+									ease-[linear]
+									will-change-[opacity];
+ }
+
+ &:hover {
+  @apply translate-y-[-5.02px]
+									scale-[1.06]
+									shadow-[0px_0px_39px_1px_rgba(0,247,255,0.5)];
+
+  &:before {
+   @apply opacity-100;
+  }
+ }
+
+ &__txt {
+  @apply text-gradient
+									relative
+									right-0
+									top-0
+									block
+									bg-grad-aqua-r-100;
+ }
+
+ &__ic {
+  @apply absolute
+									right-[0.5rem]
+									top-[0.7rem]
+									h-auto
+							text-aqua-325;
+ }
 }
 
 .s-200 {
- @apply overflow-hidden;
  &__fix {
   /*   @apply pb-[6.3rem]
 									pt-[15.7rem]; */
@@ -1186,8 +1220,66 @@ body {
   "it-3 it-3 it-3 it-3 it-3 it-3 it-3 it-4 it-4 it-4 it-4 it-4"
   "it-5 it-5 it-5 it-5 it-5 it-5 it-5 it-4 it-4 it-4 it-4 it-4";
 
+ &__it {
+  @apply min-h-max;
+
+  .unique-btn {
+   @apply absolute
+										left-[inherit]
+										right-[2.3rem]
+										top-0;
+  }
+
+  .badge {
+   @apply mb-[0.4rem];
+  }
+
+  .main-title {
+   @apply ~pb-[2rem]/[4rem];
+  }
+
+  .main-descr {
+   @apply max-w-[48.3rem]
+										~mb-[2rem]/[4rem];
+  }
+
+  &:nth-child(1) {
+   grid-area: it-1;
+   @apply ~pt-[4.1rem]/[15.7rem];
+  }
+
+  &:nth-child(2) {
+   @apply rel;
+   grid-area: it-2;
+  }
+
+  &:nth-child(3) {
+   grid-area: it-3;
+   .btn-cell {
+    @apply hidden;
+   }
+  }
+
+  &:nth-child(4) {
+   grid-area: it-4;
+
+   @apply relative
+										right-0
+										top-0;
+
+   .collage-200 {
+    @apply absolute
+											bottom-[initial]
+											left-[-1.7rem]
+											top-[3.501rem]
+											w-[130%];
+   }
+  }
+ }
+
  @media (max-width: $lg) {
   @apply grid-cols-[repeat(6,1fr)];
+
   grid-template-areas:
    "it-1 it-1 it-1 it-1 it-1 it-1"
    "it-2 it-2 it-2 it-2 it-2 it-2"
@@ -1235,62 +1327,10 @@ body {
   .unique-btn {
    @apply hidden;
   }
- }
 
- &__it {
-  @apply min-h-max;
-
-  .unique-btn {
-   @apply absolute
-										left-[inherit]
-										right-[2.3rem]
-										top-0;
-  }
-
-  .badge {
-   @apply mb-[0.4rem];
-  }
-
-  .main-title {
-   @apply ~pb-[2rem]/[4rem];
-  }
-
-  .main-descr {
-   @apply max-w-[48.3rem]
-										~mb-[2rem]/[4rem];
-  }
-
-  &:nth-child(1) {
-   grid-area: it-1;
-   @apply ~pt-[4.1rem]/[15.7rem];
-  }
-
-  &:nth-child(2) {
-   @apply rel;
-   grid-area: it-2;
-  }
-
-  &:nth-child(3) {
-   grid-area: it-3;
-   .btn {
-    @apply hidden;
-   }
-  }
-
-  &:nth-child(4) {
-   grid-area: it-4;
-
-   @apply relative
-										right-0
-										top-0;
-
-   .collage-200 {
-    @apply absolute
-											bottom-[initial]
-											left-[-1.7rem]
-											top-[3.501rem]
-											w-[130%];
-   }
+  .btn-cell {
+   @apply !block
+										text-center;
   }
  }
 }
@@ -1305,10 +1345,51 @@ body {
 						text-white;
 }
 
+.app-store-btns {
+ @apply inline-flex
+								gap-x-[3.2rem]
+								pb-[1.01rem];
+}
+
 .app-store-btn {
- @apply flex
+ @apply rel
+								z-[1]
+								flex
 								h-[4.5rem]
-								w-[13.01rem]
+								w-[13rem]
+								scale-100
 								items-center
-								justify-center;
+								justify-center
+								rounded-[0.7rem]
+						bg-black;
+
+ @apply transition-[transform,box-shadow]
+								duration-[0.16s,0.16s]
+								ease-[linear,linear]
+								will-change-[transform,box-shadow];
+
+ &:after {
+  @apply absolute
+									inset-0
+									z-[-1]
+									block
+									rounded-[inherit]
+									bg-grad-aqua-r-100
+									opacity-0
+									content-[""];
+
+  @apply transition-[opacity]
+									duration-[0.16s]
+									ease-[linear]
+									will-change-[opacity];
+ }
+
+ &:hover {
+  transform: scale(1.05) translateY(-5px);
+  @apply shadow-[0px_0px_39px_1px_rgba(0,247,255,1)];
+
+  &:after {
+   @apply opacity-100;
+  }
+ }
 }
