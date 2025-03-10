@@ -51,8 +51,13 @@ export interface CatIt {
  slug: s;
  taxonomy: s;
  parent: n;
+
+ excerpt: {
+  rendered: s;
+  protected: s;
+ };
  meta: any[];
- acf: any[];
+ acf: any[] | { [k: s]: s };
  _links: Links;
 }
 

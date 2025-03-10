@@ -607,6 +607,7 @@ body {
 .box-700 {
  @apply rel
 								z-[1]
+								mx-auto
 								min-h-[39.9rem]
 								w-full
 								max-w-[37rem]
@@ -1637,26 +1638,15 @@ body {
    "it-4 it-4 it-4 it-4 it-4 it-4 it-4 it-4 it-4 it-4 it-4 it-4";
 
   .collage-600 {
-   position: relative !important;
-   margin-bottom: 30px;
-   margin-left: auto;
-   margin-right: auto;
+   @apply !relative
+										mx-auto
+										mb-[3.002rem];
   }
 
   .card--610,
   .card--605,
   .card--600 {
-   position: relative;
-   top: 0;
-   right: 0;
-   bottom: 0;
-   left: 0;
-   margin-bottom: 20px;
-   width: 100% !important;
-   max-width: 100% !important;
-   @apply aspect-auto;
-   margin-left: 0;
-   margin-right: 0;
+   @apply relative inset-0 mx-0 mb-8 aspect-auto w-full max-w-full;
   }
  }
 

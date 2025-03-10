@@ -540,6 +540,10 @@ body::-webkit-resizer{
   display:block;
 }
 
+.\!hidden {
+  display:none !important;
+}
+
 .grow {
   flex-grow:1;
 }
@@ -1577,6 +1581,8 @@ body {
 
 .box-700 {
   z-index:1;
+  margin-left:auto;
+  margin-right:auto;
   min-height:39.9rem;
   width:100%;
   max-width:37rem;
@@ -3409,27 +3415,24 @@ body {
   grid-template-areas:"it-1 it-1 it-1 it-1 it-1 it-1 it-1 it-1 it-1 it-1 it-1 it-1" "it-5 it-5 it-5 it-5 it-5 it-5 it-5 it-5 it-5 it-5 it-5 it-5" "it-2 it-2 it-2 it-2 it-2 it-2 it-2 it-2 it-2 it-2 it-2 it-2" "it-3 it-3 it-3 it-3 it-3 it-3 it-3 it-3 it-3 it-3 it-3 it-3" "it-4 it-4 it-4 it-4 it-4 it-4 it-4 it-4 it-4 it-4 it-4 it-4"
 }
 
-  .grid-600 .collage-600{
-   position:relative !important;
-   margin-bottom:30px;
-   margin-left:auto;
-   margin-right:auto;
+  .grid-600 .collage-600 {
+    position:relative !important;
+    margin-left:auto;
+    margin-right:auto;
+    margin-bottom:3.002rem;
   }
 
   .grid-600 .card--610,
   .grid-600 .card--605,
-  .grid-600 .card--600{
-   position:relative;
-   top:0;
-   right:0;
-   bottom:0;
-   left:0;
-   margin-bottom:20px;
-   width:100% !important;
-   max-width:100% !important;
-   aspect-ratio:auto;
-   margin-left:0;
-   margin-right:0;
+  .grid-600 .card--600 {
+    position:relative;
+    inset:0px;
+    margin-left:0px;
+    margin-right:0px;
+    margin-bottom:2rem;
+    aspect-ratio:auto;
+    width:100%;
+    max-width:100%;
   }
 }
 
