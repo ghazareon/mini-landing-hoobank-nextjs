@@ -1473,7 +1473,8 @@ body {
  }
 
  &--600 {
-  @apply max-w-[19.1rem]
+  @apply aspect-[191/158]
+									max-w-[35.70093457943925%]
 									text-center;
 
   .symbol-600 {
@@ -1493,7 +1494,7 @@ body {
 
  &--605 {
   @apply aspect-[259/241]
-									max-w-[25.9rem];
+									max-w-[47.85046728971963%];
 
   .arr-down {
    @apply text-white;
@@ -1513,7 +1514,8 @@ body {
  }
 
  &--610 {
-  @apply max-w-[26.2rem];
+  @apply aspect-[263/150]
+									max-w-[49.1588785046729%];
 
   .list-logos-610 {
    @apply pb-[1rem];
@@ -1598,12 +1600,12 @@ body {
   }
 
   &:after {
-   @apply bg-grad-aqua-l-200
-										absolute
+   @apply absolute
 										inset-[-5px]
 										z-[-1]
 										block
 										rounded-[0.502rem]
+										bg-grad-aqua-l-200
 										opacity-0
 										content-[""];
 
@@ -1611,6 +1613,148 @@ body {
 										duration-[0.16s]
 										ease-[linear]
 										will-change-[opacity];
+  }
+ }
+}
+
+.grid-600 {
+ @apply gap-x
+								grid
+								grid-cols-[repeat(12,1fr)];
+
+ grid-template-areas:
+  "it-1 it-1 it-1 it-1 it-1 it-1 it-5 it-5 it-5 it-5 it-5 it-5"
+  "it-2 it-2 it-2 it-2 it-2 it-2 it-5 it-5 it-5 it-5 it-5 it-5"
+  "it-3 it-3 it-3 it-3 it-3 it-3 it-5 it-5 it-5 it-5 it-5 it-5"
+  "it-4 it-4 it-4 it-4 it-4 it-4 it-5 it-5 it-5 it-5 it-5 it-5";
+
+ @media (max-width: $lgx) {
+  grid-template-areas:
+   "it-1 it-1 it-1 it-1 it-1 it-1 it-1 it-1 it-1 it-1 it-1 it-1"
+   "it-5 it-5 it-5 it-5 it-5 it-5 it-5 it-5 it-5 it-5 it-5 it-5"
+   "it-2 it-2 it-2 it-2 it-2 it-2 it-2 it-2 it-2 it-2 it-2 it-2"
+   "it-3 it-3 it-3 it-3 it-3 it-3 it-3 it-3 it-3 it-3 it-3 it-3"
+   "it-4 it-4 it-4 it-4 it-4 it-4 it-4 it-4 it-4 it-4 it-4 it-4";
+
+  .collage-600 {
+   position: relative !important;
+   margin-bottom: 30px;
+   margin-left: auto;
+   margin-right: auto;
+  }
+
+  .card--610,
+  .card--605,
+  .card--600 {
+   position: relative;
+   top: 0;
+   right: 0;
+   bottom: 0;
+   left: 0;
+   margin-bottom: 20px;
+   width: 100% !important;
+   max-width: 100% !important;
+   @apply aspect-auto;
+   margin-left: 0;
+   margin-right: 0;
+  }
+ }
+
+ &__it {
+  &:nth-child(1) {
+   grid-area: it-1;
+  }
+
+  &:nth-child(2) {
+   grid-area: it-2;
+  }
+
+  &:nth-child(3) {
+   grid-area: it-3;
+  }
+
+  &:nth-child(4) {
+   grid-area: it-4;
+  }
+
+  &:nth-child(5) {
+   grid-area: it-5;
+   @apply rel;
+
+   .collage-600 {
+    @apply absolute
+											left-[initial]
+											right-0
+											top-0;
+   }
+  }
+ }
+}
+
+.collage-600 {
+ .card {
+  &--600,
+  &--605,
+  &--610 {
+   @apply absolute;
+  }
+
+  &--600 {
+   @apply left-[1.2rem]
+										top-[20.5%];
+  }
+
+  &--605 {
+   @apply left-[initial]
+										right-0
+										top-0;
+  }
+
+  &--610 {
+   @apply bottom-0
+										left-[initial]
+										right-[25%]
+										top-[initial];
+  }
+ }
+
+ @apply rel
+								aspect-[535/454]
+								w-full
+								max-w-[53.5rem];
+
+ .rings {
+  @apply absolute
+									bottom-0
+									left-[1rem]
+									top-0
+									h-full
+									w-full
+									ring-0;
+ }
+}
+
+.rings {
+ @apply block
+								aspect-[1/1]
+								w-full;
+}
+
+.s-600 {
+ &__fix {
+  @apply ~pt-[5.7rem]/[11.8rem]
+									~pb-[3.35rem]/[6.7rem];
+
+  .s {
+   &__t {
+    @apply ~pt-[1.75rem]/[3.5rem]
+											~pb-[1.15rem]/[2.3rem];
+   }
+
+   &__d {
+    @apply max-w-[50rem]
+											pb-[1.4rem];
+   }
   }
  }
 }
