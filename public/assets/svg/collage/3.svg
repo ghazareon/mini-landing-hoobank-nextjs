@@ -26,6 +26,7 @@
    <stop offset="0" stop-color="#fff" stop-opacity=".7" />
    <stop offset=".67" stop-color="#f9f9f9" stop-opacity=".18" />
    <stop offset="1" stop-color="#f9f9f9" stop-opacity=".1" />
+   <stop offset="1" stop-color="#fff" stop-opacity=".2" />
   </linearGradient>
   <linearGradient
    id="linear-gradient-2"

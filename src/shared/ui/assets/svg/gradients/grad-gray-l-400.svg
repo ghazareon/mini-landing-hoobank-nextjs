@@ -1,0 +1,22 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 623.85 565.14">
+ <defs>
+  <style>
+   .cls-1 {
+    fill: url(#linear-gradient);
+   }
+  </style>
+  <linearGradient
+   id="linear-gradient"
+   x1="-1294.74"
+   y1="2187.2"
+   x2="505.46"
+   y2="54.78"
+   gradientTransform="translate(0 566.59) scale(1 -1)"
+   gradientUnits="userSpaceOnUse"
+  >
+   <stop offset="0" stop-color="#fff" />
+   <stop offset=".94" stop-color="#14101d" />
+  </linearGradient>
+ </defs>
+ <rect class="cls-1" width="623.85" height="565.14" />
+</svg>

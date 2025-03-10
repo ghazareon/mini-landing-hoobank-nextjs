@@ -627,6 +627,8 @@ body {
 									z-[-1]
 									block
 									rounded-[inherit]
+									bg-cover
+									bg-no-repeat
 									opacity-30
 									content-[""];
 
@@ -764,6 +766,8 @@ body {
 									block
 									h-full
 									w-full
+									bg-cover
+									bg-no-repeat
 									opacity-30
 									content-[""];
 
@@ -789,6 +793,7 @@ body {
   &__t {
    @apply pb-0;
   }
+
   &__d {
    @apply hidden;
   }
@@ -1017,6 +1022,8 @@ body {
 									inset-0
 									z-[-1]
 									block
+									bg-cover
+									bg-no-repeat
 									content-[""];
 
   background-image: svg-load(
@@ -1303,18 +1310,10 @@ body {
 						text-white;
 }
 
-.card-600-1 {
- @apply block
-								aspect-[191/158]
-								w-full
+.card-600 {
+ @apply aspect-[191/158]
 								max-w-[19.1rem]
-								rounded-[1rem]
-								p-[2.01rem]
 								text-center;
-
- background-image: svg-load(
-  ../../../../../public/assets/svg/gradients/gradient-start.svg
- );
 
  &__t {
   @apply block
@@ -1359,7 +1358,8 @@ body {
 								pb-[1.01rem];
 
  @media (max-width: $mdxxx) {
-  @apply flex-col gap-y-[2rem];
+  @apply flex-col
+									gap-y-[2rem];
  }
 }
 
@@ -1444,4 +1444,202 @@ body {
 
 .wrap {
  @apply overflow-x-hidden;
+}
+
+.card {
+ @apply rel
+								z-[1]
+								block
+								w-full
+								rounded-[1rem]
+								bg-cover
+								bg-no-repeat
+								p-[2.01rem];
+
+ &:after {
+  @apply absolute
+									inset-0
+									z-[-1]
+									rounded-[inherit]
+									content-[""];
+
+  background-image: svg-load(
+   ../../../../../public/assets/svg/gradients/gradient-start.svg
+  );
+ }
+
+ &__t {
+  @apply text-[1.6rem]
+									font-600
+									leading-[2.6rem]
+							text-white;
+ }
+
+ &__d {
+  @apply text-[1.2rem]
+									leading-[1.9rem]
+							text-white/70;
+ }
+
+ &__r {
+  @apply flex
+									justify-between;
+ }
+
+ &:after {
+  @apply absolute
+									inset-0
+									z-[-1]
+									rounded-[inherit]
+									bg-cover
+									bg-no-repeat
+									p-[2rem]
+									content-[""];
+
+  background-image: svg-load(
+   ../../../../../public/assets/svg/gradients/grad-gray-l-400.svg
+  );
+ }
+
+ &--600 {
+  @apply max-w-[19.1rem]
+									text-center;
+
+  .symbol-600 {
+   @apply mb-[1.001rem];
+  }
+
+  .card {
+   &__t {
+    @apply pb-[0.4rem];
+   }
+
+   &__d {
+    @apply pb-[0.4rem];
+   }
+  }
+ }
+
+ &--605 {
+  @apply aspect-[259/241]
+									max-w-[25.9rem];
+
+  .arr-down {
+   @apply text-white;
+  }
+
+  .card {
+   &__r {
+    @apply pb-[1rem];
+   }
+
+   &__d {
+    @apply flex
+											items-center
+											gap-[0.5rem];
+   }
+  }
+ }
+
+ &--610 {
+  @apply max-w-[26.2rem];
+
+  .list-logos-610 {
+   @apply pb-[1rem];
+  }
+
+  .card {
+   &__r {
+    @apply items-center
+											pb-[1.6rem];
+   }
+  }
+
+  .arr-down {
+   @apply text-white;
+  }
+ }
+}
+
+.symbol-600 {
+ @apply inline-flex
+								aspect-[1/1]
+								w-[3.4rem]
+								items-center
+								justify-center
+								rounded-[1rem]
+						bg-gray-350
+						text-aqua-250;
+}
+
+.list-logos-610 {
+ @apply flex
+								gap-x-[1rem];
+}
+
+.box-logo {
+ @apply flex
+								aspect-[1/1]
+								w-full
+								items-center
+								justify-center
+								rounded-[1.01rem]
+						bg-white;
+}
+
+.present-info {
+ &__t {
+  @apply block
+									text-[1.2rem]
+									font-500
+									leading-[1.3rem];
+ }
+
+ &__d {
+  @apply block
+									opacity-80;
+ }
+}
+
+.list-605 {
+ @apply flex
+								justify-between;
+
+ &__it {
+  @apply rel
+									z-[1]
+									text-[1rem]
+									font-400
+									leading-[1.3rem]
+							text-white/70;
+
+  @apply transition-[color]
+									duration-[0.16s]
+									ease-[linear]
+									will-change-[color];
+
+  &:hover {
+   @apply text-black;
+
+   &:after {
+    @apply opacity-100;
+   }
+  }
+
+  &:after {
+   @apply bg-grad-aqua-l-200
+										absolute
+										inset-[-5px]
+										z-[-1]
+										block
+										rounded-[0.502rem]
+										opacity-0
+										content-[""];
+
+   @apply transition-[opacity]
+										duration-[0.16s]
+										ease-[linear]
+										will-change-[opacity];
+  }
+ }
 }

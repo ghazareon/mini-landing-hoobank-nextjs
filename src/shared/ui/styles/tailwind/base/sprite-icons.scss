@@ -1,6 +1,18 @@
 .icons {
+  &--arr-down {
+    @apply aspect-[10/5] w-[1rem] h-auto;
+  }
+
+  &--arr-rounded-down {
+    @apply aspect-[9.82/8.7] w-[0.982rem] h-auto;
+  }
+
   &--arrow-top-right {
     @apply aspect-[12.45/11.36] w-[1.2449999999999999rem] h-auto;
+  }
+
+  &--check {
+    @apply aspect-[24/24] w-[2.4rem] h-auto;
   }
 
   &--fb {
