@@ -50,17 +50,101 @@ export default async function Home() {
  return (
   <Div className="wrap">
    <Main>
-    <Div className="card-600-1">
-     <Div className="symbol-box card-600-1__symbol-box">
-      <SvgSprite
-       className="card-600-1__ic"
-       name="scan"
-       width="22"
-       height="18.01"
+    <Div className="card card--610">
+     <Div className="card__r">
+      <H3 className="card__t">Pay Method</H3>
+      <SvgSprite name="arr-down" width="10" height="5" className="arr-down" />
+     </Div>
+
+     <Div className="list-logos-610">
+      <Div className="box-logo">
+       <Img
+        src="assets/svg/logos-pay/paypal.svg"
+        alt="paypal"
+        width="24"
+        height="27.32"
+       />
+      </Div>
+      <Div className="box-logo">
+       <Img
+        src="assets/svg/logos-pay/apple.svg"
+        alt="paypal"
+        width="20.49"
+        height="24.01"
+       />
+      </Div>
+      <Div className="box-logo">
+       <Img
+        src="assets/svg/logos-pay/visa.svg"
+        alt="paypal"
+        width="32"
+        height="9.7"
+       />
+      </Div>
+      <Div className="box-logo">
+       <Img
+        src="assets/svg/logos-pay/shopify.svg"
+        alt="paypal"
+        width="36.92"
+        height="10.53"
+       />
+      </Div>
+     </Div>
+    </Div>
+
+    <Div className="card card--600">
+     <Span className="symbol-600">
+      <SvgSprite className="scan" name="scan" width="22" height="18.01" />
+     </Span>
+     <H3 className="card__t">Scan Credit Cards</H3>
+     <P className="card__d">Scan yourcredit card in 4 minutes.</P>
+    </Div>
+
+    <Div className="card card--605">
+     <Div className="card__r">
+      <H3 className="card__t">Online Analysis</H3>
+      <P className="card__d">
+       1 Month
+       <SvgSprite
+        name="arr-down"
+        width="5.83"
+        height="2.92"
+        className="arr-down"
+       />
+      </P>
+     </Div>
+
+     <Div className="card__r">
+      <Div className="present-info text-green-100">
+       <Span className="present-info__t">$ 2,334,67</Span>
+       <Span className="present-info__d">Income</Span>
+      </Div>
+
+      <Div className="present-info text-aqua-300">
+       <Span className="present-info__t">$ 5.31M</Span>
+       <Span className="present-info__d">Expenses</Span>
+      </Div>
+     </Div>
+
+     <Div className="py-[1.7rem]">
+      <Img
+       src="assets/svg/diagram.svg"
+       width="215.02"
+       height="64.5"
+       alt=""
+       className="diagram"
       />
      </Div>
-     <Div className="card-600-1__t">Scan Credit Cards</Div>
-     <Div className="card-600-1__d">Scan yourcredit card in 4 minutes.</Div>
+
+     <Div className="list-605">
+      <Span className="list-605__it">Jan</Span>
+      <Span className="list-605__it">Feb</Span>
+      <Span className="list-605__it">Mar</Span>
+      <Span className="list-605__it">Apr</Span>
+      <Span className="list-605__it">May</Span>
+      <Span className="list-605__it">Jun</Span>
+      <Span className="list-605__it">Jul</Span>
+     </Div>
     </Div>
 
     <Section className="s-200">
@@ -139,7 +223,6 @@ export default async function Home() {
         </Div>
        </Div>
        <Div className="grid-200__it">
-        {/*  */}
         <Div className="collage-200">
          <Div className="ball ball--1"></Div>
          <Div className="ball ball--2"></Div>
@@ -186,7 +269,6 @@ export default async function Home() {
 														assets/img/hand/hand-4x.webp 4x"
          />
         </Div>
-        {/*  */}
        </Div>
       </Div>
      </Div>
@@ -442,167 +524,167 @@ export default async function Home() {
       </Div>
      </Div>
     </Section>
-
-    <Footer>
-     <Section className="s-1000">
-      <Div className="s-1000__fix fix">
-       <I className="break-line"></I>
-
-       <Div className="grid-1000">
-        <Div className="grid-1000__it">
-         <Link href="#" className="logo logo--2">
-          <Img
-           src="assets/svg/logo-2.svg"
-           alt=""
-           width="264.79"
-           height="72.14"
-          />
-         </Link>
-
-         <Div className="s-1000__txt">
-          A new way to make the payments easy, reliable and secure.
-         </Div>
-        </Div>
-        <Div className="grid-1000__it">
-         <H4 className="h4-1000 h4-1000--s-1000">Usefull Links</H4>
-         <Ul className="l-1000 l-1000--s-1000">
-          <Li className="l-1000__li">
-           <Link className="l-1000__a" href="#">
-            Content
-           </Link>
-          </Li>
-          <Li className="l-1000__li">
-           <Link href="#" className="l-1000__a">
-            How it Works
-           </Link>
-          </Li>
-          <Li className="l-1000__li">
-           <Link href="#" className="l-1000__a">
-            Create
-           </Link>
-          </Li>
-          <Li className="l-1000__li">
-           <Link href="#" className="l-1000__a">
-            Explore
-           </Link>
-          </Li>
-          <Li className="l-1000__li">
-           <Link href="#" className="l-1000__a">
-            Terms & Services
-           </Link>
-          </Li>
-         </Ul>
-        </Div>
-        <Div className="grid-1000__it">
-         <H4 className="h4-1000 h4-1000--s-1000">Community</H4>
-
-         <Ul className="l-1000 l-1000--s-1000">
-          <Li className="l-1000__li">
-           <Link href="#" className="l-1000__a">
-            Help Center
-           </Link>
-          </Li>
-          <Li className="l-1000__li">
-           <Link href="#" className="l-1000__a">
-            Partners
-           </Link>
-          </Li>
-          <Li className="l-1000__li">
-           <Link href="#" className="l-1000__a">
-            Suggestions
-           </Link>
-          </Li>
-          <Li className="l-1000__li">
-           <Link href="#" className="l-1000__a">
-            Blog
-           </Link>
-          </Li>
-          <Li className="l-1000__li">
-           <Link href="#" className="l-1000__a">
-            Newsletters
-           </Link>
-          </Li>
-         </Ul>
-        </Div>
-        <Div className="grid-1000__it">
-         <H4 className="h4-1000 h4-1000--s-1000">Partner</H4>
-         <Ul className="l-1000 l-1000--s-1000">
-          <Li className="l-1000__li">
-           <Link href="#" className="l-1000__a">
-            Our Partner
-           </Link>
-          </Li>
-          <Li className="l-1000__li">
-           <Link href="#" className="l-1000__a">
-            Become a Partner
-           </Link>
-          </Li>
-         </Ul>
-        </Div>
-       </Div>
-      </Div>
-     </Section>
-
-     <Section className="s-1100">
-      <Div className="s-1100__fix fix">
-       <I className="break-line"></I>
-       <Div className="grid-1100">
-        <Div className="s-1100__txt">
-         © 2021-{new Date().getFullYear()}&nbsp;
-         <Span className="logo-txt">
-          <Span className="logo-txt__p1">Hoo</Span>
-          <Span className="logo-txt__p2">Bank</Span>.
-         </Span>
-         <Br />
-         All Rights Reserved.
-        </Div>
-
-        <Div className="soc-pages">
-         <Link href="#" className="soc-page soc-page--inst">
-          <Img
-           src="assets/svg/icons/inst.svg"
-           width="21"
-           height="21"
-           alt=""
-           className="soc-page__ic soc-page__ic--inst"
-          />
-         </Link>
-
-         <Link href="#" className="soc-page soc-page--fb">
-          <Img
-           src="assets/svg/icons/fb.svg"
-           width="21"
-           height="21"
-           alt=""
-           className="soc-page__ic soc-page__ic--fb"
-          />
-         </Link>
-
-         <Link href="#" className="soc-page soc-page--tw">
-          <Img
-           src="assets/svg/icons/tw.svg"
-           width="23"
-           height="19"
-           alt=""
-           className="soc-page__ic soc-page__ic--tw"
-          />
-         </Link>
-
-         <Link href="#" className="soc-page soc-page--tw">
-          <Img
-           src="assets/svg/icons/in.svg"
-           width="20.99"
-           height="20.99"
-           alt=""
-           className="soc-page__ic soc-page__ic--in"
-          />
-         </Link>
-        </Div>
-       </Div>
-      </Div>
-     </Section>
-    </Footer>
    </Main>
+
+   <Footer>
+    <Section className="s-1000">
+     <Div className="s-1000__fix fix">
+      <I className="break-line"></I>
+
+      <Div className="grid-1000">
+       <Div className="grid-1000__it">
+        <Link href="#" className="logo logo--2">
+         <Img
+          src="assets/svg/logo-2.svg"
+          alt=""
+          width="264.79"
+          height="72.14"
+         />
+        </Link>
+
+        <Div className="s-1000__txt">
+         A new way to make the payments easy, reliable and secure.
+        </Div>
+       </Div>
+       <Div className="grid-1000__it">
+        <H4 className="h4-1000 h4-1000--s-1000">Usefull Links</H4>
+        <Ul className="l-1000 l-1000--s-1000">
+         <Li className="l-1000__li">
+          <Link className="l-1000__a" href="#">
+           Content
+          </Link>
+         </Li>
+         <Li className="l-1000__li">
+          <Link href="#" className="l-1000__a">
+           How it Works
+          </Link>
+         </Li>
+         <Li className="l-1000__li">
+          <Link href="#" className="l-1000__a">
+           Create
+          </Link>
+         </Li>
+         <Li className="l-1000__li">
+          <Link href="#" className="l-1000__a">
+           Explore
+          </Link>
+         </Li>
+         <Li className="l-1000__li">
+          <Link href="#" className="l-1000__a">
+           Terms & Services
+          </Link>
+         </Li>
+        </Ul>
+       </Div>
+       <Div className="grid-1000__it">
+        <H4 className="h4-1000 h4-1000--s-1000">Community</H4>
+
+        <Ul className="l-1000 l-1000--s-1000">
+         <Li className="l-1000__li">
+          <Link href="#" className="l-1000__a">
+           Help Center
+          </Link>
+         </Li>
+         <Li className="l-1000__li">
+          <Link href="#" className="l-1000__a">
+           Partners
+          </Link>
+         </Li>
+         <Li className="l-1000__li">
+          <Link href="#" className="l-1000__a">
+           Suggestions
+          </Link>
+         </Li>
+         <Li className="l-1000__li">
+          <Link href="#" className="l-1000__a">
+           Blog
+          </Link>
+         </Li>
+         <Li className="l-1000__li">
+          <Link href="#" className="l-1000__a">
+           Newsletters
+          </Link>
+         </Li>
+        </Ul>
+       </Div>
+       <Div className="grid-1000__it">
+        <H4 className="h4-1000 h4-1000--s-1000">Partner</H4>
+        <Ul className="l-1000 l-1000--s-1000">
+         <Li className="l-1000__li">
+          <Link href="#" className="l-1000__a">
+           Our Partner
+          </Link>
+         </Li>
+         <Li className="l-1000__li">
+          <Link href="#" className="l-1000__a">
+           Become a Partner
+          </Link>
+         </Li>
+        </Ul>
+       </Div>
+      </Div>
+     </Div>
+    </Section>
+
+    <Section className="s-1100">
+     <Div className="s-1100__fix fix">
+      <I className="break-line"></I>
+      <Div className="grid-1100">
+       <Div className="s-1100__txt">
+        © 2021-{new Date().getFullYear()}&nbsp;
+        <Span className="logo-txt">
+         <Span className="logo-txt__p1">Hoo</Span>
+         <Span className="logo-txt__p2">Bank</Span>.
+        </Span>
+        <Br />
+        All Rights Reserved.
+       </Div>
+
+       <Div className="soc-pages">
+        <Link href="#" className="soc-page soc-page--inst">
+         <Img
+          src="assets/svg/icons/inst.svg"
+          width="21"
+          height="21"
+          alt=""
+          className="soc-page__ic soc-page__ic--inst"
+         />
+        </Link>
+
+        <Link href="#" className="soc-page soc-page--fb">
+         <Img
+          src="assets/svg/icons/fb.svg"
+          width="21"
+          height="21"
+          alt=""
+          className="soc-page__ic soc-page__ic--fb"
+         />
+        </Link>
+
+        <Link href="#" className="soc-page soc-page--tw">
+         <Img
+          src="assets/svg/icons/tw.svg"
+          width="23"
+          height="19"
+          alt=""
+          className="soc-page__ic soc-page__ic--tw"
+         />
+        </Link>
+
+        <Link href="#" className="soc-page soc-page--tw">
+         <Img
+          src="assets/svg/icons/in.svg"
+          width="20.99"
+          height="20.99"
+          alt=""
+          className="soc-page__ic soc-page__ic--in"
+         />
+        </Link>
+       </Div>
+      </Div>
+     </Div>
+    </Section>
+   </Footer>
   </Div>
  );
 }
