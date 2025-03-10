@@ -27,25 +27,35 @@ import "@/src/shared/ui/assets/css/transpiled/tw-out.css";
 
 import { SocPagesData } from "@/src/app/components/organisms/SocPages/SocPagesData";
 
-/* export async function getEntities(name: s, perPage: n = 100) {
+const fetchCats = async (name: s = "categories", quantity: n = 100) => {
  const res = await fetch(
-  `${process.env.DB_HOST}/${process.env.REST_PATH}/${name}?per_page=${perPage}`,
+  `${process.env.DB_HOST}/${process.env.REST_PATH}/${name}?per_page=${quantity}`,
   { cache: "no-store" }
  );
  return res.json();
-} */
+};
 
-/* export const getCatIdBySlug = async (data: CatIt[], slug: s) =>
- data.filter((it: CatIt) => it.slug === slug)[0].id; */
+const fetchPostByCatId = async (id: n) => {
+ const res = await fetch(
+  `${process.env.DB_HOST}/${process.env.REST_PATH}/posts?categories=${id}&per_page=100`,
+  { cache: "no-store" }
+ );
+ return res.json();
+};
 
-/*
-export const getPostsByCatId = async getEntities("posts", )
-*/
+const getCatBySlug = (data: CatIt[], slug: s) =>
+ data.filter((it) => it.slug === slug);
 
+/* Page Start */
 export default async function Home() {
- /*  console.log(
-  await getCatIdBySlug(await getEntities("categories"), "soc-pages")
- ); */
+ const cat = getCatBySlug(await fetchCats(), "testimonials")[0];
+
+ const catInfo = {
+  title: !Array.isArray(cat.acf) ? cat.acf.long_title : null,
+  descr: cat.description
+ };
+
+ const posts = await fetchPostByCatId(+cat.id);
 
  return (
   <Div className="wrap">
@@ -424,7 +434,9 @@ export default async function Home() {
      </Div>
     </Section>
 
-    <Section className="s-700">
+    <Testimonials posts={posts} catInfo={catInfo} />
+
+    <Section className="s-700 !hidden">
      <Div className="s-700__fix fix">
       <Div className="grid-700">
        <H2 className="s__t s__t--s-700">What people ares aying about us</H2>
@@ -455,7 +467,6 @@ export default async function Home() {
           <P className="img-info__d">Founder & Leader</P>
          </Div>
         </Div>
-        {/*  */}
        </Article>
        <Article className="box-700">
         <SvgSprite
@@ -563,7 +574,7 @@ export default async function Home() {
     </Section>
    </Main>
 
-   <Footer>
+   <Footer className="">
     <Section className="s-1000">
      <Div className="s-1000__fix fix">
       <I className="break-line"></I>
