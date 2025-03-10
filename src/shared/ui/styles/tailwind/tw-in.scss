@@ -1310,35 +1310,6 @@ body {
 						text-white;
 }
 
-.card-600 {
- @apply aspect-[191/158]
-								max-w-[19.1rem]
-								text-center;
-
- &__t {
-  @apply block
-									pb-[0.4rem]
-									text-[1.6rem]
-									font-600
-									leading-[2.6rem]
-							text-white;
- }
-
- &__d {
-  @apply text-center
-									text-[1.2rem]
-									font-400
-									leading-[1.9rem]
-									tracking-[0.01em]
-							text-white/70;
- }
-
- &__symbol-box {
-  @apply mb-[1.6rem]
-									block;
- }
-}
-
 .symbol-box {
  @apply mx-auto
 								flex
