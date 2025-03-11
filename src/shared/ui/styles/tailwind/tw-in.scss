@@ -449,6 +449,19 @@ body {
  &:active {
   @apply scale-[1.0];
  }
+
+ &--long {
+  @apply !block
+									w-full
+									rounded-[1rem]
+									px-0
+									py-[0.7rem]
+									text-center
+									text-[1.2rem]
+									font-500
+									leading-[1.9rem]
+									text-black;
+ }
 }
 
 .s-800 {
@@ -1473,6 +1486,28 @@ body {
   );
  }
 
+ &__rounded-logo {
+  @apply flex
+									aspect-[1/1]
+									w-[5.6rem]
+									items-center
+									justify-center
+									rounded-[50%]
+							bg-white;
+ }
+
+ &__r {
+  &--400 {
+   @apply justify-start
+										gap-x-[1.2rem];
+  }
+ }
+
+ &--400 {
+  @apply aspect-[227/216]
+									max-w-[22.7rem];
+ }
+
  &--600 {
   @apply aspect-[191/158]
 									max-w-[35.70093457943925%]
@@ -1765,5 +1800,54 @@ body {
   @apply text-[1.4rem]
 									font-500
 									leading-[2.2rem];
+ }
+}
+
+.outline-btn {
+ @apply rel
+								text-gradient
+								inline-flex
+								shrink-0
+								grow-0
+								items-center
+								justify-center
+								rounded-[1rem]
+								bg-grad-aqua-l-100
+								px-[1.1rem]
+								py-[0.7rem]
+								text-[1.2rem]
+								font-600
+								leading-[1.9rem];
+
+ &:after {
+  @apply absolute
+									inset-0
+									block
+									rounded-[inherit]
+									border-[2px]
+									border-solid
+									border-transparent
+									content-[""];
+
+  background: radial-gradient(
+    64.33% 64.33% at 71.16% 35.69%,
+    #def9fa 0.89%,
+    #bef3f5 17.23%,
+    #9dedf0 42.04%,
+    #7de7eb 55.12%,
+    #5ce1e6 71.54%,
+    #33bbcf 100%
+   )
+   border-box;
+
+  -webkit-mask:
+   linear-gradient(#fff 0 0) padding-box,
+   linear-gradient(#fff 0 0);
+
+  mask:
+   linear-gradient(#fff 0 0) padding-box,
+   linear-gradient(#fff 0 0);
+  -webkit-mask-composite: destination-out;
+  mask-composite: exclude;
  }
 }

@@ -67,6 +67,42 @@ export default async function Home() {
      <SvgSprite name="check" width="24" height="24" className="msg__check" />
      <Span className="msg__txt">Great! Your Payment is succesfully.</Span>
     </Div>
+
+    {/*  */}
+    <Div className="card card--400">
+     <Div className="card__r card__r--400 items-center pb-[2rem]">
+      <Div className="card__rounded-logo">
+       <Img
+        src="assets/svg/logos-pay/paypal.svg"
+        width="24.03"
+        height="27.33"
+        alt="paypal"
+       />
+      </Div>
+      <Div className="group-card-400">
+       <Div className="card__t">Paypal</Div>
+       <Div className="card__d">Checkout</Div>
+      </Div>
+     </Div>
+
+     <Div className="card__r pb-[2rem]">
+      <Div className="group-card-405">
+       <Div className="card__d">Total</Div>
+       <Div className="card__t">$210</Div>
+      </Div>
+      <Link href="#" className="outline-btn">
+       Change
+      </Link>
+     </Div>
+
+     <Div className="card__r">
+      <Link href="#" className="btn btn--long">
+       Make Payment
+      </Link>
+     </Div>
+    </Div>
+    {/*  */}
+
     <Section className="s-200">
      <Div className="s-200__fix fix">
       <Div className="grid-200">
@@ -405,7 +441,7 @@ export default async function Home() {
            <Div className="box-logo">
             <Img
              src="assets/svg/logos-pay/apple.svg"
-             alt="paypal"
+             alt="apple"
              width="20.49"
              height="24.01"
             />
@@ -413,7 +449,7 @@ export default async function Home() {
            <Div className="box-logo">
             <Img
              src="assets/svg/logos-pay/visa.svg"
-             alt="paypal"
+             alt="visa"
              width="32"
              height="9.7"
             />
@@ -421,7 +457,7 @@ export default async function Home() {
            <Div className="box-logo">
             <Img
              src="assets/svg/logos-pay/shopify.svg"
-             alt="paypal"
+             alt="shopify"
              width="36.92"
              height="10.53"
             />
@@ -538,14 +574,14 @@ export default async function Home() {
         src="assets/svg/logos/coinbase.svg"
         width="189.01"
         height="41.25"
-        alt="logo coinbase"
+        alt="coinbase"
         className="logo-it logo-it--coinbase"
        />
        <Img
         src="assets/svg/logos/dropbox.svg"
         width="192.25"
         height="37.86"
-        alt="logo dropbox"
+        alt="dropbox"
         className="logo-it logo-it--dropbox"
        />
       </Div>
