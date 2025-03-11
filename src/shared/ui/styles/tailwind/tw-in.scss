@@ -1888,3 +1888,118 @@ body {
 								h-[0.869rem]
 								w-[0.982rem];
 }
+
+.s-400 {
+ &__fix {
+  @apply block
+									~pt-[2rem]/[8rem]
+									~pb-[2.5rem]/[9.9rem];
+ }
+
+ .s {
+  &__t {
+   @apply ~pb-[1.2rem]/[2.2rem];
+  }
+
+  &__d {
+   @apply ~pb-[1.7rem]/[4.8rem];
+  }
+ }
+}
+
+.collage-400 {
+ @apply rel
+								aspect-[536/454]
+								w-full
+								max-w-[53.6rem];
+
+ .msg {
+  @apply absolute
+									bottom-0
+									right-0
+									z-[10];
+ }
+
+ .card {
+  &--400 {
+   @apply absolute
+										left-[initial]
+										right-[84px]
+										top-0;
+  }
+
+  &--405 {
+   @apply aspect-[33.5/27]
+										w-full
+										max-w-[33.5rem];
+
+   @apply absolute
+										left-0
+										right-[initial]
+										top-[32%];
+  }
+ }
+}
+
+.grid-400 {
+ @apply gap-x
+								grid
+								grid-cols-[repeat(12,1fr)];
+
+ grid-template-areas:
+  "it-1 it-1 it-1 it-1 it-1 it-1 it-1 it-2 it-2 it-2 it-2 it-2"
+  "it-1 it-1 it-1 it-1 it-1 it-1 it-1 it-3 it-3 it-3 it-3 it-3"
+  "it-1 it-1 it-1 it-1 it-1 it-1 it-1 it-4 it-4 it-4 it-4 it-4"
+  "it-1 it-1 it-1 it-1 it-1 it-1 it-1 it-5 it-5 it-5 it-5 it-5";
+
+ @media (max-width: $lgx) {
+  @apply gap-x
+									grid
+									grid-cols-[repeat(6,1fr)];
+
+  grid-template-areas:
+   "it-2 it-2 it-2 it-2 it-2 it-2"
+   "it-1 it-1 it-1 it-1 it-1 it-1"
+   "it-3 it-3 it-3 it-3 it-3 it-3"
+   "it-4 it-4 it-4 it-4 it-4 it-4"
+   "it-5 it-5 it-5 it-5 it-5 it-5";
+ }
+
+ .collage-400 {
+  /*   background-color: yellow; */
+  @apply !relative
+									inset-0
+									mx-auto
+									!mb-[4.002rem];
+ }
+
+ &__it {
+  &:nth-child(1) {
+   grid-area: it-1;
+
+   @apply rel
+										min-h-[2rem];
+
+   .collage-400 {
+    @apply absolute
+											inset-x-0;
+   }
+  }
+
+  &:nth-child(2) {
+   grid-area: it-2;
+  }
+
+  &:nth-child(3) {
+   grid-area: it-3;
+  }
+
+  &:nth-child(4) {
+   grid-area: it-4;
+  }
+
+  &:nth-child(5) {
+   grid-area: it-5;
+  }
+ }
+}
