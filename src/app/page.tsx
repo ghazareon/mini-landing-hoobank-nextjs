@@ -59,12 +59,42 @@ export default async function Home() {
  };
 
  const posts = await fetchPostByCatId(+cat.id);  */
- const d = await fetchCats();
+ // const d = await fetchCats();
  return (
   <Div className="wrap">
    <Main>
-    <Div className="lighting-100 !hidden">
-     <Img src="" alt="" />
+    <Div className="lighting-100">
+     <Img
+      src="assets/svg/lighting/lighting-100__shape-1.svg"
+      alt=""
+      width="402.92"
+      height="503.89"
+      className="lighting-100__shape-1"
+     />
+
+     <Img
+      src="assets/svg/lighting/lighting-100__shape-4.svg"
+      alt=""
+      width="630.46"
+      height="559.12"
+      className="lighting-100__shape-4"
+     />
+
+     <Img
+      src="assets/svg/lighting/lighting-100__shape-3.svg"
+      alt=""
+      width="405"
+      height="471"
+      className="lighting-100__shape-3"
+     />
+
+     <Img
+      src="assets/svg/lighting/lighting-100__shape-2.svg"
+      alt=""
+      width="578"
+      height="571"
+      className="lighting-100__shape-2"
+     />
     </Div>
 
     <Section className="s-200">
@@ -94,7 +124,7 @@ export default async function Home() {
        </Div>
        <Div className="grid-200__it">
         <H1 className="main-title">
-         {d.length} The Next <Span>Generation</Span> Payment Method.
+         The Next <Span>Generation</Span> Payment Method.
          <Link href="#" className="unique-btn">
           <Span className="unique-btn__txt">
            Get

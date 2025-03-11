@@ -237,6 +237,7 @@
     #272727 0%,
     #11101d 100%
   );
+  --z-index-0:0;
   --z-index-10:10;
 }
 
@@ -538,10 +539,6 @@ body::-webkit-resizer{
 
 .block {
   display:block;
-}
-
-.\!hidden {
-  display:none !important;
 }
 
 .grow {
@@ -936,6 +933,7 @@ video{
 
 html,
 body {
+  overflow-x:hidden;
   --tw-bg-opacity:1;
   background-color:rgba( 0 4 15 / 1);
   font-family:Poppins, sans-serif;
@@ -2373,7 +2371,7 @@ body {
 
 .grid-200__it:nth-child(1){
    grid-area:it-1;
-   padding-top:clamp(4.1rem,4.1rem + 9.43vw,15.7rem);
+   padding-top:clamp(1.1rem,1.1rem + 11.87vw,15.7rem);
   }
 
 .grid-200__it:nth-child(2) {
@@ -2571,10 +2569,6 @@ body {
 .logo-it--dropbox {
   height:3.786rem;
   width:19.225rem;
-}
-
-.wrap {
-  overflow-x:hidden;
 }
 
 .card {
@@ -3256,13 +3250,62 @@ body {
   width:100%;
   max-width:106.1rem;
 
- background-image:url(../../../../../../public/assets/svg/lighting/lighting-100.png);
- background-repeat:no-repeat;
- background-position:left top;
+ filter:blur(30rem);
+
+ position:absolute;
+
+ right:-8%;
+
+ top:-500px;
+
+ z-index:0;
+
+ z-index:var(--z-index-0);
+
  background-size:cover;
- position:relative;
- left:0px;
- top:0px;
+
+ background-position:left top;
+
+ background-repeat:no-repeat;
+}
+
+.lighting-100__shape-1 {
+  position:absolute;
+  left:23.5%;
+  top:0px;
+  display:block;
+  aspect-ratio:402.92/503.89;
+  width:100%;
+  max-width:37.97549481621112%;
+}
+
+.lighting-100__shape-2 {
+  position:absolute;
+  bottom:0;
+  z-index:1;
+  width:54.47690857681433%;
+}
+
+.lighting-100__shape-3 {
+  position:absolute;
+  left:18.7%;
+  top:48.2%;
+  z-index:2;
+  width:38.1715%;
+}
+
+.lighting-100__shape-4 {
+  position:absolute;
+  left:40.5%;
+  top:50.7%;
+  aspect-ratio:630.46/559.12;
+  width:59.42130065975495%;
+}
+
+@-moz-document url-prefix(){
+ .lighting-100{
+  display:none;
+ }
 }
 
 @media (max-width: 76.875rem) {
