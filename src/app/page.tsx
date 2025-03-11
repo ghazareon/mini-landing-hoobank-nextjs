@@ -63,6 +63,10 @@ export default async function Home() {
  return (
   <Div className="wrap">
    <Main>
+    <Div className="msg">
+     <SvgSprite name="check" width="24" height="24" className="msg__check" />
+     <Span className="msg__txt">Great! Your Payment is succesfully.</Span>
+    </Div>
     <Section className="s-200">
      <Div className="s-200__fix fix">
       <Div className="grid-200">
