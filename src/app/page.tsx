@@ -87,7 +87,7 @@ export default async function Home() {
        </Div>
        <Div className="grid-200__it">
         <H1 className="main-title">
-         The Next <Span>Generation</Span> Payment Method.
+         {process.env.DB_HOST} The Next <Span>Generation</Span> Payment Method.
          <Link href="#" className="unique-btn">
           <Span className="unique-btn__txt">
            Get
