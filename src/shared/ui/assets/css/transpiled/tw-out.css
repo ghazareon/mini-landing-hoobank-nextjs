@@ -557,6 +557,10 @@ body::-webkit-resizer{
   padding-bottom:2rem;
 }
 
+.pb-\[3\.4rem\] {
+  padding-bottom:3.4rem;
+}
+
 .text-aqua-300 {
   --tw-text-opacity:1;
   color:rgba( 0 217 245 / 1);
@@ -576,6 +580,17 @@ body::-webkit-resizer{
 @supports (color: rgba(0 0 0 / 0)) {
 .text-green-100 {
     color:rgba( 26 229 190 / var(--tw-text-opacity, 1));
+  }
+}
+
+.text-red-100 {
+  --tw-text-opacity:1;
+  color:rgba( 187 45 45 / 1);
+}
+
+@supports (color: rgba(0 0 0 / 0)) {
+.text-red-100 {
+    color:rgba( 187 45 45 / var(--tw-text-opacity, 1));
   }
 }
 
@@ -2584,6 +2599,32 @@ body {
   );
 }
 
+.card__g {
+  display:flex;
+  width:100%;
+  -moz-column-gap:1.2rem;
+       column-gap:1.2rem;
+}
+
+.card__val {
+  display:inline-flex;
+  align-items:center;
+  -moz-column-gap:0.4rem;
+       column-gap:0.4rem;
+  font-size:1.4rem;
+  font-weight:400;
+  font-weight:var(--font-weight-400);
+  line-height:2.2rem;
+  --tw-text-opacity:1;
+  color:rgba( 255 255 255   / 1);
+}
+
+@supports (color: rgba(0 0 0 / 0)) {
+.card__val {
+    color:rgba( 255 255 255   / var(--tw-text-opacity, 1));
+  }
+}
+
 .card__t {
   font-size:1.6rem;
   font-weight:600;
@@ -2659,6 +2700,15 @@ body {
 .card--400 {
   aspect-ratio:227/216;
   max-width:22.7rem;
+}
+
+.card--405 {
+  aspect-ratio:335/270;
+  max-width:33.5rem;
+}
+
+.card--405 .card__r {
+  padding-bottom:1rem;
 }
 
 .card--600 {
@@ -3074,6 +3124,18 @@ body {
   mask:linear-gradient(#fff 0 0) padding-box, linear-gradient(#fff 0 0);
   -webkit-mask-composite:destination-out;
   mask-composite:exclude;
+}
+
+.transaction-logo {
+  display:block;
+  width:100%;
+  max-width:4rem;
+}
+
+.transaction-quot {
+  display:block;
+  height:0.869rem;
+  width:0.982rem;
 }
 
 @media (max-width: 76.875rem) {

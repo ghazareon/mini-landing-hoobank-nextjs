@@ -63,12 +63,95 @@ export default async function Home() {
  return (
   <Div className="wrap">
    <Main>
+    <Div className="card card--405">
+     <Div className="card__r">
+      <Div className="card__t pb-[3.4rem]">Last Transaction</Div>
+     </Div>
+
+     <Div className="card__r">
+      <Div className="card__g">
+       <Img
+        src="assets/svg/logo-transaction/dribbble.svg"
+        widtgh="40"
+        height="39.95"
+        alt="paypal"
+        className="transaction-logo"
+       />
+       <Div className="card__i">
+        <Div className="card__t">Dribbble Pro</Div>
+        <Div className="card__d">15 Days ago</Div>
+       </Div>
+      </Div>
+
+      <Div className="card__val">
+       <SvgSprite
+        name="arr-rounded-down"
+        width="12.45"
+        height="11.36"
+        className="transaction-quot text-red-100"
+       />
+       -$250,93
+      </Div>
+     </Div>
+
+     <Div className="card__r">
+      <Div className="card__g">
+       <Img
+        src="assets/svg/logo-transaction/netflix.svg"
+        widtgh="40"
+        height="39.95"
+        alt="netflix"
+        className="transaction-logo"
+       />
+       <Div className="card__i">
+        <Div className="card__t">Netflix</Div>
+        <Div className="card__d">4 Days ago</Div>
+       </Div>
+      </Div>
+
+      <Div className="card__val">
+       <SvgSprite
+        name="arr-rounded-down"
+        width="12.45"
+        height="11.36"
+        className="transaction-quot text-red-100"
+       />
+       -$250,93
+      </Div>
+     </Div>
+
+     <Div className="card__r">
+      <Div className="card__g">
+       <Img
+        src="assets/svg/logo-transaction/manulife-cash.svg"
+        widtgh="40"
+        height="39.95"
+        alt="netflix"
+        className="transaction-logo"
+       />
+       <Div className="card__i">
+        <Div className="card__t">Manulife Cash</Div>
+        <Div className="card__d">4 Days ago</Div>
+       </Div>
+      </Div>
+
+      <Div className="card__val">
+       <SvgSprite
+        name="arr-rounded-down"
+        width="12.45"
+        height="11.36"
+        className="transaction-quot text-red-100"
+       />
+       -$250,93
+      </Div>
+     </Div>
+    </Div>
+
     <Div className="msg">
      <SvgSprite name="check" width="24" height="24" className="msg__check" />
      <Span className="msg__txt">Great! Your Payment is succesfully.</Span>
     </Div>
 
-    {/*  */}
     <Div className="card card--400">
      <Div className="card__r card__r--400 items-center pb-[2rem]">
       <Div className="card__rounded-logo">
@@ -101,7 +184,6 @@ export default async function Home() {
       </Link>
      </Div>
     </Div>
-    {/*  */}
 
     <Section className="s-200">
      <Div className="s-200__fix fix">

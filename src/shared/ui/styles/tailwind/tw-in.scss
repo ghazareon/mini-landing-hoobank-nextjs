@@ -1453,6 +1453,22 @@ body {
   );
  }
 
+ &__g {
+  @apply flex
+									w-full
+									gap-x-[1.2rem];
+ }
+
+ &__val {
+  @apply inline-flex
+							items-center
+									gap-x-[0.4rem]
+									text-[1.4rem]
+									font-400
+									leading-[2.2rem]
+									text-white;
+ }
+
  &__t {
   @apply text-[1.6rem]
 									font-600
@@ -1506,6 +1522,15 @@ body {
  &--400 {
   @apply aspect-[227/216]
 									max-w-[22.7rem];
+ }
+
+ &--405 {
+  @apply aspect-[335/270]
+									max-w-[33.5rem];
+
+  .card__r {
+   @apply pb-[1rem];
+  }
  }
 
  &--600 {
@@ -1850,4 +1875,16 @@ body {
   -webkit-mask-composite: destination-out;
   mask-composite: exclude;
  }
+}
+
+.transaction-logo {
+ @apply block
+								w-full
+								max-w-[4rem];
+}
+
+.transaction-quot {
+ @apply block
+								h-[0.869rem]
+								w-[0.982rem];
 }
