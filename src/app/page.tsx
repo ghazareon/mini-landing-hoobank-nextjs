@@ -94,7 +94,7 @@ export default async function Home() {
          <Br />
          <Br />
          <Br />
-         {`${process.env.DB_HOST}/${process.env.REST_PATH}/${"categories"}?per_page=100`}
+         {`${process.env.DB_HOST}/${process.env.DB_PATH}/${"categories"}?per_page=100`}
          {process.env.DB_HOST} The Next <Span>Generation</Span> Payment Method.
          <Link href="#" className="unique-btn">
           <Span className="unique-btn__txt">
