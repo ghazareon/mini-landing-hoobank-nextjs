@@ -2919,6 +2919,43 @@ body {
   padding-bottom:1.4rem;
 }
 
+.msg {
+  display:inline-flex;
+  -moz-column-gap:2rem;
+       column-gap:2rem;
+  border-radius:1rem;
+  --tw-bg-opacity:1;
+  background-color:rgba( 255 255 255   / 1);
+  padding-left:1.9rem;
+  padding-right:1.9rem;
+  padding-top:1.6rem;
+  padding-bottom:1.6rem;
+}
+
+@supports (color: rgba(0 0 0 / 0)) {
+.msg {
+    background-color:rgba( 255 255 255   / var(--tw-bg-opacity, 1));
+  }
+}
+
+.msg__check {
+  --tw-text-opacity:1;
+  color:rgba( 0 174 28 / 1);
+}
+
+@supports (color: rgba(0 0 0 / 0)) {
+.msg__check {
+    color:rgba( 0 174 28 / var(--tw-text-opacity, 1));
+  }
+}
+
+.msg__txt {
+  font-size:1.4rem;
+  font-weight:500;
+  font-weight:var(--font-weight-500);
+  line-height:2.2rem;
+}
+
 @media (max-width: 76.875rem) {
 
 .s1{
