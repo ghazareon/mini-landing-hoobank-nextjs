@@ -1,0 +1,73 @@
+<svg
+ xmlns="http://www.w3.org/2000/svg"
+ xmlns:xlink="http://www.w3.org/1999/xlink"
+ viewBox="0 0 535 454"
+>
+ <defs>
+  <style>
+   .cls-1 {
+    fill: url(#linear-gradient-3);
+   }
+
+   .cls-1,
+   .cls-2,
+   .cls-3 {
+    fill-opacity: 0.3;
+    fill-rule: evenodd;
+   }
+
+   .cls-2 {
+    fill: url(#linear-gradient);
+   }
+
+   .cls-3 {
+    fill: url(#linear-gradient-2);
+   }
+  </style>
+  <linearGradient
+   id="linear-gradient"
+   x1="90.33"
+   y1="472.4"
+   x2="343.08"
+   y2="1092.14"
+   gradientTransform="translate(0 -697.77)"
+   gradientUnits="userSpaceOnUse"
+  >
+   <stop offset="0" stop-color="#def9fa" />
+   <stop offset=".17" stop-color="#bef3f5" />
+   <stop offset=".42" stop-color="#9dedf0" />
+   <stop offset=".55" stop-color="#7de7eb" />
+   <stop offset=".72" stop-color="#5ce1e6" />
+   <stop offset="1" stop-color="#33bbcf" />
+  </linearGradient>
+  <linearGradient
+   id="linear-gradient-2"
+   x1="543.37"
+   y1="1052.34"
+   x2="149.82"
+   y2="844.74"
+   xlink:href="#linear-gradient"
+  />
+  <linearGradient
+   id="linear-gradient-3"
+   x1="403.24"
+   y1="978.43"
+   x2="209.6"
+   y2="876.28"
+   xlink:href="#linear-gradient"
+  />
+ </defs>
+
+ <path
+  class="cls-2"
+  d="m267.5,389.56c99.69,0,180.5-80.81,180.5-180.5S367.19,28.56,267.5,28.56,87,109.37,87,209.06s80.81,180.5,180.5,180.5Zm0,10c105.21,0,190.5-85.29,190.5-190.5S372.71,18.56,267.5,18.56,77,103.85,77,209.06s85.29,190.5,190.5,190.5Z"
+ />
+ <path
+  class="cls-3"
+  d="m189.31,115.87c-51.47,43.18-58.18,119.91-14.99,171.38,43.18,51.47,119.91,58.18,171.38,14.99,51.46-43.19,58.18-119.92,14.99-171.38-43.19-51.47-119.91-58.18-171.38-14.99Zm-3.21-3.83c-53.58,44.96-60.57,124.84-15.61,178.42,44.96,53.58,124.84,60.57,178.42,15.61,53.58-44.96,60.57-124.84,15.61-178.42-44.96-53.58-124.84-60.57-178.43-15.61h.01Z"
+ />
+ <path
+  class="cls-1"
+  d="m230.66,165.15c-24.25,20.35-27.41,56.5-7.06,80.75s56.5,27.41,80.75,7.07c24.25-20.35,27.41-56.5,7.07-80.75-20.35-24.25-56.5-27.41-80.75-7.07h-.01Zm-3.21-3.83c-26.37,22.12-29.8,61.43-7.68,87.79,22.12,26.36,61.43,29.8,87.79,7.68s29.8-61.43,7.68-87.79c-22.12-26.36-61.43-29.8-87.79-7.68h0Z"
+ />
+</svg>

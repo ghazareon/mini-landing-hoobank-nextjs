@@ -63,6 +63,10 @@ export default async function Home() {
  return (
   <Div className="wrap">
    <Main>
+    <Div className="lighting-100 !hidden">
+     <Img src="" alt="" />
+    </Div>
+
     <Section className="s-200">
      <Div className="s-200__fix fix">
       <Div className="grid-200">
@@ -83,7 +87,7 @@ export default async function Home() {
           />
          </Div>
          <Div className="badge__txt">
-          <Span className="text-white">20%</Span> DISCOUNT FOR
+          <Span className="text-white">20%</Span>&nbsp;DISCOUNT FOR
           <Span className="text-white">&nbsp;1 MONTH</Span> ACCOUNT
          </Div>
         </Div>

@@ -401,7 +401,7 @@ body {
 									content-[""];
 
   background-image: svg-load(
-   ../../../../../public/assets/svg/gradients/gradient-start.svg
+   ../../../../../public/assets/svg/gradients/grad-gray-l-500.svg
   );
  }
 }
@@ -725,7 +725,7 @@ body {
 									will-change-[opacity];
 
   background-image: svg-load(
-   ../../../../../public/assets/svg/gradients/gradient-start.svg
+   ../../../../../public/assets/svg/gradients/grad-gray-l-500.svg
   );
  }
 
@@ -879,7 +879,7 @@ body {
 									will-change-[opacity];
 
   background-image: svg-load(
-   ../../../../../public/assets/svg/gradients/gradient-tab-2.svg
+   ../../../../../public/assets/svg/gradients/grad-gray-l-600.svg
   );
  }
 
@@ -1007,11 +1007,41 @@ body {
     @apply hidden;
    }
 
-   // .s-300__fix .grid-300
    .grid-300 {
-    @apply flex-col
-											gap-x-0
-											~gap-y-[2.5rem]/[5rem];
+    @apply grid
+											grid-cols-[repeat(12,1fr)]
+											gap-y-[3rem];
+
+    grid-template-areas:
+     "it-1 it-1 it-1 it-1 it-1 it-1 it-2 it-2 it-2 it-2 it-2 it-2"
+     " . . . it-3 it-3 it-3 it-3 it-3 it-3 . . .";
+   }
+
+   .info-caption {
+    @apply block
+											w-full
+											self-start
+											justify-self-center
+											text-center;
+
+    &:nth-of-type(1) {
+     grid-area: it-1;
+    }
+
+    &:nth-of-type(2) {
+     grid-area: it-2;
+    }
+
+    &:nth-of-type(3) {
+     grid-area: it-3;
+    }
+   }
+  }
+
+  @media (max-width: calc($mdxxxx + 60px)) {
+   .grid-300 {
+    @apply flex
+											flex-col;
    }
   }
  }
@@ -1160,15 +1190,28 @@ body {
 									content-[""];
 
   background-image: svg-load(
-   ../../../../../public/assets/svg/gradients/gradient-badge.svg
+   ../../../../../public/assets/svg/gradients/grad-gray-l-100.svg
   );
  }
 
  // .badge__txt
  &__txt {
   @apply badge-v1
-									inline-block
-									text-white/70;
+									inline-flex
+									items-center
+							text-white/70;
+
+  @media (max-width: $mdxxx) {
+   @apply flex-col
+										items-start
+										justify-start
+										text-left;
+
+   .badge__txt-break {
+    @apply block
+											w-full;
+   }
+  }
  }
 }
 
@@ -1610,7 +1653,7 @@ body {
 									content-[""];
 
   background-image: svg-load(
-   ../../../../../public/assets/svg/gradients/gradient-start.svg
+   ../../../../../public/assets/svg/gradients/grad-gray-l-500.svg
   );
  }
 
@@ -1906,7 +1949,19 @@ body {
   .card--610,
   .card--605,
   .card--600 {
-   @apply relative inset-0 mx-0 mb-8 aspect-auto w-full max-w-full;
+   @apply relative
+										inset-0
+										mx-0
+										mb-8
+										aspect-auto
+										w-full
+										max-w-full;
+  }
+
+  .diagram {
+   @apply block
+										w-full
+										max-w-full;
   }
  }
 
@@ -2244,50 +2299,53 @@ body {
 .s-400 {
  @media (max-width: $mdxx) {
   .collage-400 {
-   display: flex;
-
-   flex-direction: column;
-   @apply aspect-[none]
+   @apply relative
+										flex
+										aspect-[none]
+										h-auto
+										w-full
+										flex-col
 										gap-y-[2rem];
-
-   width: 100%;
-   height: auto;
-   position: relative;
   }
 
   .card {
    &--400 {
-    position: relative;
-    right: 0;
-    left: 0;
-    bottom: 0;
-    top: 0;
-    width: 100%;
-    max-width: 100%;
-    aspect-ratio: initial;
+    @apply relative
+											inset-0
+											aspect-[initial]
+											w-full
+											max-w-full;
    }
 
    &--405 {
-    position: relative;
-    right: 0;
-    left: 0;
-    bottom: 0;
-    top: 0;
-    width: 100%;
-    max-width: 100%;
-    aspect-ratio: initial;
+    @apply relative
+											inset-0
+											aspect-[initial]
+											w-full
+											max-w-full;
    }
   }
 
   .msg {
-   position: relative;
-   right: 0;
-   left: 0;
-   bottom: 0;
-   top: 0;
-   width: 100%;
-   max-width: 100%;
-   aspect-ratio: initial;
+   @apply relative
+										inset-0
+										aspect-[initial]
+										w-full
+										max-w-full;
   }
  }
+}
+
+.lighting-100 {
+ @apply block
+								aspect-[1061/1133]
+								w-full
+								max-w-[106.1rem];
+
+ background-image: url(../../../../../../public/assets/svg/lighting/lighting-100.png);
+ background-repeat: no-repeat;
+ background-position: left top;
+ background-size: cover;
+ @apply rel;
+ // filter: blur(27rem);
 }
