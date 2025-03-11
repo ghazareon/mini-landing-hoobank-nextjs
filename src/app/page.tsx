@@ -49,8 +49,6 @@ const getCatBySlug = (data: CatIt[], slug: s) =>
 */
 
 export default async function Home() {
- console.log(await fetchCats());
-
  /*  const cat = getCatBySlug(await fetchCats(), "testimonials")[0];
 
  const catInfo = {
@@ -59,7 +57,7 @@ export default async function Home() {
  };
 
  const posts = await fetchPostByCatId(+cat.id);  */
-
+ const d = await fetchCats();
  return (
   <Div className="wrap">
    <Main>
@@ -90,7 +88,8 @@ export default async function Home() {
        </Div>
        <Div className="grid-200__it">
         <H1 className="main-title">
-         {process.env.DB_HOST} The Next <Span>Generation</Span> Payment Method.
+         {d.length} {process.env.DB_HOST} The Next <Span>Generation</Span>{" "}
+         Payment Method.
          <Link href="#" className="unique-btn">
           <Span className="unique-btn__txt">
            Get
