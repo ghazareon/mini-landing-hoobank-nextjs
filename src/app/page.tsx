@@ -29,7 +29,7 @@ import { SocPagesData } from "@/src/app/components/organisms/SocPages/SocPagesDa
 
 const fetchCats = async (name: s = "categories", quantity: n = 100) => {
  const res = await fetch(
-  `${process.env.DB_HOST}/${process.env.REST_PATH}/${name}?per_page=${quantity}`,
+  `${process.env.DB_HOST}/${process.env.DB_PATH}/${name}?per_page=${quantity}`,
   { cache: "no-store" }
  );
  return res.json();
@@ -59,7 +59,7 @@ export default async function Home() {
  };
 
  const posts = await fetchPostByCatId(+cat.id);  */
- // const d = await fetchCats();
+ const d = await fetchCats();
  return (
   <Div className="wrap">
    <Main>
@@ -90,12 +90,7 @@ export default async function Home() {
        </Div>
        <Div className="grid-200__it">
         <H1 className="main-title">
-         {`${process.env.NAME_CATEGORIES}`}
-         <Br />
-         <Br />
-         <Br />
-         {`${process.env.DB_HOST}/${process.env.DB_PATH}/${"categories"}?per_page=100`}
-         {process.env.DB_HOST} The Next <Span>Generation</Span> Payment Method.
+         {d.length} The Next <Span>Generation</Span> Payment Method.
          <Link href="#" className="unique-btn">
           <Span className="unique-btn__txt">
            Get
