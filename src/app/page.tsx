@@ -26,7 +26,7 @@ import { Logo, Logo1Date } from "@/src/app/components/organisms";
 import "@/src/shared/ui/assets/css/transpiled/tw-out.css";
 
 import { SocPagesData } from "@/src/app/components/organisms/SocPages/SocPagesData";
-
+/*
 const fetchCats = async (name: s = "categories", quantity: n = 100) => {
  const res = await fetch(
   `${process.env.DB_HOST}/${process.env.REST_PATH}/${name}?per_page=${quantity}`,
@@ -46,7 +46,6 @@ const fetchPostByCatId = async (id: n) => {
 const getCatBySlug = (data: CatIt[], slug: s) =>
  data.filter((it) => it.slug === slug);
 
-/* Page Start */
 export default async function Home() {
  const cat = getCatBySlug(await fetchCats(), "testimonials")[0];
 
@@ -55,7 +54,7 @@ export default async function Home() {
   descr: cat.description
  };
 
- const posts = await fetchPostByCatId(+cat.id);
+ const posts = await fetchPostByCatId(+cat.id); */
 
  return (
   <Div className="wrap">
@@ -433,8 +432,6 @@ export default async function Home() {
       </Div>
      </Div>
     </Section>
-
-    <Testimonials posts={posts} catInfo={catInfo} />
 
     <Section className="s-700 !hidden">
      <Div className="s-700__fix fix">
