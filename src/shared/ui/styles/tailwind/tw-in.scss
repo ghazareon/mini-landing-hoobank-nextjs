@@ -1007,11 +1007,41 @@ body {
     @apply hidden;
    }
 
-   // .s-300__fix .grid-300
    .grid-300 {
-    @apply flex-col
-											gap-x-0
-											~gap-y-[2.5rem]/[5rem];
+    @apply grid
+											grid-cols-[repeat(12,1fr)]
+											gap-y-[3rem];
+
+    grid-template-areas:
+     "it-1 it-1 it-1 it-1 it-1 it-1 it-2 it-2 it-2 it-2 it-2 it-2"
+     " . . . it-3 it-3 it-3 it-3 it-3 it-3 . . .";
+   }
+
+   .info-caption {
+    @apply block
+											w-full
+											self-start
+											justify-self-center
+											text-center;
+
+    &:nth-of-type(1) {
+     grid-area: it-1;
+    }
+
+    &:nth-of-type(2) {
+     grid-area: it-2;
+    }
+
+    &:nth-of-type(3) {
+     grid-area: it-3;
+    }
+   }
+  }
+
+  @media (max-width: calc($mdxxxx + 60px)) {
+   .grid-300 {
+    @apply flex
+											flex-col;
    }
   }
  }
@@ -1167,8 +1197,21 @@ body {
  // .badge__txt
  &__txt {
   @apply badge-v1
-									inline-block
-									text-white/70;
+									inline-flex
+									items-center
+							text-white/70;
+
+  @media (max-width: $mdxxx) {
+   @apply flex-col
+										items-start
+										justify-start
+										text-left;
+
+   .badge__txt-break {
+    @apply block
+											w-full;
+   }
+  }
  }
 }
 

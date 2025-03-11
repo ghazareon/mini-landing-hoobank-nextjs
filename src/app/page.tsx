@@ -83,7 +83,7 @@ export default async function Home() {
           />
          </Div>
          <Div className="badge__txt">
-          <Span className="text-white">20%</Span> DISCOUNT FOR
+          <Span className="text-white">20%</Span>&nbsp;DISCOUNT FOR
           <Span className="text-white">&nbsp;1 MONTH</Span> ACCOUNT
          </Div>
         </Div>
