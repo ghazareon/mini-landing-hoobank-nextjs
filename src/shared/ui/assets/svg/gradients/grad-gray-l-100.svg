@@ -1,0 +1,27 @@
+<svg
+ xmlns="http://www.w3.org/2000/svg"
+ xmlns:xlink="http://www.w3.org/1999/xlink"
+ viewBox="0 0 311.96 99.33"
+ preserveAspectRatio="none"
+>
+ <defs>
+  <style>
+   .cls-1 {
+    fill: url(#linear-gradient);
+   }
+  </style>
+  <linearGradient
+   id="linear-gradient"
+   x1="110.9"
+   y1="150.46"
+   x2="201.05"
+   y2="-49.08"
+   gradientTransform="translate(0 100.35) scale(1 -1)"
+   gradientUnits="userSpaceOnUse"
+  >
+   <stop offset="0" stop-color="#272727" />
+   <stop offset="1" stop-color="#11101d" />
+  </linearGradient>
+ </defs>
+ <rect class="cls-1" width="311.96" height="99.33" />
+</svg>
