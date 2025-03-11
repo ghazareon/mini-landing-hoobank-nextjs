@@ -26,7 +26,7 @@ import { Logo, Logo1Date } from "@/src/app/components/organisms";
 import "@/src/shared/ui/assets/css/transpiled/tw-out.css";
 
 import { SocPagesData } from "@/src/app/components/organisms/SocPages/SocPagesData";
-
+/*
 const fetchCats = async (name: s = "categories", quantity: n = 100) => {
  const res = await fetch(
   `${process.env.DB_HOST}/${process.env.REST_PATH}/${name}?per_page=${quantity}`,
@@ -45,17 +45,17 @@ const fetchPostByCatId = async (id: n) => {
 
 const getCatBySlug = (data: CatIt[], slug: s) =>
  data.filter((it) => it.slug === slug);
+*/
 
-/* Page Start */
 export default async function Home() {
- const cat = getCatBySlug(await fetchCats(), "testimonials")[0];
+ /*  const cat = getCatBySlug(await fetchCats(), "testimonials")[0];
 
  const catInfo = {
   title: !Array.isArray(cat.acf) ? cat.acf.long_title : null,
   descr: cat.description
  };
 
- const posts = await fetchPostByCatId(+cat.id);
+ const posts = await fetchPostByCatId(+cat.id);  */
 
  return (
   <Div className="wrap">
@@ -434,9 +434,7 @@ export default async function Home() {
      </Div>
     </Section>
 
-    <Testimonials posts={posts} catInfo={catInfo} />
-
-    <Section className="s-700 !hidden">
+    <Section className="s-700">
      <Div className="s-700__fix fix">
       <Div className="grid-700">
        <H2 className="s__t s__t--s-700">What people ares aying about us</H2>
