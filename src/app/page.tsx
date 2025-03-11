@@ -45,16 +45,17 @@ const fetchPostByCatId = async (id: n) => {
 
 const getCatBySlug = (data: CatIt[], slug: s) =>
  data.filter((it) => it.slug === slug);
+*/
 
 export default async function Home() {
- const cat = getCatBySlug(await fetchCats(), "testimonials")[0];
+ /*  const cat = getCatBySlug(await fetchCats(), "testimonials")[0];
 
  const catInfo = {
   title: !Array.isArray(cat.acf) ? cat.acf.long_title : null,
   descr: cat.description
  };
 
- const posts = await fetchPostByCatId(+cat.id); */
+ const posts = await fetchPostByCatId(+cat.id);  */
 
  return (
   <Div className="wrap">
@@ -433,7 +434,7 @@ export default async function Home() {
      </Div>
     </Section>
 
-    <Section className="s-700 !hidden">
+    <Section className="s-700">
      <Div className="s-700__fix fix">
       <Div className="grid-700">
        <H2 className="s__t s__t--s-700">What people ares aying about us</H2>
