@@ -45,9 +45,10 @@
 
 html,
 body {
- @apply bg-gray-425
-										font-primary
-										font-300;
+ @apply overflow-x-hidden
+						bg-gray-425
+								font-primary
+								font-300;
 }
 
 .logo-txt {
@@ -1402,7 +1403,7 @@ body {
   // .grid-200__it:nth-child(1)
   &:nth-child(1) {
    grid-area: it-1;
-   @apply ~pt-[4.1rem]/[15.7rem];
+   @apply ~pt-[1.1rem]/[15.7rem];
   }
 
   // .grid-200__it:nth-child(2)
@@ -1630,10 +1631,6 @@ body {
  }
 }
 
-.wrap {
- @apply overflow-x-hidden;
-}
-
 .card {
  @apply rel
 								z-[1]
@@ -1667,12 +1664,12 @@ body {
  // .card__val
  &__val {
   @apply inline-flex
-							items-center
+									items-center
 									gap-x-[0.4rem]
 									text-[1.4rem]
 									font-400
 									leading-[2.2rem]
-									text-white;
+							text-white;
  }
 
  // .card__t
@@ -2342,10 +2339,53 @@ body {
 								w-full
 								max-w-[106.1rem];
 
- background-image: url(../../../../../../public/assets/svg/lighting/lighting-100.png);
- background-repeat: no-repeat;
- background-position: left top;
- background-size: cover;
- @apply rel;
- // filter: blur(27rem);
+ filter: blur(30rem);
+
+ @apply absolute
+								right-[-8%]
+								top-[-500px]
+								z-0;
+
+ @apply bg-cover
+								bg-left-top
+								bg-no-repeat;
+
+ &__shape-1 {
+  @apply absolute
+									left-[23.5%]
+									top-0
+									block
+									aspect-[402.92/503.89]
+									w-full
+									max-w-[37.97549481621112%];
+ }
+
+ &__shape-2 {
+  @apply absolute
+									bottom-[0]
+									z-[1]
+									w-[54.47690857681433%];
+ }
+
+ &__shape-3 {
+  @apply absolute
+									left-[18.7%]
+									top-[48.2%]
+									z-[2]
+									w-[38.1715%];
+ }
+
+ &__shape-4 {
+  @apply absolute
+									left-[40.5%]
+									top-[50.7%]
+									aspect-[630.46/559.12]
+									w-[59.42130065975495%];
+ }
+}
+
+@-moz-document url-prefix() {
+ .lighting-100 {
+  display: none;
+ }
 }
