@@ -26,7 +26,7 @@ import { Logo, Logo1Date } from "@/src/app/components/organisms";
 import "@/src/shared/ui/assets/css/transpiled/tw-out.css";
 
 import { SocPagesData } from "@/src/app/components/organisms/SocPages/SocPagesData";
-/*
+
 const fetchCats = async (name: s = "categories", quantity: n = 100) => {
  const res = await fetch(
   `${process.env.DB_HOST}/${process.env.REST_PATH}/${name}?per_page=${quantity}`,
@@ -35,6 +35,7 @@ const fetchCats = async (name: s = "categories", quantity: n = 100) => {
  return res.json();
 };
 
+/*
 const fetchPostByCatId = async (id: n) => {
  const res = await fetch(
   `${process.env.DB_HOST}/${process.env.REST_PATH}/posts?categories=${id}&per_page=100`,
@@ -48,6 +49,8 @@ const getCatBySlug = (data: CatIt[], slug: s) =>
 */
 
 export default async function Home() {
+ console.log(await fetchCats());
+
  /*  const cat = getCatBySlug(await fetchCats(), "testimonials")[0];
 
  const catInfo = {
