@@ -35,6 +35,8 @@ const fetchCats = async (name: s = "categories", quantity: n = 100) => {
  return res.json();
 };
 
+/* `${process.env.DB_HOST}/${process.env.REST_PATH}/${"categories"}?per_page=100`, */
+
 /*
 const fetchPostByCatId = async (id: n) => {
  const res = await fetch(
@@ -57,7 +59,7 @@ export default async function Home() {
  };
 
  const posts = await fetchPostByCatId(+cat.id);  */
- const d = await fetchCats();
+ // const d = await fetchCats();
  return (
   <Div className="wrap">
    <Main>
@@ -88,8 +90,8 @@ export default async function Home() {
        </Div>
        <Div className="grid-200__it">
         <H1 className="main-title">
-         {d.length} {process.env.DB_HOST} The Next <Span>Generation</Span>{" "}
-         Payment Method.
+         {`${process.env.DB_HOST}/${process.env.REST_PATH}/${"categories"}?per_page=100`}
+         {process.env.DB_HOST} The Next <Span>Generation</Span> Payment Method.
          <Link href="#" className="unique-btn">
           <Span className="unique-btn__txt">
            Get
