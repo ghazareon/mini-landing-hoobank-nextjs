@@ -2702,3 +2702,33 @@ body {
 									max-w-[51.4rem];
  }
 }
+
+.lighting-500 {
+ @apply absolute
+								left-[-23.98rem]
+								top-[400.893rem]
+								block
+								aspect-[1020/602]
+								w-full
+								max-w-[102rem];
+
+ filter: blur(30rem);
+
+ &__shape-1 {
+  @apply absolute
+									bottom-[0]
+									left-[0]
+									aspect-[513.42/359.21]
+									w-full
+									max-w-[513.42];
+ }
+
+ &__shape-2 {
+  @apply absolute
+									right-[0]
+									top-[0]
+									aspect-[530.85/524.32]
+									w-full
+									max-w-[530.85];
+ }
+}

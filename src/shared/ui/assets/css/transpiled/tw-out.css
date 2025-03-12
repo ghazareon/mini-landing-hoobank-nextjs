@@ -546,6 +546,10 @@ body::-webkit-resizer{
   display:block;
 }
 
+.\!hidden {
+  display:none !important;
+}
+
 .grow {
   flex-grow:1;
 }
@@ -3486,6 +3490,36 @@ body {
   aspect-ratio:514/360;
   width:100%;
   max-width:51.4rem;
+}
+
+.lighting-500 {
+  position:absolute;
+  left:-23.98rem;
+  top:400.893rem;
+  display:block;
+  aspect-ratio:1020/602;
+  width:100%;
+  max-width:102rem;
+
+ filter:blur(30rem);
+}
+
+.lighting-500__shape-1 {
+  position:absolute;
+  bottom:0;
+  left:0;
+  aspect-ratio:513.42/359.21;
+  width:100%;
+  max-width:513.42;
+}
+
+.lighting-500__shape-2 {
+  position:absolute;
+  right:0;
+  top:0;
+  aspect-ratio:530.85/524.32;
+  width:100%;
+  max-width:530.85;
 }
 
 @media (max-width: 76.875rem) {

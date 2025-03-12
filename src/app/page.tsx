@@ -30,6 +30,24 @@ import { SocPagesData } from "@/src/app/components/organisms/SocPages/SocPagesDa
 export default async function Home() {
  return (
   <>
+   <Div className="lighting-500">
+    <Img
+     src="assets/svg/lighting/lighting-500__shape-1.svg"
+     alt=""
+     width="532"
+     height="526"
+     className="lighting-500__shape-1"
+    />
+
+    <Img
+     src="assets/svg/lighting/lighting-500__shape-2.svg"
+     alt=""
+     width="530.85"
+     height="524.32"
+     className="lighting-500__shape-2"
+    />
+   </Div>
+
    <Div className="lighting-400">
     <Img
      src="assets/svg/lighting/lighting-400__shape-1.svg"
