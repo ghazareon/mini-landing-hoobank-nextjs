@@ -7,7 +7,7 @@ import type { ElementType, FC, HTMLAttributes, JSX, ReactNode } from "react";
 import Link from "@/npm/next/link";
 import { clsx } from "clsx";
 
-import type { s, IObj, IObjNest, n, CatIt } from "@/src/shared/types";
+import type { s, IObj, IObjNest, n, ICat700 } from "@/src/shared/types";
 import type { CoreUiProps } from "@/src/app/components/electrons";
 
 /* prettier-ignore */
@@ -27,10 +27,28 @@ import "@/src/shared/ui/assets/css/transpiled/tw-out.css";
 
 import { SocPagesData } from "@/src/app/components/organisms/SocPages/SocPagesData";
 
+import { fetchCats, fetchPostByCatId } from "@/src/shared/api";
+
 export default async function Home() {
+ const getCatBySlug = async (data: ICat700[], slug: s) =>
+  data.filter((it: ICat700) => it.slug === slug);
+
+ const cats = await fetchCats();
+ const catBySlug = await getCatBySlug(cats, "testimonials");
+
+ const cat = catBySlug[0];
+ const catId = +cat.id;
+
+ const catInfo = {
+  title: cat.acf.long_title,
+  descr: cat.description
+ };
+
+ const postsDataS700 = await fetchPostByCatId(catId);
+
  return (
   <>
-   <Div className="lighting-500">
+   <Div className="lighting-500 !hidden">
     <Img
      src="assets/svg/lighting/lighting-500__shape-1.svg"
      alt=""
@@ -48,7 +66,7 @@ export default async function Home() {
     />
    </Div>
 
-   <Div className="lighting-400">
+   <Div className="lighting-400 !hidden">
     <Img
      src="assets/svg/lighting/lighting-400__shape-1.svg"
      alt=""
@@ -66,7 +84,7 @@ export default async function Home() {
     />
    </Div>
 
-   <Div className="lighting-300">
+   <Div className="lighting-300 !hidden">
     <Img
      src="assets/svg/lighting/lighting-300__shape-1.svg"
      alt=""
@@ -90,7 +108,7 @@ export default async function Home() {
     />
    </Div>
 
-   <Div className="lighting-100">
+   <Div className="lighting-100 !hidden">
     <Img
      src="assets/svg/lighting/lighting-100__shape-1.svg"
      alt=""
@@ -208,7 +226,7 @@ export default async function Home() {
            widrth="402.92"
            height="503.89"
            alt=""
-           className="lighting-200"
+           className="lighting-200 !hidden"
           />
           The Next <Span>Generation</Span> Payment Method.
           <Link href="#" className="unique-btn">
@@ -708,81 +726,7 @@ export default async function Home() {
       </Div>
      </Section>
 
-     <Section className="s-700">
-      <Div className="s-700__fix fix">
-       <Div className="grid-700">
-        <H2 className="s__t s__t--s-700">What people ares aying about us</H2>
-        <P className="s__d s__d--s-700">
-         Everything you need to accept card payments and grow your business
-         anywhere on the planet.
-        </P>
-       </Div>
-
-       <Div className="grid-700-v2">
-        <Article className="box-700">
-         <SvgSprite
-          name="quote"
-          width="42.6"
-          height="27.6"
-          className="box-700__svg"
-         />
-
-         <Div className="s__d s__d--s-700">
-          Money is only a tool. It will take you wherever you wish, but it will
-          not replace you as the driver.
-         </Div>
-
-         <Div className="img-info">
-          <Div className="img-info__c img-info__c--1"></Div>
-          <Div className="img-info__c img-info__c--2">
-           <H3 className="img-info__t">Herman Jensen</H3>
-           <P className="img-info__d">Founder & Leader</P>
-          </Div>
-         </Div>
-        </Article>
-        <Article className="box-700">
-         <SvgSprite
-          name="quote"
-          width="42.6"
-          height="27.6"
-          className="box-700__svg"
-         />
-         <Div className="s__d s__d--s-700">
-          Money is only a tool. It will take you wherever you wish, but it will
-          not replace you as the driver.
-         </Div>
-
-         <Div className="img-info">
-          <Div className="img-info__c img-info__c--1"></Div>
-          <Div className="img-info__c img-info__c--2">
-           <H3 className="img-info__t">Herman Jensen</H3>
-           <P className="img-info__d">Founder & Leader</P>
-          </Div>
-         </Div>
-        </Article>
-        <Article className="box-700">
-         <SvgSprite
-          name="quote"
-          width="42.6"
-          height="27.6"
-          className="box-700__svg"
-         />
-         <Div className="s__d s__d--s-700">
-          Money is only a tool. It will take you wherever you wish, but it will
-          not replace you as the driver.
-         </Div>
-
-         <Div className="img-info">
-          <Div className="img-info__c img-info__c--1"></Div>
-          <Div className="img-info__c img-info__c--2">
-           <H3 className="img-info__t">Herman Jensen</H3>
-           <P className="img-info__d">Founder & Leader</P>
-          </Div>
-         </Div>
-        </Article>
-       </Div>
-      </Div>
-     </Section>
+     <Testimonials posts={postsDataS700} catInfo={catInfo} />
 
      <Section className="s-800">
       <Div className="s-800__fix fix">

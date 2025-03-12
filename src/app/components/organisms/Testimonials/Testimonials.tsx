@@ -3,25 +3,23 @@
  * Author: Hayk Ghazaryan
  * Email: hayk.ghazaryanc@gmail.com
  */
-import { FC } from "@/npm/@types/react";
 
+import { FC } from "@/npm/@types/react";
 import { Swiper, SwiperSlide } from "swiper/react";
 import { Pagination } from "swiper/modules";
-
-import "../../../../../node_modules/swiper/swiper.css";
-
+import { removeHtmlTagsFromStr } from "@/src/shared/utils/removeHtmlTagsFromStr";
+import { truncateStr } from "@/src/shared/utils/truncateStr";
 import { SvgSprite } from "@/src/app/components/molecules";
 
 /* prettier-ignore */
-import {
- CoreUi, Div, Main, Header, Footer, Section, Img, H1, P,
- H2, H3, Svg, Use, Span, Input, Form, Button, H4, Nav, Ul,
-	Li, Figure, Figcaption, Article, Br, I, Label, Picture,
-	Select, Source } from "@/src/app/components/electrons";
-import { IObj, n, s, CatIt } from "@/src/shared/types";
+import { Div, Section, P,
+									H2, H3, Article }    from "@/src/app/components/electrons";
+import { IObj, s, IPosts700 } from "@/src/shared/types";
+
+import "../../../../../node_modules/swiper/swiper.css";
 
 export interface ITestimonials {
- posts: CatIt[];
+ posts: IPosts700[];
  catInfo: IObj<s | null>;
 }
 
@@ -59,7 +57,7 @@ export const Testimonials: FC<ITestimonials> = ({ posts, catInfo }) => {
        modules={[Pagination]}
        className="mySwiper"
       >
-       {posts?.map((it: CatIt) => {
+       {posts?.map((it: IPosts700) => {
         return (
          <SwiperSlide key={it.id}>
           <Article className="box-700">
@@ -69,14 +67,14 @@ export const Testimonials: FC<ITestimonials> = ({ posts, catInfo }) => {
             height="27.6"
             className="box-700__svg"
            />
-
-           <Div className="s__d s__d--s-700">{it.excerpt.rendered}</Div>
-
+           <Div className="s__d s__d--s-700">
+            {truncateStr(removeHtmlTagsFromStr(it.excerpt.rendered as s), 103)}
+           </Div>
            <Div className="img-info">
             <Div className="img-info__c img-info__c--1"></Div>
             <Div className="img-info__c img-info__c--2">
-             <H3 className="img-info__t">Herman Jensen</H3>
-             <P className="img-info__d">Founder & Leader</P>
+             <H3 className="img-info__t">{it.title.rendered}</H3>
+             <P className="img-info__d">{it.acf.position_of_a_person}</P>
             </Div>
            </Div>
           </Article>

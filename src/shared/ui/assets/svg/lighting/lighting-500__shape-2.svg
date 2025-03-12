@@ -1,0 +1,29 @@
+<svg
+ xmlns="http://www.w3.org/2000/svg"
+ xmlns:xlink="http://www.w3.org/1999/xlink"
+ viewBox="0 0 530.85 524.32"
+>
+ <defs>
+  <style>
+   .cls-1 {
+    fill: url(#linear-gradient);
+   }
+  </style>
+  <linearGradient
+   id="linear-gradient"
+   x1="412.99"
+   y1="424.95"
+   x2="117.86"
+   y2="103.32"
+   gradientTransform="translate(0 526.29) scale(1 -1)"
+   gradientUnits="userSpaceOnUse"
+  >
+   <stop offset="0" stop-color="#1a2980" />
+   <stop offset="1" stop-color="#26d0ce" />
+  </linearGradient>
+ </defs>
+ <path
+  class="cls-1"
+  d="m359.91,52.64l106.15,97.41c81.39,74.68,86.82,201.2,12.14,282.58l-24.69,26.91c-74.68,81.39-201.2,86.82-282.58,12.14l-106.15-97.41C-16.61,299.59-22.04,173.07,52.64,91.69l24.69-26.91c74.68-81.39,201.2-86.82,282.58-12.14Z"
+ />
+</svg>

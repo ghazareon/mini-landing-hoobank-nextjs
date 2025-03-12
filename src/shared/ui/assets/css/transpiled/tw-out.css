@@ -615,6 +615,10 @@ body::-webkit-resizer{
   }
 }
 
+.filter {
+  filter:var(--tw-blur) var(--tw-brightness) var(--tw-contrast) var(--tw-grayscale) var(--tw-hue-rotate) var(--tw-invert) var(--tw-saturate) var(--tw-sepia) var(--tw-drop-shadow);
+}
+
 *, ::before, ::after {
   --tw-translate-x:0;
   --tw-translate-y:0;
@@ -630,6 +634,15 @@ body::-webkit-resizer{
   --tw-ring-offset-shadow:0 0 #0000;
   --tw-ring-shadow:0 0 #0000;
   --tw-shadow:0 0 #0000;
+  --tw-blur:;
+  --tw-brightness:;
+  --tw-contrast:;
+  --tw-grayscale:;
+  --tw-hue-rotate:;
+  --tw-invert:;
+  --tw-saturate:;
+  --tw-sepia:;
+  --tw-drop-shadow:;
 }
 
 ::backdrop {
@@ -647,6 +660,15 @@ body::-webkit-resizer{
   --tw-ring-offset-shadow:0 0 #0000;
   --tw-ring-shadow:0 0 #0000;
   --tw-shadow:0 0 #0000;
+  --tw-blur:;
+  --tw-brightness:;
+  --tw-contrast:;
+  --tw-grayscale:;
+  --tw-hue-rotate:;
+  --tw-invert:;
+  --tw-saturate:;
+  --tw-sepia:;
+  --tw-drop-shadow:;
 }
 
 /* ! tailwindcss v3.4.17 | MIT License | https://tailwindcss.com */
@@ -1601,13 +1623,13 @@ body {
   padding-bottom:clamp(4rem,4rem + 5.69vw,11rem);
 }
 
-.grid-700-v2 {
+.grid-705 {
   display:flex;
   justify-content:space-between;
   gap:3rem;
 }
 
-.grid-700-v2 {
+.grid-705 {
   transition-property:column-gap,row-gap;
   transition-property:column-gap,row-gap,-moz-column-gap;
   transition-timing-function:cubic-bezier(0.4, 0, 0.2, 1);
@@ -3632,7 +3654,7 @@ body {
     gap:2.2rem;
   }
 
-.grid-700-v2 {
+.grid-705 {
     gap:2.2rem;
   }
 
@@ -3722,7 +3744,7 @@ body {
     gap:2.2rem;
   }
 
-  .grid-700-v2 {
+  .grid-705 {
     gap:2.2rem;
   }
 
@@ -3853,7 +3875,7 @@ body {
    .grid-800 .logo-it:nth-child(4){
     grid-area:it-4;
    }
-   .grid-700-v2 {
+   .grid-705 {
     gap:2.4rem;
   }
    .grid-500 {
@@ -4015,7 +4037,7 @@ body {
     flex-direction:column;
   }
 
-.grid-700-v2 {
+.grid-705 {
     gap:2.4rem;
   }
 
@@ -4290,7 +4312,7 @@ body {
   .grid-1000 {
     gap:2rem;
   }
-  .grid-700-v2 {
+  .grid-705 {
     gap:2rem;
   }
   .grid-500 {
@@ -4391,7 +4413,7 @@ body {
     gap:2rem;
   }
 
-  .grid-700-v2 {
+  .grid-705 {
     gap:2rem;
   }
 
@@ -4522,7 +4544,7 @@ body {
     justify-content:center;
   }
 
-.grid-700-v2 {
+.grid-705 {
     gap:1.2rem;
   }
 
@@ -4743,7 +4765,7 @@ body {
     line-height:2.16rem;
   }
 
-  .grid-700-v2 {
+  .grid-705 {
     gap:1.2rem;
   }
 
@@ -4930,7 +4952,7 @@ body {
    .l-1000--s-1000 {
     padding-bottom:1.65rem;
   }
-   .grid-700-v2 {
+   .grid-705 {
     gap:1.2rem;
   }
    .grid-500 {
@@ -5038,7 +5060,7 @@ body {
     gap:1.2rem;
   }
 
-  .grid-700-v2 {
+  .grid-705 {
     gap:1.2rem;
   }
 
