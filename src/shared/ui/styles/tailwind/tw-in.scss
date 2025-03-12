@@ -45,10 +45,13 @@
 
 html,
 body {
- @apply overflow-x-hidden
-						bg-gray-425
+ @apply bg-gray-425
 								font-primary
 								font-300;
+}
+
+body {
+ @apply overflow-x-hidden;
 }
 
 .logo-txt {
@@ -2668,5 +2671,34 @@ body {
     }
    }
   }
+ }
+}
+
+.lighting-400 {
+ @apply absolute
+								left-[156.25rem]
+								top-[310.3rem]
+								aspect-[1020/602]
+								w-full
+								max-w-[102rem];
+
+ filter: blur(30rem);
+
+ &__shape-1 {
+  @apply absolute
+									left-0
+									top-0
+									aspect-[532/526]
+									w-full
+									max-w-[53.2rem];
+ }
+
+ &__shape-2 {
+  @apply absolute
+									bottom-0
+									right-0
+									aspect-[514/360]
+									w-full
+									max-w-[51.4rem];
  }
 }

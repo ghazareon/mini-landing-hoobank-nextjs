@@ -916,7 +916,6 @@ video{
 
 html,
 body {
-  overflow-x:hidden;
   --tw-bg-opacity:1;
   background-color:rgba( 0 4 15 / 1);
   font-family:Poppins, sans-serif;
@@ -930,6 +929,10 @@ html,
 body {
     background-color:rgba( 0 4 15 / var(--tw-bg-opacity, 1));
   }
+}
+
+body {
+  overflow-x:hidden;
 }
 
 .logo-txt {
@@ -3454,6 +3457,35 @@ body {
 .burger-btn__icon {
     color:rgba( 255 255 255   / var(--tw-text-opacity, 1));
   }
+}
+
+.lighting-400 {
+  position:absolute;
+  left:156.25rem;
+  top:310.3rem;
+  aspect-ratio:1020/602;
+  width:100%;
+  max-width:102rem;
+
+ filter:blur(30rem);
+}
+
+.lighting-400__shape-1 {
+  position:absolute;
+  left:0px;
+  top:0px;
+  aspect-ratio:532/526;
+  width:100%;
+  max-width:53.2rem;
+}
+
+.lighting-400__shape-2 {
+  position:absolute;
+  bottom:0px;
+  right:0px;
+  aspect-ratio:514/360;
+  width:100%;
+  max-width:51.4rem;
 }
 
 @media (max-width: 76.875rem) {
