@@ -46,7 +46,7 @@
 html,
 body {
  @apply overflow-x-hidden
-								bg-gray-425
+						bg-gray-425
 								font-primary
 								font-300;
 }
@@ -287,6 +287,11 @@ body {
 .logo {
  @apply block
 								w-full;
+
+ // .logo--1
+ &--1 {
+  @apply max-w-[11.695rem];
+ }
 
  // .logo--2
  &--2 {
@@ -2569,5 +2574,99 @@ body {
 									aspect-[405.26/470.8]
 									w-full
 									max-w-[28.05805114029026%];
+ }
+}
+
+.s-100 {
+ &__fix {
+  @apply py-[3.02rem];
+ }
+}
+
+.grid-100 {
+ @apply flex
+								items-center
+								justify-between;
+}
+
+.main-nav {
+ &__ul {
+  @apply flex
+									~gap-x-[0.5rem]/[4.25rem];
+ }
+
+ &__li {
+ }
+
+ &__a {
+  @apply link-v1
+							text-white/70;
+
+  @apply transition-[color]
+									duration-[0.16s]
+									ease-[linear]
+									will-change-[color];
+
+  &:hover {
+   @apply text-white;
+  }
+ }
+}
+
+.burger-btn {
+ @apply absolute
+								right-[32px]
+								top-[35px]
+								hidden;
+
+ &:after {
+  @apply absolute
+									left-[50%]
+									top-[50%]
+									block
+									aspect-[1/1]
+									w-[3.501rem]
+									translate-x-[-50.02%]
+									translate-y-[-50.02%]
+									rounded-[50.02%]
+							bg-white/20
+									content-[""];
+ }
+ &__icon {
+  @apply text-white;
+ }
+}
+
+.for-mobile {
+ &--menu {
+  @media (max-width: $md) {
+   .burger-btn {
+    @apply block;
+   }
+
+   @apply fixed
+			right-0
+			top-0
+			z-[100]
+			block
+			h-screen
+			w-full
+			max-w-[32rem]
+	bg-gray-425/80;
+
+   .main-nav {
+    &__ul {
+     @apply block
+												p-[2.02rem];
+    }
+    &__a {
+     @apply block
+					px-[1.502rem]
+					py-[1.202rem];
+
+     border-bottom: solid rgba(255, 255, 255, 0.07) 1px;
+    }
+   }
+  }
  }
 }
