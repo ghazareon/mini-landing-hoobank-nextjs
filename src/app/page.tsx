@@ -30,6 +30,30 @@ import { SocPagesData } from "@/src/app/components/organisms/SocPages/SocPagesDa
 export default async function Home() {
  return (
   <>
+   <Div className="lighting-300">
+    <Img
+     src="assets/svg/lighting/lighting-300__shape-1.svg"
+     alt=""
+     width="630.45"
+     height="549.01"
+     className="lighting-300__shape-1"
+    />
+    <Img
+     src="assets/svg/lighting/lighting-300__shape-2.svg"
+     alt=""
+     width="412.2"
+     height="500.2"
+     className="lighting-300__shape-2"
+    />
+    <Img
+     src="assets/svg/lighting/lighting-300__shape-3.svg"
+     alt=""
+     width="405.26"
+     height="470.8"
+     className="lighting-300__shape-3"
+    />
+   </Div>
+
    <Div className="lighting-100">
     <Img
      src="assets/svg/lighting/lighting-100__shape-1.svg"
@@ -38,7 +62,6 @@ export default async function Home() {
      height="503.89"
      className="lighting-100__shape-1"
     />
-
     <Img
      src="assets/svg/lighting/lighting-100__shape-4.svg"
      alt=""
@@ -93,6 +116,13 @@ export default async function Home() {
         </Div>
         <Div className="grid-200__it">
          <H1 className="main-title">
+          <Img
+           src="assets/svg/lighting/lighting-100__shape-1.svg"
+           widrth="402.92"
+           height="503.89"
+           alt=""
+           className="lighting-200"
+          />
           The Next <Span>Generation</Span> Payment Method.
           <Link href="#" className="unique-btn">
            <Span className="unique-btn__txt">

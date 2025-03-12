@@ -1408,6 +1408,12 @@ body {
  }
 }
 
+.s-200 {
+ &__fix {
+  @apply rel;
+ }
+}
+
 .grid-200 {
  @apply gap-x
 								grid
@@ -2485,8 +2491,83 @@ body {
 }
 
 @-moz-document url-prefix() {
- // .lighting-100
- .lighting-100 {
+ .lighting {
+  &-100,
+  &-200,
+  &-300,
+  &-400,
+  &-500 {
+   @apply !hidden;
+  }
+ }
+}
+
+.lighting-200 {
+ @apply absolute
+								inset-x-0
+								left-[0%]
+								top-[50%]
+								z-[-1]
+								block
+								w-full
+								max-w-[19.5rem]
+								translate-x-[-50%]
+								translate-y-[-50%];
+
+ filter: blur(17rem);
+
+ @media (max-width: $lgx) {
   @apply hidden;
+ }
+}
+
+.s-200 {
+ .main-title {
+  @apply relative
+									right-0
+									top-0
+									z-[1];
+ }
+}
+
+.lighting-300 {
+ @apply absolute
+								left-[-58.116rem]
+								top-[135.2rem]
+								block
+								aspect-[1447/1083]
+								w-full
+								max-w-[144.7rem]
+								bg-cover
+								bg-left-top
+								bg-no-repeat;
+
+ filter: blur(30rem);
+
+ &__shape-1 {
+  @apply absolute
+									left-0
+									top-0
+									aspect-[630.45/549.01]
+									w-full
+									max-w-[43.56945404284727%];
+ }
+
+ &__shape-2 {
+  @apply absolute
+									left-[29.30200414651002%]
+									top-[53.87453874538745%]
+									aspect-[412.2/500.2]
+									w-full
+									max-w-[28.54181064270905%];
+ }
+
+ &__shape-3 {
+  @apply absolute
+									right-0
+									top-[18.35793357933579%]
+									aspect-[405.26/470.8]
+									w-full
+									max-w-[28.05805114029026%];
  }
 }
