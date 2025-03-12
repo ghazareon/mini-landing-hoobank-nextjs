@@ -11,6 +11,10 @@
     @apply aspect-[12.45/11.36] w-[1.2449999999999999rem] h-auto;
   }
 
+  &--burger {
+    @apply aspect-[16.3/10.02] w-[1.6300000000000001rem] h-auto;
+  }
+
   &--check {
     @apply aspect-[24/24] w-[2.4rem] h-auto;
   }

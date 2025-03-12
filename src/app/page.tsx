@@ -88,6 +88,57 @@ export default async function Home() {
    </Div>
 
    <Div className="wrap">
+    <Header className="s-100">
+     <Div className="s-100__fix fix">
+      <Div className="grid-100">
+       <Link href="#" className="logo logo--1">
+        <Img src="assets/svg/logo.svg" width="116.95" height="32" alt="" />
+       </Link>
+
+       <Div className="for-mobile for-mobile--menu">
+        <Nav className="main-nav">
+         <Ul className="main-nav__ul">
+          <Li className="main-nav__li">
+           <Link href="#" className="main-nav__a">
+            About Us
+           </Link>
+          </Li>
+          <Li className="main-nav__li">
+           <Link href="#" className="main-nav__a">
+            Features
+           </Link>
+          </Li>
+          <Li className="main-nav__li">
+           <Link href="#" className="main-nav__a">
+            Solution
+           </Link>
+          </Li>
+          <Li className="main-nav__li">
+           <Link href="#" className="main-nav__a">
+            Testimonials
+           </Link>
+          </Li>
+          <Li className="main-nav__li">
+           <Link href="#" className="main-nav__a">
+            Get Started
+           </Link>
+          </Li>
+         </Ul>
+        </Nav>
+
+        <Link href="#" className="burger-btn">
+         <SvgSprite
+          name="burger"
+          width="16.3"
+          height="10.02"
+          className="burger-btn__icon"
+         />
+        </Link>
+       </Div>
+      </Div>
+     </Div>
+    </Header>
+
     <Main>
      <Section className="s-200">
       <Div className="s-200__fix fix">
