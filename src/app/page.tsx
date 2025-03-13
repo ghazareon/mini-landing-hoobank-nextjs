@@ -30,21 +30,27 @@ import { SocPagesData } from "@/src/app/components/organisms/SocPages/SocPagesDa
 import { fetchCats, fetchPostByCatId } from "@/src/shared/api";
 
 export default async function Home() {
- const getCatBySlug = async (data: ICat700[], slug: s) =>
-  data.filter((it: ICat700) => it.slug === slug);
+ // const getCatBySlug = async <T extends { slug: U }, U>(data: T[], slug: U) =>
+ //  data.filter((it: T) => it.slug === slug);
 
- const cats = await fetchCats();
- const catBySlug = await getCatBySlug(cats, "testimonials");
+ // const cats = await fetchCats();
+ // const catBySlug = (
+ //  await getCatBySlug<ICat700, s>(await fetchCats(), "testimonials")
+ // )[0].id;
 
- const cat = catBySlug[0];
- const catId = +cat.id;
+ // console.log(catBySlug);
 
- const catInfo = {
-  title: cat.acf.long_title,
-  descr: cat.description
- };
+ // const cat = catBySlug[0];
+ // const catId = +cat.id;
 
- const postsDataS700 = await fetchPostByCatId(catId);
+ // const catInfo = {
+ //  title: cat.acf.long_title,
+ //  descr: cat.description
+ // };
+
+ // const postsDataS700 = await fetchPostByCatId(catBySlug);
+
+ // console.log(postsDataS700);
 
  return (
   <>
@@ -316,6 +322,7 @@ export default async function Home() {
          <Div className="info-caption__i">3800+</Div>
          <Div className="info-caption__c">USER ACTIVE</Div>
         </Div>
+
         <I className="breaker"></I>
         <Div className="info-caption">
          <Div className="info-caption__i">230+</Div>
@@ -726,7 +733,7 @@ export default async function Home() {
       </Div>
      </Section>
 
-     <Testimonials posts={postsDataS700} catInfo={catInfo} />
+     {/* <Testimonials posts={postsDataS700} catInfo={catInfo} /> */}
 
      <Section className="s-800">
       <Div className="s-800__fix fix">
