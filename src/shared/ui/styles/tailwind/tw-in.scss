@@ -2644,10 +2644,16 @@ body {
 }
 
 .burger-btn {
- @apply absolute
+ @apply fixed
 								right-[32px]
 								top-[35px]
 								hidden;
+
+ z-index: 1000;
+
+ @media (max-width: $md) {
+  @apply block;
+ }
 
  // .burger-btn:after
  &:after {
@@ -2674,19 +2680,16 @@ body {
  &--menu {
   @media (max-width: $md) {
    // .for-mobile--menu .burger-btn
-   .burger-btn {
-    @apply block;
-   }
 
    @apply fixed
-			right-0
-			top-0
-			z-[100]
-			block
-			h-screen
-			w-full
-			max-w-[32rem]
-	bg-gray-425/80;
+										right-0
+										top-0
+										z-[100]
+										hidden
+										h-screen
+										w-full
+										max-w-[32rem]
+								bg-gray-425/80;
 
    // .for-mobile--menu .main-nav
    .main-nav {

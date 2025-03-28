@@ -17,7 +17,7 @@ import {
 	Li, Figure, Figcaption, Article, Br, I, Label, Picture,
 	Select, Source } from "@/src/app/components/electrons";
 
-import { CoreEntity, SvgSprite } from "@/src/app/components/molecules";
+import { CoreEntity, SvgSprite, MainNav } from "@/src/app/components/molecules";
 
 import { SocPages, Testimonials } from "@/src/app/components/organisms";
 
@@ -30,123 +30,26 @@ import { SocPagesData } from "@/src/app/components/organisms/SocPages/SocPagesDa
 import { fetchCats, fetchPostByCatId } from "@/src/shared/api";
 
 export default async function Home() {
- // const getCatBySlug = async <T extends { slug: U }, U>(data: T[], slug: U) =>
- //  data.filter((it: T) => it.slug === slug);
+ const getCatBySlug = async <T extends { slug: U }, U>(data: T[], slug: U) =>
+  data.filter((it: T) => it.slug === slug);
 
- // const cats = await fetchCats();
- // const catBySlug = (
- //  await getCatBySlug<ICat700, s>(await fetchCats(), "testimonials")
- // )[0].id;
+ const cats = await fetchCats();
+ const catBySlug = (
+  await getCatBySlug<ICat700, s>(await fetchCats(), "testimonials")
+ )[0];
 
- // console.log(catBySlug);
+ const cat = catBySlug;
+ const catId = +cat.id;
 
- // const cat = catBySlug[0];
- // const catId = +cat.id;
+ const catInfo = {
+  title: cat.acf.long_title,
+  descr: cat.description
+ };
 
- // const catInfo = {
- //  title: cat.acf.long_title,
- //  descr: cat.description
- // };
-
- // const postsDataS700 = await fetchPostByCatId(catBySlug);
-
- // console.log(postsDataS700);
+ const postsDataS700 = await fetchPostByCatId(catId);
 
  return (
   <>
-   <Div className="lighting-500 !hidden">
-    <Img
-     src="assets/svg/lighting/lighting-500__shape-1.svg"
-     alt=""
-     width="532"
-     height="526"
-     className="lighting-500__shape-1"
-    />
-
-    <Img
-     src="assets/svg/lighting/lighting-500__shape-2.svg"
-     alt=""
-     width="530.85"
-     height="524.32"
-     className="lighting-500__shape-2"
-    />
-   </Div>
-
-   <Div className="lighting-400 !hidden">
-    <Img
-     src="assets/svg/lighting/lighting-400__shape-1.svg"
-     alt=""
-     width="532"
-     height="526"
-     className="lighting-400__shape-1"
-    />
-
-    <Img
-     src="assets/svg/lighting/lighting-400__shape-2.svg"
-     alt=""
-     width="514"
-     height="360"
-     className="lighting-400__shape-2"
-    />
-   </Div>
-
-   <Div className="lighting-300 !hidden">
-    <Img
-     src="assets/svg/lighting/lighting-300__shape-1.svg"
-     alt=""
-     width="630.45"
-     height="549.01"
-     className="lighting-300__shape-1"
-    />
-    <Img
-     src="assets/svg/lighting/lighting-300__shape-2.svg"
-     alt=""
-     width="412.2"
-     height="500.2"
-     className="lighting-300__shape-2"
-    />
-    <Img
-     src="assets/svg/lighting/lighting-300__shape-3.svg"
-     alt=""
-     width="405.26"
-     height="470.8"
-     className="lighting-300__shape-3"
-    />
-   </Div>
-
-   <Div className="lighting-100 !hidden">
-    <Img
-     src="assets/svg/lighting/lighting-100__shape-1.svg"
-     alt=""
-     width="402.92"
-     height="503.89"
-     className="lighting-100__shape-1"
-    />
-    <Img
-     src="assets/svg/lighting/lighting-100__shape-4.svg"
-     alt=""
-     width="630.46"
-     height="559.12"
-     className="lighting-100__shape-4"
-    />
-
-    <Img
-     src="assets/svg/lighting/lighting-100__shape-3.svg"
-     alt=""
-     width="405"
-     height="471"
-     className="lighting-100__shape-3"
-    />
-
-    <Img
-     src="assets/svg/lighting/lighting-100__shape-2.svg"
-     alt=""
-     width="578"
-     height="571"
-     className="lighting-100__shape-2"
-    />
-   </Div>
-
    <Div className="wrap">
     <Header className="s-100">
      <Div className="s-100__fix fix">
@@ -155,46 +58,7 @@ export default async function Home() {
         <Img src="assets/svg/logo.svg" width="116.95" height="32" alt="" />
        </Link>
 
-       <Div className="for-mobile for-mobile--menu">
-        <Nav className="main-nav">
-         <Ul className="main-nav__ul">
-          <Li className="main-nav__li">
-           <Link href="#" className="main-nav__a">
-            About Us
-           </Link>
-          </Li>
-          <Li className="main-nav__li">
-           <Link href="#" className="main-nav__a">
-            Features
-           </Link>
-          </Li>
-          <Li className="main-nav__li">
-           <Link href="#" className="main-nav__a">
-            Solution
-           </Link>
-          </Li>
-          <Li className="main-nav__li">
-           <Link href="#" className="main-nav__a">
-            Testimonials
-           </Link>
-          </Li>
-          <Li className="main-nav__li">
-           <Link href="#" className="main-nav__a">
-            Get Started
-           </Link>
-          </Li>
-         </Ul>
-        </Nav>
-
-        <Link href="#" className="burger-btn">
-         <SvgSprite
-          name="burger"
-          width="16.3"
-          height="10.02"
-          className="burger-btn__icon"
-         />
-        </Link>
-       </Div>
+       <MainNav />
       </Div>
      </Div>
     </Header>
@@ -733,9 +597,85 @@ export default async function Home() {
       </Div>
      </Section>
 
-     {/* <Testimonials posts={postsDataS700} catInfo={catInfo} /> */}
+     <Testimonials posts={postsDataS700} catInfo={catInfo} />
 
-     <Section className="s-800">
+     <Section className="s-700">
+      <Div className="s-700__fix fix">
+       <Div className="grid-700">
+        <H2 className="s__t s__t--s-700">What people ares aying about us</H2>
+        <P className="s__d s__d--s-700">
+         Everything you need to accept card payments and grow your business
+         anywhere on the planet.
+        </P>
+       </Div>
+
+       <Div className="grid-705">
+        <Article className="box-700">
+         <SvgSprite
+          name="quote"
+          width="42.6"
+          height="27.6"
+          className="box-700__svg"
+         />
+
+         <Div className="s__d s__d--s-700">
+          Money is only a tool. It will take you wherever you wish, but it will
+          not replace you as the driver.
+         </Div>
+
+         <Div className="img-info">
+          <Div className="img-info__c img-info__c--1"></Div>
+          <Div className="img-info__c img-info__c--2">
+           <H3 className="img-info__t">Herman Jensen</H3>
+           <P className="img-info__d">Founder & Leader</P>
+          </Div>
+         </Div>
+        </Article>
+        <Article className="box-700">
+         <SvgSprite
+          name="quote"
+          width="42.6"
+          height="27.6"
+          className="box-700__svg"
+         />
+         <Div className="s__d s__d--s-700">
+          Money is only a tool. It will take you wherever you wish, but it will
+          not replace you as the driver.
+         </Div>
+
+         <Div className="img-info">
+          <Div className="img-info__c img-info__c--1"></Div>
+          <Div className="img-info__c img-info__c--2">
+           <H3 className="img-info__t">Herman Jensen</H3>
+           <P className="img-info__d">Founder & Leader</P>
+          </Div>
+         </Div>
+        </Article>
+        <Article className="box-700">
+         <SvgSprite
+          name="quote"
+          width="42.6"
+          height="27.6"
+          className="box-700__svg"
+         />
+         <Div className="s__d s__d--s-700">
+          Money is only a tool. It will take you wherever you wish, but it will
+          not replace you as the driver.
+         </Div>
+
+         <Div className="img-info">
+          <Div className="img-info__c img-info__c--1"></Div>
+          <Div className="img-info__c img-info__c--2">
+           <H3 className="img-info__t">Herman Jensen</H3>
+           <P className="img-info__d">Founder & Leader</P>
+          </Div>
+         </Div>
+        </Article>
+       </Div>
+      </Div>
+     </Section>
+
+     <Section className="s-800 hidden">
       <Div className="s-800__fix fix">
        <Div className="grid-800">
         <Img
@@ -768,11 +708,11 @@ export default async function Home() {
         />
        </Div>
 
-       <Div className="pagination">
+       {/* <Div className="pagination">
         <Div className="pagination__it pagination__it--current"></Div>
         <Div className="pagination__it"></Div>
         <Div className="pagination__it"></Div>
-       </Div>
+       </Div> */}
       </Div>
      </Section>
 
@@ -956,6 +896,99 @@ export default async function Home() {
       </Div>
      </Section>
     </Footer>
+   </Div>
+
+   <Div className="lighting-500 !hidden">
+    <Img
+     src="assets/svg/lighting/lighting-500__shape-1.svg"
+     alt=""
+     width="532"
+     height="526"
+     className="lighting-500__shape-1"
+    />
+
+    <Img
+     src="assets/svg/lighting/lighting-500__shape-2.svg"
+     alt=""
+     width="530.85"
+     height="524.32"
+     className="lighting-500__shape-2"
+    />
+   </Div>
+
+   <Div className="lighting-400 !hidden">
+    <Img
+     src="assets/svg/lighting/lighting-400__shape-1.svg"
+     alt=""
+     width="532"
+     height="526"
+     className="lighting-400__shape-1"
+    />
+
+    <Img
+     src="assets/svg/lighting/lighting-400__shape-2.svg"
+     alt=""
+     width="514"
+     height="360"
+     className="lighting-400__shape-2"
+    />
+   </Div>
+
+   <Div className="lighting-300 !hidden">
+    <Img
+     src="assets/svg/lighting/lighting-300__shape-1.svg"
+     alt=""
+     width="630.45"
+     height="549.01"
+     className="lighting-300__shape-1"
+    />
+    <Img
+     src="assets/svg/lighting/lighting-300__shape-2.svg"
+     alt=""
+     width="412.2"
+     height="500.2"
+     className="lighting-300__shape-2"
+    />
+    <Img
+     src="assets/svg/lighting/lighting-300__shape-3.svg"
+     alt=""
+     width="405.26"
+     height="470.8"
+     className="lighting-300__shape-3"
+    />
+   </Div>
+
+   <Div className="lighting-100 !hidden">
+    <Img
+     src="assets/svg/lighting/lighting-100__shape-1.svg"
+     alt=""
+     width="402.92"
+     height="503.89"
+     className="lighting-100__shape-1"
+    />
+    <Img
+     src="assets/svg/lighting/lighting-100__shape-4.svg"
+     alt=""
+     width="630.46"
+     height="559.12"
+     className="lighting-100__shape-4"
+    />
+
+    <Img
+     src="assets/svg/lighting/lighting-100__shape-3.svg"
+     alt=""
+     width="405"
+     height="471"
+     className="lighting-100__shape-3"
+    />
+
+    <Img
+     src="assets/svg/lighting/lighting-100__shape-2.svg"
+     alt=""
+     width="578"
+     height="571"
+     className="lighting-100__shape-2"
+    />
    </Div>
   </>
  );

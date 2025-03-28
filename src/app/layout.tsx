@@ -24,6 +24,8 @@ import { metaTagsNext } from "@/src/shared/data/headMeta";
 import appDb from "@/src/shared/data/appDb.json";
 import { Fonts } from "@/src/app/nextFonts";
 
+// import { Scrollbar } from "smooth-scrollbar-react";
+
 export const metadata: Metadata = {
  title: "",
  description: ""
@@ -53,7 +55,8 @@ export default function RootLayout({
    </Head>
    <Body className={Fonts.variable}>
     <Noscript></Noscript>
-    {children}
+
+    >{children}
    </Body>
   </Html>
  );

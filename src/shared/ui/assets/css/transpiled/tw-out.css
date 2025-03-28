@@ -550,6 +550,10 @@ body::-webkit-resizer{
   display:none !important;
 }
 
+.hidden {
+  display:none;
+}
+
 .grow {
   flex-grow:1;
 }
@@ -3454,10 +3458,12 @@ body {
 }
 
 .burger-btn {
-  position:absolute;
+  position:fixed;
   right:32px;
   top:35px;
   display:none;
+
+ z-index:1000;
 }
 
 .burger-btn:after {
@@ -4452,12 +4458,16 @@ body {
          column-gap:2rem;
   }
 
+.burger-btn {
+    display:block;
+  }
+
 .for-mobile--menu{
    position:fixed;
    right:0px;
    top:0px;
    z-index:100;
-   display:block;
+   display:none;
    height:100vh;
    width:100%;
    max-width:32rem;
@@ -4469,9 +4479,6 @@ body {
    background-color:rgba( 0 4 15 / var(--opacity-80))
  }
 }
-   .for-mobile--menu .burger-btn {
-    display:block;
-  }
     .for-mobile--menu .main-nav__ul {
     display:block;
     padding:2.02rem;

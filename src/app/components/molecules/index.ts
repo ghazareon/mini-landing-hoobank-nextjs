@@ -8,3 +8,6 @@ export { CoreEntity } from "./CoreEntity";
 
 export type { SvgSpriteProps } from "./SvgSprite/";
 export { SvgSprite } from "./SvgSprite/";
+
+export type { MainNavProps } from "./MainNav";
+export { MainNav } from "./MainNav";
