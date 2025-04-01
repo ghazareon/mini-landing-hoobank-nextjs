@@ -24,6 +24,8 @@
 
 @import url("components/atoms/main.scss");
 
+@import "../../../../../node_modules/locomotive-scroll/dist/locomotive-scroll.min.css";
+
 @tailwind utilities;
 @tailwind base;
 @tailwind components;
@@ -2774,5 +2776,27 @@ body {
 									aspect-[530.85/524.32]
 									w-full
 									max-w-[530.85];
+ }
+}
+
+.wrap {
+ position: relative;
+ top: 0;
+ left: 0;
+ &__front {
+  position: relative;
+  top: 0;
+  left: 0;
+  z-index: 2;
+ }
+ &__back {
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 100%;
+  width: 100%;
+  z-index: 1;
+
+  overflow: hidden;
  }
 }
