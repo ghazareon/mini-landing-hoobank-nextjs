@@ -609,88 +609,9 @@ export default function Home() {
       </Div>
      </Section>
 
-     <Div>
-      {/* <Testimonials posts={postsDataS700} catInfo={catInfo} /> */}
-      <Testimonials />
-     </Div>
+     <Testimonials />
 
-     <Section className="s-700 hidden">
-      <Div className="s-700__fix fix">
-       <Div className="grid-700">
-        <H2 className="s__t s__t--s-700">What people ares aying about us</H2>
-        <P className="s__d s__d--s-700">
-         Everything you need to accept card payments and grow your business
-         anywhere on the planet.
-        </P>
-       </Div>
-
-       <Div className="grid-705">
-        <Article className="box-700">
-         <SvgSprite
-          name="quote"
-          width="42.6"
-          height="27.6"
-          className="box-700__svg"
-         />
-
-         <Div className="s__d s__d--s-700">
-          Money is only a tool. It will take you wherever you wish, but it will
-          not replace you as the driver.
-         </Div>
-
-         <Div className="img-info">
-          <Div className="img-info__c img-info__c--1"></Div>
-          <Div className="img-info__c img-info__c--2">
-           <H3 className="img-info__t">Herman Jensen</H3>
-           <P className="img-info__d">Founder & Leader</P>
-          </Div>
-         </Div>
-        </Article>
-        <Article className="box-700">
-         <SvgSprite
-          name="quote"
-          width="42.6"
-          height="27.6"
-          className="box-700__svg"
-         />
-         <Div className="s__d s__d--s-700">
-          Money is only a tool. It will take you wherever you wish, but it will
-          not replace you as the driver.
-         </Div>
-
-         <Div className="img-info">
-          <Div className="img-info__c img-info__c--1"></Div>
-          <Div className="img-info__c img-info__c--2">
-           <H3 className="img-info__t">Herman Jensen</H3>
-           <P className="img-info__d">Founder & Leader</P>
-          </Div>
-         </Div>
-        </Article>
-        <Article className="box-700">
-         <SvgSprite
-          name="quote"
-          width="42.6"
-          height="27.6"
-          className="box-700__svg"
-         />
-         <Div className="s__d s__d--s-700">
-          Money is only a tool. It will take you wherever you wish, but it will
-          not replace you as the driver.
-         </Div>
-
-         <Div className="img-info">
-          <Div className="img-info__c img-info__c--1"></Div>
-          <Div className="img-info__c img-info__c--2">
-           <H3 className="img-info__t">Herman Jensen</H3>
-           <P className="img-info__d">Founder & Leader</P>
-          </Div>
-         </Div>
-        </Article>
-       </Div>
-      </Div>
-     </Section>
-
-     <Section className="s-800 hidden">
+     <Section className="s-800">
       <Div className="s-800__fix fix">
        <Div className="grid-800">
         <Img

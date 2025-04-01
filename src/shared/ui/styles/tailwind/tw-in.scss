@@ -5,7 +5,7 @@
 
 @import url("base/media-query.scss");
 
-@import url("../common/dev/sections.scss");
+// @import url("../common/dev/sections.scss");
 
 @import url("tw-utils/grid.scss");
 @import url("tw-utils/extends.scss");
@@ -713,7 +713,6 @@ body {
 
  @media (max-width: $lgx) {
   flex-direction: column;
-  // max-width: 80rem;
  }
 }
 
@@ -2658,6 +2657,7 @@ body {
 								z-[1000]
 								hidden;
 
+ // .burger-btn--show
  &--show {
   @apply block;
  }
@@ -2683,11 +2683,8 @@ body {
 }
 
 .for-mobile {
- // .for-mobile--menu
+ // .for-mobile--show
  &--show {
-  // @media (max-width: $md) {}
-  // .for-mobile--menu .burger-btn
-  /* hidden */
   @apply fixed
 										right-0
 										top-0
@@ -2697,14 +2694,14 @@ body {
 										max-w-[32rem]
 								bg-gray-425/90;
 
-  // .for-mobile--menu .main-nav
+  // .for-mobile--show .main-nav
   .main-nav {
-   // .for-mobile--menu .main-nav__ul
+   // .for-mobile--show .main-nav__ul
    &__ul {
     @apply block
 												p-[2.02rem];
    }
-   // .for-mobile--menu .main-nav__a
+   // .for-mobile--show .main-nav__a
    &__a {
     @apply block
 					px-[1.502rem]
@@ -2782,11 +2779,13 @@ body {
 .wrap {
  @apply rel;
 
+ // .wrap__front
  &__front {
   @apply rel
 									z-[2];
  }
 
+ // .wrap__back
  &__back {
   @apply absolute
 									left-0
