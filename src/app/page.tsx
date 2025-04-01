@@ -86,7 +86,11 @@ export default function Home() {
     <Header className="s-100">
      <Div className="s-100__fix fix">
       <Div className="grid-100">
-       <Link href="#" className="logo logo--1">
+       <Link
+        href="#"
+        className="logo logo--1"
+        aria-label="Logo Hoobank Payment Method"
+       >
         <Img src="assets/svg/logo.svg" width="116.95" height="32" alt="" />
        </Link>
 
@@ -101,7 +105,7 @@ export default function Home() {
        <Div className="grid-200">
         <Div className="grid-200__it">
          <Div className="badge">
-          <Div className="symbol">
+          <Div className="symbol" aria-hidden="true">
            <SvgSprite
             name="percent"
             width="9.19"
@@ -131,7 +135,7 @@ export default function Home() {
            className="lighting-200"
           />
           The Next <Span>Generation</Span> Payment Method.
-          <Link href="#" className="unique-btn">
+          <Link href="#" className="unique-btn" aria-label="Get Started button">
            <Span className="unique-btn__txt">
             Get
             <Br />
@@ -154,13 +158,17 @@ export default function Home() {
          </P>
 
          <Div className="btn-cell">
-          <Link href="#" className="btn btn--s-200">
+          <Link
+           href="#"
+           className="btn btn--s-200"
+           aria-label="get started button"
+          >
            Get Started
           </Link>
          </Div>
         </Div>
         <Div className="grid-200__it">
-         <Div className="collage-200">
+         <Div className="collage-200" aria-hidden="true">
           <Div className="ball ball--1"></Div>
           <Div className="ball ball--2"></Div>
           <Div className="ball ball--3"></Div>
@@ -172,6 +180,8 @@ export default function Home() {
            height="223.24"
            loading="lazy"
            decoding="async"
+           aria-hidden="true"
+           alt=""
           />
 
           <Img
@@ -181,6 +191,8 @@ export default function Home() {
            height="223.24"
            loading="lazy"
            decoding="async"
+           aria-hidden="true"
+           alt=""
           />
 
           <Img
@@ -190,6 +202,8 @@ export default function Home() {
            height="219.58"
            loading="lazy"
            decoding="async"
+           aria-hidden="true"
+           alt=""
           />
 
           <Img
@@ -200,10 +214,11 @@ export default function Home() {
            src="assets/img/hand/hand-1x.png"
            width="256"
            className="collage-200__img-4"
+           aria-hidden="true"
            srcSet="assets/img/hand/hand-1x.webp,
-														assets/img/hand/hand-2x.webp 2x,
-														assets/img/hand/hand-3x.webp 3x,
-														assets/img/hand/hand-4x.webp 4x"
+																			assets/img/hand/hand-2x.webp 2x,
+																			assets/img/hand/hand-3x.webp 3x,
+																			assets/img/hand/hand-4x.webp 4x"
           />
          </Div>
         </Div>
@@ -218,7 +233,7 @@ export default function Home() {
        <Div className="grid-400">
         <Div className="grid-400__it">
          {/*  */}
-         <Div className="collage-400">
+         <Div className="collage-400" aria-hidden="true">
           <Div className="msg">
            <SvgSprite
             name="check"
@@ -340,7 +355,7 @@ export default function Home() {
            </Div>
 
            <Div className="card__r">
-            <Link href="#" className="btn btn--long">
+            <Link href="#" className="btn btn--long" aria-label="Make Payment">
              Make Payment
             </Link>
            </Div>
@@ -360,19 +375,31 @@ export default function Home() {
         </Div>
         <Div className="grid-400__it">
          <Div className="app-store-btns">
-          <Link href="#" className="app-store-btn" target="_blank">
+          <Link
+           href="#"
+           className="app-store-btn"
+           target="_blank"
+           aria-label="Link to download the application for installation on a mobile device from the App Store"
+          >
            <Img
             src="assets/svg/logos/app-store.svg"
             width="108.75"
             height="27.53"
+            alt=""
             className="btn-img btn-img--app-store"
            />
           </Link>
-          <Link href="#" className="app-store-btn" target="_blank">
+          <Link
+           href="#"
+           className="app-store-btn"
+           target="_blank"
+           aria-label="Link to download the application for installation on a mobile device from the Google Play"
+          >
            <Img
             src="assets/svg/logos/google-play.svg"
             width="101.25"
             height="24.2"
+            alt=""
             className="btn-img btn-img--google-play"
            />
           </Link>
@@ -401,7 +428,11 @@ export default function Home() {
         </Div>
 
         <Div className="grid-500__it">
-         <Link href="#" className="btn btn--s-500">
+         <Link
+          href="#"
+          className="btn btn--s-500"
+          aria-label="get started button"
+         >
           Get Started
          </Link>
         </Div>
@@ -488,13 +519,17 @@ export default function Home() {
          </P>
         </Div>
         <Div className="grid-600__it">
-         <Link href="#" className="btn btn--s-200">
+         <Link
+          href="#"
+          className="btn btn--s-200"
+          aria-label="get started button"
+         >
           Get Started
          </Link>
         </Div>
         <Div className="grid-600__it"></Div>
         <Div className="grid-600__it">
-         <Div className="collage-600">
+         <Div className="collage-600" aria-hidden="true">
           <Div className="card card--600">
            <Span className="symbol-600">
             <SvgSprite className="scan" name="scan" width="22" height="18.01" />
@@ -664,7 +699,7 @@ export default function Home() {
           </P>
          </Div>
 
-         <Link href="#" className="btn">
+         <Link href="#" className="btn" aria-label="get started button">
           Get Started
          </Link>
         </Div>
@@ -680,7 +715,11 @@ export default function Home() {
 
        <Div className="grid-1000">
         <Div className="grid-1000__it">
-         <Link href="#" className="logo logo--2">
+         <Link
+          href="#"
+          className="logo logo--2"
+          aria-label="Logo Hoobank Payment Method"
+         >
           <Img
            src="assets/svg/logo-2.svg"
            alt=""
@@ -694,7 +733,7 @@ export default function Home() {
          </Div>
         </Div>
         <Div className="grid-1000__it">
-         <H4 className="h4-1000 h4-1000--s-1000">Usefull Links</H4>
+         <H3 className="h4-1000 h4-1000--s-1000">Usefull Links</H3>
          <Ul className="l-1000 l-1000--s-1000">
           <Li className="l-1000__li">
            <Link className="l-1000__a" href="#">
@@ -724,7 +763,7 @@ export default function Home() {
          </Ul>
         </Div>
         <Div className="grid-1000__it">
-         <H4 className="h4-1000 h4-1000--s-1000">Community</H4>
+         <H3 className="h4-1000 h4-1000--s-1000">Community</H3>
 
          <Ul className="l-1000 l-1000--s-1000">
           <Li className="l-1000__li">
@@ -755,7 +794,7 @@ export default function Home() {
          </Ul>
         </Div>
         <Div className="grid-1000__it">
-         <H4 className="h4-1000 h4-1000--s-1000">Partner</H4>
+         <H3 className="h4-1000 h4-1000--s-1000">Partner</H3>
          <Ul className="l-1000 l-1000--s-1000">
           <Li className="l-1000__li">
            <Link href="#" className="l-1000__a">
@@ -788,7 +827,11 @@ export default function Home() {
         </Div>
 
         <Div className="soc-pages">
-         <Link href="#" className="soc-page soc-page--inst">
+         <Link
+          href="#"
+          className="soc-page soc-page--inst"
+          aria-label="instagram page company"
+         >
           <Img
            src="assets/svg/icons/inst.svg"
            width="21"
@@ -798,7 +841,11 @@ export default function Home() {
           />
          </Link>
 
-         <Link href="#" className="soc-page soc-page--fb">
+         <Link
+          href="#"
+          className="soc-page soc-page--fb"
+          aria-label="facebook page company"
+         >
           <Img
            src="assets/svg/icons/fb.svg"
            width="21"
@@ -808,7 +855,11 @@ export default function Home() {
           />
          </Link>
 
-         <Link href="#" className="soc-page soc-page--tw">
+         <Link
+          href="#"
+          className="soc-page soc-page--tw"
+          aria-label="twitter page company"
+         >
           <Img
            src="assets/svg/icons/tw.svg"
            width="23"
@@ -818,7 +869,11 @@ export default function Home() {
           />
          </Link>
 
-         <Link href="#" className="soc-page soc-page--tw">
+         <Link
+          href="#"
+          className="soc-page soc-page--tw"
+          aria-label="facebook page linkedin"
+         >
           <Img
            src="assets/svg/icons/in.svg"
            width="20.99"
@@ -833,7 +888,7 @@ export default function Home() {
      </Section>
     </Footer>
    </Div>
-   <Div className="wrap__back">
+   <Div className="wrap__back" aria-hidden="true">
     <Div className="lighting-500">
      <Img
       src="assets/svg/lighting/lighting-500__shape-1.svg"

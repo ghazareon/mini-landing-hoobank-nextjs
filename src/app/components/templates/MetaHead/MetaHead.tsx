@@ -31,7 +31,8 @@ export const MetaHead: FC<MetaHeadProps> = ({
      ) {
       return (
        <CoreUi
-        as={tagName as ElementType}
+        as={tagName}
+        /* as ElementType */
         {...restAttrs}
         href={`${picPath}/${href}`}
         key={id}
@@ -45,14 +46,16 @@ export const MetaHead: FC<MetaHeadProps> = ({
      ) {
       return (
        <CoreUi
-        as={tagName as ElementType}
+        as={tagName}
+        /* as ElementType */
         {...restAttrs}
         content={`${picPath}/${content}`}
         key={id}
        />
       );
      } else {
-      return <CoreUi as={tagName as ElementType} {...restAttrs} key={id} />;
+      return <CoreUi as={tagName} {...restAttrs} key={id} content={content} />;
+      /* as ElementType */
      }
     }
    )}
