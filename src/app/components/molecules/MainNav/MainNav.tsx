@@ -20,7 +20,7 @@ import { Div, Section, P,
 									Li,
 									Ul, Nav}    from "@/src/app/components/electrons";
 
-import type { IObj, s, IPosts700 } from "@/src/shared/types";
+import type { IObj, s, IPosts } from "@/src/shared/types";
 import Link from "@/npm/next/link";
 
 import gsap from "gsap";

@@ -12,14 +12,14 @@ import { Div, Section, P,
 									Img,
 									I}    from "@/src/app/components/electrons";
 
-import type { IObj, s, IPosts700 } from "@/src/shared/types";
+import type { IObj, s, IPosts } from "@/src/shared/types";
 
 import SlotCounter from "react-slot-counter";
 
 import React, { useEffect, useState } from "react";
 
 export interface ICounter {
- // posts: IPosts700[];
+ // posts: IPosts[];
  // catInfo: IObj<s | null>;
 }
 
