@@ -2530,7 +2530,7 @@ body {
   &-300,
   &-400,
   &-500 {
-   @apply !hidden;
+   opacity: 0.2;
   }
  }
 }
@@ -2780,23 +2780,20 @@ body {
 }
 
 .wrap {
- position: relative;
- top: 0;
- left: 0;
- &__front {
-  position: relative;
-  top: 0;
-  left: 0;
-  z-index: 2;
- }
- &__back {
-  position: absolute;
-  top: 0;
-  left: 0;
-  height: 100%;
-  width: 100%;
-  z-index: 1;
+ @apply rel;
 
-  overflow: hidden;
+ &__front {
+  @apply rel
+									z-[2];
+ }
+
+ &__back {
+  @apply absolute
+									left-0
+									top-0
+									z-[1]
+									h-full
+									w-full
+									overflow-hidden;
  }
 }

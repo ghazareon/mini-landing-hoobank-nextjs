@@ -3368,8 +3368,8 @@ body {
   .lighting-200,
   .lighting-300,
   .lighting-400,
-  .lighting-500 {
-    display:none !important;
+  .lighting-500{
+   opacity:0.2;
   }
 }
 
@@ -3633,29 +3633,28 @@ body {
   max-width:530.85;
 }
 
-.wrap{
- position:relative;
- top:0;
- left:0;
+.wrap {
+  position:relative;
+  left:0px;
+  top:0px;
 }
 
-.wrap__front{
-  position:relative;
-  top:0;
-  left:0;
+.wrap__front {
   z-index:2;
- }
+  position:relative;
+  left:0px;
+  top:0px;
+}
 
-.wrap__back{
+.wrap__back {
   position:absolute;
-  top:0;
-  left:0;
+  left:0px;
+  top:0px;
+  z-index:1;
   height:100%;
   width:100%;
-  z-index:1;
-
   overflow:hidden;
- }
+}
 
 @media (min-width: 1536px) {
 
