@@ -55,8 +55,7 @@ export default function RootLayout({
    </Head>
    <Body className={Fonts.variable}>
     <Noscript></Noscript>
-
-    >{children}
+    {children}
    </Body>
   </Html>
  );

@@ -13,9 +13,9 @@ export const fetchCats = async (name: s = "categories", quantity: n = 100) => {
  return res.json();
 };
 
-export const fetchPostByCatId = async (id: n) => {
+export const fetchPostsByCatId = async (id: n, quantity: n = 100) => {
  const res = await fetch(
-  `${process.env.DB_HOST}/${process.env.DB_PATH}/posts?categories=${id}&per_page=100`,
+  `${process.env.DB_HOST}/${process.env.DB_PATH}/posts?categories=${id}&per_page=${quantity}`,
   { cache: "no-store" }
  );
  return res.json();

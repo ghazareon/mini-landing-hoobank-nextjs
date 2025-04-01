@@ -19,7 +19,11 @@ import {
 
 import { CoreEntity, SvgSprite, MainNav } from "@/src/app/components/molecules";
 
-import { SocPages, Testimonials } from "@/src/app/components/organisms";
+import {
+ SocPages,
+ Testimonials,
+ Counter
+} from "@/src/app/components/organisms";
 
 import { Logo, Logo1Date } from "@/src/app/components/organisms";
 
@@ -27,18 +31,27 @@ import "@/src/shared/ui/assets/css/transpiled/tw-out.css";
 
 import { SocPagesData } from "@/src/app/components/organisms/SocPages/SocPagesData";
 
-import { fetchCats, fetchPostByCatId } from "@/src/shared/api";
+import { fetchCats, fetchPostsByCatId } from "@/src/shared/api";
 
 export default async function Home() {
- const getCatBySlug = async <T extends { slug: U }, U>(data: T[], slug: U) =>
-  data.filter((it: T) => it.slug === slug);
+ //
+ // 	interface IGetCatBySlug {
+ //   <T extends { slug: U }, U>(data: T[], slug: U): T;
+ // }
 
- const cats = await fetchCats();
- const catBySlug = (
-  await getCatBySlug<ICat700, s>(await fetchCats(), "testimonials")
- )[0];
+ //  const getCatBySlug: IGetCatBySlug = async (data, slug) => data.filter((it) => it.slug === slug)[0];
 
- const cat = catBySlug;
+ //  const catBySlug = await getCatBySlug<ICat700, s>(await fetchCats(), "testimonials");
+
+ // console.log(catBySlug);
+
+ // const catBySlug = (
+ //  await getCatBySlug<ICat700, s>(await fetchCats(), "testimonials")
+ // )[0];
+
+ // console.log(catBySlug);
+
+ /*  const cat = catBySlug;
  const catId = +cat.id;
 
  const catInfo = {
@@ -46,7 +59,9 @@ export default async function Home() {
   descr: cat.description
  };
 
- const postsDataS700 = await fetchPostByCatId(catId);
+ const postsDataS700 = await fetchPostsByCatId(catId);
+
+	*/
 
  return (
   <>
@@ -179,27 +194,7 @@ export default async function Home() {
       </Div>
      </Section>
 
-     <Section className="s-300">
-      <Div className="s-300__fix fix">
-       <Div className="grid-300">
-        <Div className="info-caption">
-         <Div className="info-caption__i">3800+</Div>
-         <Div className="info-caption__c">USER ACTIVE</Div>
-        </Div>
-
-        <I className="breaker"></I>
-        <Div className="info-caption">
-         <Div className="info-caption__i">230+</Div>
-         <Div className="info-caption__c">TRUSTED BY COMPANY</Div>
-        </Div>
-        <I className="breaker"></I>
-        <Div className="info-caption">
-         <Div className="info-caption__i">$230M+</Div>
-         <Div className="info-caption__c">TRANSACTION</Div>
-        </Div>
-       </Div>
-      </Div>
-     </Section>
+     <Counter />
 
      <Section className="s-400">
       <Div className="s-400__fix fix">
@@ -597,9 +592,12 @@ export default async function Home() {
       </Div>
      </Section>
 
-     <Testimonials posts={postsDataS700} catInfo={catInfo} />
+     <Div>
+      {/* <Testimonials posts={postsDataS700} catInfo={catInfo} /> */}
+      <Testimonials />
+     </Div>
 
-     <Section className="s-700">
+     <Section className="s-700 hidden">
       <Div className="s-700__fix fix">
        <Div className="grid-700">
         <H2 className="s__t s__t--s-700">What people ares aying about us</H2>

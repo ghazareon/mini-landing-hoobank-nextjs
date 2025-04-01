@@ -708,6 +708,11 @@ body {
  @apply gap
 								flex
 								justify-between;
+
+ @media (max-width: $lgx) {
+  flex-direction: column;
+  // max-width: 80rem;
+ }
 }
 
 .box-700 {
@@ -2629,6 +2634,7 @@ body {
  // .main-nav__a
  &__a {
   @apply link-v1
+									whitespace-nowrap
 							text-white/70;
 
   @apply transition-[color]
@@ -2647,11 +2653,10 @@ body {
  @apply fixed
 								right-[32px]
 								top-[35px]
+								z-[1000]
 								hidden;
 
- z-index: 1000;
-
- @media (max-width: $md) {
+ &--show {
   @apply block;
  }
 
@@ -2677,35 +2682,33 @@ body {
 
 .for-mobile {
  // .for-mobile--menu
- &--menu {
-  @media (max-width: $md) {
-   // .for-mobile--menu .burger-btn
-
-   @apply fixed
+ &--show {
+  // @media (max-width: $md) {}
+  // .for-mobile--menu .burger-btn
+  /* hidden */
+  @apply fixed
 										right-0
 										top-0
 										z-[100]
-										hidden
 										h-screen
 										w-full
 										max-w-[32rem]
-								bg-gray-425/80;
+								bg-gray-425/90;
 
-   // .for-mobile--menu .main-nav
-   .main-nav {
-    // .for-mobile--menu .main-nav__ul
-    &__ul {
-     @apply block
+  // .for-mobile--menu .main-nav
+  .main-nav {
+   // .for-mobile--menu .main-nav__ul
+   &__ul {
+    @apply block
 												p-[2.02rem];
-    }
-    // .for-mobile--menu .main-nav__a
-    &__a {
-     @apply block
+   }
+   // .for-mobile--menu .main-nav__a
+   &__a {
+    @apply block
 					px-[1.502rem]
 					py-[1.202rem];
 
-     border-bottom: solid rgba(255, 255, 255, 0.07) 1px;
-    }
+    border-bottom: solid rgba(255, 255, 255, 0.07) 1px;
    }
   }
  }
