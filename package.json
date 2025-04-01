@@ -92,7 +92,8 @@
 		"reset-css": "^5.0.2",
 		"smooth-scrollbar-react": "^2.4.1",
 		"styled-components": "^6.1.15",
-		"swiper": "^11.2.4"
+		"swiper": "^11.2.4",
+		"swr": "^2.3.3"
 	},
 	"devDependencies": {
 		"@csstools/postcss-bundler": "^2.0.6",

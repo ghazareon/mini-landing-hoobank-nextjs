@@ -4,19 +4,12 @@
  */
 
 import type { s, IObj, IObjNest, n } from "@/src/shared/types";
+const { DB_HOST, DB_PATH, DB_ENTITY_CATEGORIES, DB_ENTITY_POSTS } = process.env;
 
-export const fetchCats = async (name: s = "categories", quantity: n = 100) => {
- const res = await fetch(
-  `${process.env.DB_HOST}/${process.env.DB_PATH}/${name}?per_page=${quantity}`,
-  { cache: "no-store" }
- );
- return res.json();
-};
+export const cats = `${DB_HOST}/${DB_PATH}/${DB_ENTITY_CATEGORIES}`;
 
-export const fetchPostsByCatId = async (id: n, quantity: n = 100) => {
- const res = await fetch(
-  `${process.env.DB_HOST}/${process.env.DB_PATH}/posts?categories=${id}&per_page=${quantity}`,
-  { cache: "no-store" }
- );
- return res.json();
-};
+export const fetcher = (url: s) =>
+ fetch(url).then((res) => {
+  if (!res.ok) throw new Error("Network response was not ok");
+  return res.json();
+ });

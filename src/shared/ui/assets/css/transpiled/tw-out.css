@@ -522,10 +522,6 @@ html.has-scroll-dragging{-webkit-user-select:none;-moz-user-select:none;user-sel
  display:block;
 }
 
-.hidden {
- display:none;
-}
-
 .grow {
  flex-grow:1;
 }

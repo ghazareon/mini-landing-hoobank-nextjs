@@ -1,10 +1,12 @@
-"use client";
 /*
  * Author: Hayk Ghazaryan
  * Email: hayk.ghazaryanc@gmail.com
  */
 
-import { FC } from "@/npm/@types/react";
+"use client";
+
+import type { FC } from "@/npm/@types/react";
+import { useState, useEffect } from "react";
 import { Swiper, SwiperSlide } from "swiper/react";
 import { Pagination } from "swiper/modules";
 import { removeHtmlTagsFromStr } from "@/src/shared/utils/removeHtmlTagsFromStr";
@@ -16,16 +18,51 @@ import { Div, Section, P,
 									H2, H3, Article,
 									Img}    from "@/src/app/components/electrons";
 
-import type { IObj, s, IPosts700 } from "@/src/shared/types";
+import type { IObj, s, IPosts } from "@/src/shared/types";
 
 import "../../../../../node_modules/swiper/swiper.css";
 
 export interface ITestimonials {
- // posts: IPosts700[];
+ // posts: IPosts[];
  // catInfo: IObj<s | null>;
 }
 
 export const Testimonials: FC<ITestimonials> = (/* { posts, catInfo } */) => {
+ // const [data, setData] = useState(null);
+ // const [loading, setLoading] = useState(true);
+
+ /*
+ const { data, error } = useSWR(
+  "../../../../shared/data/categories.json",
+  fetcher
+ );
+
+ console.log(data); */
+
+ // useEffect(() => {
+ //  const fetchData = async () => {
+ //   try {
+
+ // 			const { data, error } = useSWR('../../../../shared/data/categories.json', fetcher);
+
+ // 			if (error) return <p>Error: {error.message}</p>;
+ // 			if (!data) return <p>Loading...</p>;
+
+ //    // const jsonModule = await import("../../../../shared/data/categories.json");
+ //    // console.log(jsonModule.default);
+ //    // const jsonModule = await import("../data/example.json");
+ //    // const jsonData = jsonModule.default;
+ //    // await new Promise((resolve) => setTimeout(resolve, 0));
+ //    // setData(jsonData);
+ //   } catch (error) {
+ //    console.error("JSON Error", error);
+ //   } finally {
+ //    // setLoading(false);
+ //   }
+ //  };
+ //  fetchData();
+ // }, []);
+
  return (
   <>
    <Section className="s-700">
@@ -233,7 +270,7 @@ export const Testimonials: FC<ITestimonials> = (/* { posts, catInfo } */) => {
        modules={[Pagination]}
        className="mySwiper"
       >
-       {posts?.map((it: IPosts700) => {
+       {posts?.map((it: IPosts) => {
         return (
          <SwiperSlide key={it.id}>
           <Article className="box-700">

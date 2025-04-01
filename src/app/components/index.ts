@@ -3,11 +3,13 @@
  * Email: hayk.ghazaryanc@gmail.com
  */
 
+/* prettier-ignore */ export type { PageWrapperProps }   from "./atoms";
 /* prettier-ignore */ export type { SvgSpriteProps }     from "./molecules";
 /* prettier-ignore */ export type { CoreUiProps }        from "./electrons";
 /* prettier-ignore */ export type { MetaHeadProps }      from "./templates";
 /* prettier-ignore */ export type { MainNavProps }       from "./molecules";
 
+/* prettier-ignore */ export { PageWrapper }             from "./atoms";
 /* prettier-ignore */ export { SvgSprite, MainNav }      from "./molecules";
 /* prettier-ignore */ export { CoreUi }                  from "./electrons";
 /* prettier-ignore */ export { MetaHead }                from "./templates";
@@ -22,3 +24,5 @@
 																															Noscript, LinkMeta,
 																															Article, Figure,
 																															Figcaption, Svg, Use }    from "./electrons";
+
+/* prettier-ignore */ export { HomeClient }              from "./pages";
