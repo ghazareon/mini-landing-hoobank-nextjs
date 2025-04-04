@@ -38,7 +38,7 @@ import useSWR from "swr";
 
 import { HomeClient, PageWrapper } from "@/src/app/components";
 
-export default function Home() {
+export default async function Home() {
 
 const data = await fetch('http://13.38.24.201/wp-json/wp/v2/categories?per_page=100');
   const posts = await data.json();
