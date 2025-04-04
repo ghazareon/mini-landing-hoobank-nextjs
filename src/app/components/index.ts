@@ -26,3 +26,27 @@
 																															Figcaption, Svg, Use }    from "./electrons";
 
 /* prettier-ignore */ export { HomeClient }              from "./pages";
+
+export type {
+ IS100,
+ IS200,
+ IS300,
+ IS400,
+ IS500,
+ IS600,
+ IS700,
+ IS800,
+ IS900
+} from "./organisms";
+
+export {
+ S100,
+ S200,
+ S300,
+ S400,
+ S500,
+ S600,
+ S700,
+ S800,
+ S900
+} from "./organisms";

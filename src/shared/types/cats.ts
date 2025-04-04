@@ -6,7 +6,7 @@
 import type { s, IObj, n, b } from "@/src/shared/types";
 
 /* prettier-ignore */
-export interface ICats {
+export interface ICat {
 
  description:    s;
  link:           s;

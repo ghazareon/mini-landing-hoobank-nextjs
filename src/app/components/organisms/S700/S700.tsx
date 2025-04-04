@@ -18,61 +18,25 @@ import { Div, Section, P,
 									H2, H3, Article,
 									Img}    from "@/src/app/components/electrons";
 
-import type { IObj, s, IPosts } from "@/src/shared/types";
+import type { IObj, s, IPost, ICat } from "@/src/shared/types";
 
 import "../../../../../node_modules/swiper/swiper.css";
 
-export interface ITestimonials {
- // posts: IPosts[];
- // catInfo: IObj<s | null>;
+export interface IS700 {
+ data: {
+  cat: ICat;
+  posts: IPost[];
+ };
 }
 
-export const Testimonials: FC<ITestimonials> = (/* { posts, catInfo } */) => {
- // const [data, setData] = useState(null);
- // const [loading, setLoading] = useState(true);
-
- /*
- const { data, error } = useSWR(
-  "../../../../shared/data/categories.json",
-  fetcher
- );
-
- console.log(data); */
-
- // useEffect(() => {
- //  const fetchData = async () => {
- //   try {
-
- // 			const { data, error } = useSWR('../../../../shared/data/categories.json', fetcher);
-
- // 			if (error) return <p>Error: {error.message}</p>;
- // 			if (!data) return <p>Loading...</p>;
-
- //    // const jsonModule = await import("../../../../shared/data/categories.json");
- //    // console.log(jsonModule.default);
- //    // const jsonModule = await import("../data/example.json");
- //    // const jsonData = jsonModule.default;
- //    // await new Promise((resolve) => setTimeout(resolve, 0));
- //    // setData(jsonData);
- //   } catch (error) {
- //    console.error("JSON Error", error);
- //   } finally {
- //    // setLoading(false);
- //   }
- //  };
- //  fetchData();
- // }, []);
-
+export const S700: FC<IS700> = ({ data }) => {
  return (
   <>
    <Section className="s-700">
     <Div className="s-700__fix fix">
      <Div className="grid-700">
-      <H2 className="s__t s__t--s-700">What people are saying about us</H2>
-      <P className="s__d s__d--s-700">
-       Everything you need to accept card payments and grow your business
-       anywhere on the planet.
-      </P>
+      <H2 className="s__t s__t--s-700">{data.cat.acf.long_title}</H2>
+      <P className="s__d s__d--s-700">{data.cat.description}</P>
      </Div>
 
      <Div className="grid-705">
@@ -270,7 +234,7 @@ export const Testimonials: FC<ITestimonials> = (/* { posts, catInfo } */) => {
        modules={[Pagination]}
        className="mySwiper"
       >
-       {posts?.map((it: IPosts) => {
+       {posts?.map((it: IPost) => {
         return (
          <SwiperSlide key={it.id}>
           <Article className="box-700">
