@@ -40,7 +40,7 @@ import {
 import { HomeClient, PageWrapper } from "@/src/app/components";
 
 export default async function Home() {
- //
+
  const testimonialsData = async () => {
   const cat = await fetchCatBySlug(catsUrl, "testimonials");
   const posts = await fetchPostsByCatId(postsUrl, cat.id);
@@ -60,6 +60,7 @@ export default async function Home() {
    posts
   };
  };
+
 
  return (
   <PageWrapper>
