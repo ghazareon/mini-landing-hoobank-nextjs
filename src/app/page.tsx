@@ -8,7 +8,7 @@ import { Fragment } from "react";
 import Link from "@/npm/next/link";
 import { clsx } from "clsx";
 
-import type { s, IObj, IObjNest, n, ICats } from "@/src/shared/types";
+import type { s, IObj, IObjNest, n, ICat, IPost } from "@/src/shared/types";
 import type { CoreUiProps } from "@/src/app/components/electrons";
 
 /* prettier-ignore */
@@ -20,11 +20,7 @@ import {
 
 import { CoreEntity, SvgSprite, MainNav } from "@/src/app/components/molecules";
 
-import {
- SocPages,
- Testimonials,
- Counter
-} from "@/src/app/components/organisms";
+import { SocPages, S700, S300 } from "@/src/app/components/organisms";
 
 import { Logo, Logo1Date } from "@/src/app/components/organisms";
 
@@ -32,16 +28,48 @@ import "@/src/shared/ui/assets/css/transpiled/tw-out.css";
 
 import { SocPagesData } from "@/src/app/components/organisms/SocPages/SocPagesData";
 
-import { cats, fetcher } from "@/src/shared/api";
-
-import useSWR from "swr";
+import {
+ catsUrl,
+ postsUrl,
+ rootUrl,
+ selectCatBySlug,
+ fetchCatBySlug,
+ fetchPostsByCatId
+} from "@/src/shared/api";
 
 import { HomeClient, PageWrapper } from "@/src/app/components";
 
 export default async function Home() {
+
+ const testimonialsData = async () => {
+  const cat = await fetchCatBySlug(catsUrl, "testimonials");
+  const posts = await fetchPostsByCatId(postsUrl, cat.id);
+
+  return {
+   cat,
+   posts
+  };
+ };
+
+ const countersData = async () => {
+  const cat = await fetchCatBySlug(catsUrl, "counter");
+  const posts = await fetchPostsByCatId(postsUrl, cat.id);
+
+  return {
+   cat,
+   posts
+  };
+ };
+
+
  return (
   <PageWrapper>
-   <HomeClient />
+   <HomeClient
+    data={{
+     testimonialsData: await testimonialsData(),
+     countersData: await countersData()
+    }}
+   />
   </PageWrapper>
  );
 }

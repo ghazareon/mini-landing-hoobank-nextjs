@@ -4,7 +4,8 @@
  */
 "use client";
 
-import { FC, ReactNode } from "@/npm/@types/react";
+import type { FC, ReactNode } from "@/npm/@types/react";
+import { useEffect, useState } from "react";
 
 /* prettier-ignore */
 import { Div, Section, P,
@@ -12,12 +13,10 @@ import { Div, Section, P,
 									Img,
 									I}    from "@/src/app/components/electrons";
 
-import type { IObj, s, IPosts } from "@/src/shared/types";
-
-import React, { useEffect, useState } from "react";
+import type { IObj, s, IPost } from "@/src/shared/types";
 
 export interface PageWrapperProps {
- children: ReactNode;
+ children?: ReactNode;
 }
 
 export const PageWrapper: FC<PageWrapperProps> = ({ children }) => {

@@ -587,10 +587,6 @@ html.has-scroll-dragging{-webkit-user-select:none;-moz-user-select:none;user-sel
  }
 }
 
-.filter {
- filter:var(--tw-blur) var(--tw-brightness) var(--tw-contrast) var(--tw-grayscale) var(--tw-hue-rotate) var(--tw-invert) var(--tw-saturate) var(--tw-sepia) var(--tw-drop-shadow);
-}
-
 .rel {
  position:relative;
  left:0px;
@@ -612,15 +608,6 @@ html.has-scroll-dragging{-webkit-user-select:none;-moz-user-select:none;user-sel
  --tw-ring-offset-shadow:0 0 #0000;
  --tw-ring-shadow:0 0 #0000;
  --tw-shadow:0 0 #0000;
- --tw-blur:;
- --tw-brightness:;
- --tw-contrast:;
- --tw-grayscale:;
- --tw-hue-rotate:;
- --tw-invert:;
- --tw-saturate:;
- --tw-sepia:;
- --tw-drop-shadow:;
 }
 
 ::backdrop {
@@ -638,15 +625,6 @@ html.has-scroll-dragging{-webkit-user-select:none;-moz-user-select:none;user-sel
  --tw-ring-offset-shadow:0 0 #0000;
  --tw-ring-shadow:0 0 #0000;
  --tw-shadow:0 0 #0000;
- --tw-blur:;
- --tw-brightness:;
- --tw-contrast:;
- --tw-grayscale:;
- --tw-hue-rotate:;
- --tw-invert:;
- --tw-saturate:;
- --tw-sepia:;
- --tw-drop-shadow:;
 }
 
 /*! tailwindcss v3.4.17 | MIT License | https://tailwindcss.com */

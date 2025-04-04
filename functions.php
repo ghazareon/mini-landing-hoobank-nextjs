@@ -246,10 +246,42 @@ add_filter('wp_lazy_loading_enabled', '__return_false');
 add_filter('wp_img_tag_add_auto_sizes', '__return_false');
 
 
-function add_file_types_to_uploads($file_types){
-	$new_filetypes = array();
-	$new_filetypes['svg'] = 'image/svg+xml';
-	$file_types = array_merge($file_types, $new_filetypes );
-	return $file_types;
-	}
-	add_filter('upload_mimes', 'add_file_types_to_uploads');
+// function add_file_types_to_uploads($file_types){
+// 	$new_filetypes = array();
+// 	$new_filetypes['svg'] = 'image/svg+xml';
+// 	$file_types = array_merge($file_types, $new_filetypes );
+// 	return $file_types;
+// 	}
+// 	add_filter('upload_mimes', 'add_file_types_to_uploads');
+
+
+	// EXCLUDE NODE MODULES
+// add_filter( 'ai1wm_exclude_content_from_export',
+// function ( $exclude_filters ) {
+//   $exclude_filters[] = 'wp-content/themes/hoobank/node_modules';
+// 		$exclude_filters[] = 'wp-content/themes/hoobank/.git';
+// 		$exclude_filters[] = 'wp-content/themes/hoobank/.next';
+//   return $exclude_filters;
+// } );
+
+// dd_filter('ai1wm_exclude_content_from_export', 'ignoreCertainFiles');
+
+// function ignoreCertainFiles($exclude_filters)
+// {
+//     $exclude_filters[] = 'themes/hoobank/node_modules';
+//     $exclude_filters[] = 'themes/hoobank/.git';
+//     $exclude_filters[] = 'themes/hoobank/.next';
+//     return $exclude_filters;
+// }
+
+
+
+
+// EXCLUDE NODE MODULES
+// add_filter( 'ai1wm_exclude_themes_from_export',
+// function ( $exclude_filters ) {
+// 	$exclude_filters[] = 'hoobank/node_modules';
+// 	$exclude_filters[] = 'hoobank/.git';
+// 	$exclude_filters[] = 'hoobank/.next';
+//   return $exclude_filters;
+// } );

@@ -6,7 +6,7 @@
 import type { s, IObj, n, b } from "@/src/shared/types";
 
 /* prettier-ignore */
-export interface IPosts {
+export interface IPost {
 
 	guid:                   IObj<s>;
  title:                  IObj<s>;

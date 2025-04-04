@@ -1,6 +1,6 @@
-import type { s } from "../types";
+import type { s, b } from "../types";
 
-export const removeHtmlTagsFromStr = (str: s) => {
+export const removeHtmlTagsFromStr = (str: s | b) => {
  const regex = /(<([^>]+)>)/gi;
- return str.replace(regex, "");
+ return String(str).replace(regex, "");
 };
