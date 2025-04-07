@@ -24,7 +24,7 @@ export interface IS900 {}
 export const S900: FC<IS900> = () => {
  return (
   <>
-   <Section className="s-900">
+   <Section className="s-900" id="get-started">
     <Div className="s-900__fix fix">
      <Div className="box-900">
       <Div className="grid-900">

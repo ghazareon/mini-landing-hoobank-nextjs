@@ -46,8 +46,8 @@ export const HomeClient: FC<HomeClientProps> = ({ data }) => {
      <S300 data={data.countersData} />
      <S400 />
      <S500 />
-     <S600 />
      <S700 data={data.testimonialsData} />
+     <S600 />
      <S800 />
      <S900 />
     </Main>
@@ -57,7 +57,7 @@ export const HomeClient: FC<HomeClientProps> = ({ data }) => {
      <S1100 />
     </Footer>
    </Div>
-   {/* <Div className="wrap__back" aria-hidden="true">
+   <Div className="wrap__back" aria-hidden="true">
     <Div className="lighting-500">
      <Img
       src="assets/svg/lighting/lighting-500__shape-1.svg"
@@ -150,7 +150,7 @@ export const HomeClient: FC<HomeClientProps> = ({ data }) => {
       className="lighting-100__shape-2"
      />
     </Div>
-   </Div> */}
+   </Div>
   </>
  );
 };

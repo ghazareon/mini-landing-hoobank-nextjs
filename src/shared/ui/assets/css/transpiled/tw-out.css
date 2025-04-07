@@ -522,6 +522,10 @@ html.has-scroll-dragging{-webkit-user-select:none;-moz-user-select:none;user-sel
  display:block;
 }
 
+.w-full {
+ width:100%;
+}
+
 .grow {
  flex-grow:1;
 }
@@ -541,6 +545,14 @@ html.has-scroll-dragging{-webkit-user-select:none;-moz-user-select:none;user-sel
 
 .pb-\[3\.4rem\] {
  padding-bottom:3.4rem;
+}
+
+.pt-\[2\.5rem\] {
+ padding-top:2.5rem;
+}
+
+.text-center {
+ text-align:center;
 }
 
 .text-aqua-300 {
@@ -1583,29 +1595,31 @@ body {
  padding-bottom:clamp(4rem,4rem + 5.69vw,11rem);
 }
 
-.grid-705 {
- display:flex;
- justify-content:space-between;
- gap:3rem;
+.swiper-pagination-bullet{
 }
 
-.grid-705 {
- transition-property:column-gap,row-gap;
- transition-property:column-gap,row-gap,-moz-column-gap;
- transition-timing-function:cubic-bezier(0.4, 0, 0.2, 1);
- transition-duration:150ms;
- transition-duration:0.16s,0.16s;
- transition-timing-function:linear,linear;
- will-change:column-gap,row-gap;
+.swiper-pagination-bullet-active{
 }
 
-.box-700 {
+.grid-705 .swiper-pagination-bullet {
+ background-image:radial-gradient(
+    64.33% 64.33% at 71.16% 35.69%,
+    #def9fa 0.89%,
+    #bef3f5 17.23%,
+    #9dedf0 42.04%,
+    #7de7eb 55.12%,
+    #5ce1e6 71.54%,
+    #33bbcf 100%
+  );
+ background-image:var(--background-image-grad-aqua-r-100);
+}
+
+.box-700{
  z-index:1;
  margin-left:auto;
  margin-right:auto;
  min-height:39.9rem;
  width:100%;
- max-width:37rem;
  overflow:hidden;
  border-radius:2rem;
  padding-left:4.001rem;
@@ -1667,7 +1681,7 @@ body {
 }
 
 .img-info__t {
- font-size:2rem;
+ font-size:1.45rem;
  font-weight:400;
  font-weight:var(--font-weight-400);
  line-height:3.2rem;
@@ -1683,7 +1697,7 @@ body {
 
 .img-info__d {
  display:block;
- font-size:1.6rem;
+ font-size:1.45rem;
  font-weight:400;
  font-weight:var(--font-weight-400);
  line-height:2.4rem;
@@ -1703,6 +1717,7 @@ body {
  flex-shrink:0;
  flex-grow:0;
  align-self:flex-start;
+ overflow:hidden;
  border-radius:50%;
  background-color:rgba( 255 255 255   / 0.2);
 }
@@ -3575,6 +3590,36 @@ body {
  overflow:hidden;
 }
 
+.c-scrollbar {
+ width:4px;
+ border-radius:0px;
+ --tw-bg-opacity:1;
+ background-color:rgba( 0 0 0         / 1);
+ opacity:1;
+ opacity:var(--opacity-100);
+}
+
+@supports (color: rgba(0 0 0 / 0)) {
+.c-scrollbar {
+  background-color:rgba( 0 0 0         / var(--tw-bg-opacity, 1));
+ }
+}
+
+.c-scrollbar_thumb {
+ width:0.4rem;
+ border-radius:0px;
+ --tw-bg-opacity:1;
+ background-color:rgba( 51 187 207 / 1);
+ opacity:1;
+ opacity:var(--opacity-100);
+}
+
+@supports (color: rgba(0 0 0 / 0)) {
+.c-scrollbar_thumb {
+  background-color:rgba( 51 187 207 / var(--tw-bg-opacity, 1));
+ }
+}
+
 @media (min-width: 1536px) {
 
  .container {
@@ -3634,10 +3679,6 @@ body {
  }
 
  .grid-1000 {
-  gap:2.2rem;
- }
-
- .grid-705 {
   gap:2.2rem;
  }
 
@@ -3724,10 +3765,6 @@ body {
  }
 
  .grid-1000 {
-  gap:2.2rem;
- }
-
- .grid-705 {
   gap:2.2rem;
  }
 
@@ -3858,9 +3895,6 @@ body {
    .grid-800 .logo-it:nth-child(4){
     grid-area:it-4;
    }
-   .grid-705 {
-  gap:2.4rem;
- }
    .grid-500 {
   -moz-column-gap:2.4rem;
        column-gap:2.4rem;
@@ -4019,14 +4053,6 @@ body {
 .grid-700 {
   flex-direction:column;
  }
-
-.grid-705 {
-  gap:2.4rem;
- }
-
-.grid-705{
-  flex-direction:column
-}
 
 .s-500__fix {
   padding-bottom:0.35rem;
@@ -4299,9 +4325,6 @@ body {
   .grid-1000 {
   gap:2rem;
  }
-  .grid-705 {
-  gap:2rem;
- }
   .grid-500 {
   -moz-column-gap:2rem;
        column-gap:2rem;
@@ -4400,10 +4423,6 @@ body {
   gap:2rem;
  }
 
- .grid-705 {
-  gap:2rem;
- }
-
  .grid-500 {
   -moz-column-gap:2rem;
        column-gap:2rem;
@@ -4495,10 +4514,6 @@ body {
   flex-direction:column;
   align-items:center;
   justify-content:center;
- }
-
-.grid-705 {
-  gap:1.2rem;
  }
 
 .grid-500 {
@@ -4718,10 +4733,6 @@ body {
   line-height:2.16rem;
  }
 
- .grid-705 {
-  gap:1.2rem;
- }
-
  .grid-500 {
   -moz-column-gap:1.2rem;
        column-gap:1.2rem;
@@ -4905,9 +4916,6 @@ body {
    .l-1000--s-1000 {
   padding-bottom:1.65rem;
  }
-   .grid-705 {
-  gap:1.2rem;
- }
    .grid-500 {
   -moz-column-gap:1.2rem;
        column-gap:1.2rem;
@@ -5010,10 +5018,6 @@ body {
  }
 
  .grid-1000 {
-  gap:1.2rem;
- }
-
- .grid-705 {
   gap:1.2rem;
  }
 

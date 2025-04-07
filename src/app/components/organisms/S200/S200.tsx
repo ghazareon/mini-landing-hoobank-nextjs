@@ -28,11 +28,11 @@ export interface IS200 {}
 export const S200: FC<IS200> = () => {
  return (
   <>
-   <Section className="s-200">
+   <Section className="s-200" id="about-us">
     <Div className="s-200__fix fix">
      <Div className="grid-200">
       <Div className="grid-200__it">
-       <Div className="badge">
+       <Div className="badge" data-scroll data-scroll-speed="2">
         <Div className="symbol" aria-hidden="true">
          <SvgSprite
           name="percent"
@@ -97,9 +97,9 @@ export const S200: FC<IS200> = () => {
       </Div>
       <Div className="grid-200__it">
        <Div className="collage-200" aria-hidden="true">
-        <Div className="ball ball--1"></Div>
-        <Div className="ball ball--2"></Div>
-        <Div className="ball ball--3"></Div>
+        <Div className="ball ball--1" data-scroll data-scroll-speed="-1"></Div>
+        <Div className="ball ball--2" data-scroll data-scroll-speed="-1"></Div>
+        <Div className="ball ball--3" data-scroll data-scroll-speed="-3"></Div>
 
         <Img
          src="assets/svg/collage/1.svg"
@@ -110,6 +110,8 @@ export const S200: FC<IS200> = () => {
          decoding="async"
          aria-hidden="true"
          alt=""
+         data-scroll
+         data-scroll-speed="-1"
         />
 
         <Img
@@ -121,6 +123,8 @@ export const S200: FC<IS200> = () => {
          decoding="async"
          aria-hidden="true"
          alt=""
+         data-scroll
+         data-scroll-speed="0"
         />
 
         <Img
@@ -132,6 +136,8 @@ export const S200: FC<IS200> = () => {
          decoding="async"
          aria-hidden="true"
          alt=""
+         data-scroll
+         data-scroll-speed="1"
         />
 
         <Img
@@ -143,10 +149,12 @@ export const S200: FC<IS200> = () => {
          width="256"
          className="collage-200__img-4"
          aria-hidden="true"
+         data-scroll
+         data-scroll-speed="2"
          srcSet="assets/img/hand/hand-1x.webp,
-																				assets/img/hand/hand-2x.webp 2x,
-																				assets/img/hand/hand-3x.webp 3x,
-																				assets/img/hand/hand-4x.webp 4x"
+																	assets/img/hand/hand-2x.webp 2x,
+																	assets/img/hand/hand-3x.webp 3x,
+																	assets/img/hand/hand-4x.webp 4x"
         />
        </Div>
       </Div>

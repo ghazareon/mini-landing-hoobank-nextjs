@@ -50,7 +50,7 @@ export const S600: FC<IS600> = () => {
       <Div className="grid-600__it"></Div>
       <Div className="grid-600__it">
        <Div className="collage-600" aria-hidden="true">
-        <Div className="card card--600">
+        <Div className="card card--600" data-scroll data-scroll-speed="0">
          <Span className="symbol-600">
           <SvgSprite className="scan" name="scan" width="22" height="18.01" />
          </Span>
@@ -58,7 +58,7 @@ export const S600: FC<IS600> = () => {
          <P className="card__d">Scan yourcredit card in 4 minutes.</P>
         </Div>
 
-        <Div className="card card--605">
+        <Div className="card card--605" data-scroll data-scroll-speed="1">
          <Div className="card__r">
           <H3 className="card__t">Online Analysis</H3>
           <P className="card__d">
@@ -105,7 +105,7 @@ export const S600: FC<IS600> = () => {
          </Div>
         </Div>
 
-        <Div className="card card--610">
+        <Div className="card card--610" data-scroll data-scroll-speed="2">
          <Div className="card__r">
           <H3 className="card__t">Pay Method</H3>
           <SvgSprite
@@ -157,6 +157,8 @@ export const S600: FC<IS600> = () => {
          width="535"
          height="454"
          className="rings"
+         data-scroll
+         data-scroll-speed="1"
         />
        </Div>
       </Div>
