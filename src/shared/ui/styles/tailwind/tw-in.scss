@@ -2798,3 +2798,17 @@ body {
 									overflow-hidden;
  }
 }
+
+.c-scrollbar {
+ @apply w-[4px]
+								rounded-none
+								bg-black
+								opacity-100;
+}
+
+.c-scrollbar_thumb {
+ @apply w-[0.4rem]
+								rounded-none
+						bg-aqua-325
+								opacity-100;
+}

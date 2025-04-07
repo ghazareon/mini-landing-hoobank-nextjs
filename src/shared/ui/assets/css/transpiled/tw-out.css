@@ -3590,6 +3590,36 @@ body {
  overflow:hidden;
 }
 
+.c-scrollbar {
+ width:4px;
+ border-radius:0px;
+ --tw-bg-opacity:1;
+ background-color:rgba( 0 0 0         / 1);
+ opacity:1;
+ opacity:var(--opacity-100);
+}
+
+@supports (color: rgba(0 0 0 / 0)) {
+.c-scrollbar {
+  background-color:rgba( 0 0 0         / var(--tw-bg-opacity, 1));
+ }
+}
+
+.c-scrollbar_thumb {
+ width:0.4rem;
+ border-radius:0px;
+ --tw-bg-opacity:1;
+ background-color:rgba( 51 187 207 / 1);
+ opacity:1;
+ opacity:var(--opacity-100);
+}
+
+@supports (color: rgba(0 0 0 / 0)) {
+.c-scrollbar_thumb {
+  background-color:rgba( 51 187 207 / var(--tw-bg-opacity, 1));
+ }
+}
+
 @media (min-width: 1536px) {
 
  .container {
