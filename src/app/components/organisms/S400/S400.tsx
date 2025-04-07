@@ -26,13 +26,13 @@ export interface IS400 {}
 export const S400: FC<IS400> = () => {
  return (
   <>
-   <Section className="s-400">
+   <Section className="s-400" id="solution">
     <Div className="s-400__fix fix">
      <Div className="grid-400">
       <Div className="grid-400__it">
        {/*  */}
        <Div className="collage-400" aria-hidden="true">
-        <Div className="msg">
+        <Div className="msg" data-scroll data-scroll-speed="3">
          <SvgSprite
           name="check"
           width="24"
@@ -42,7 +42,7 @@ export const S400: FC<IS400> = () => {
          <Span className="msg__txt">Great! Your Payment is succesfully.</Span>
         </Div>
 
-        <Div className="card card--405">
+        <Div className="card card--405" data-scroll data-scroll-speed="1">
          <Div className="card__r">
           <Div className="card__t pb-[3.4rem]">Last Transaction</Div>
          </Div>
@@ -126,7 +126,7 @@ export const S400: FC<IS400> = () => {
          </Div>
         </Div>
 
-        <Div className="card card--400">
+        <Div className="card card--400" data-scroll data-scroll-speed="2">
          <Div className="card__r card__r--400 items-center pb-[2rem]">
           <Div className="card__rounded-logo">
            <Img

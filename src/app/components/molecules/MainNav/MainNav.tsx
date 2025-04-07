@@ -84,27 +84,27 @@ export const MainNav: FC<MainNavProps> = () => {
      <Nav className="main-nav">
       <Ul className="main-nav__ul">
        <Li className="main-nav__li">
-        <Link href="#" className="main-nav__a">
+        <Link href="#about-us" className="main-nav__a" data-scroll-to>
          About Us
         </Link>
        </Li>
        <Li className="main-nav__li">
-        <Link href="#" className="main-nav__a">
+        <Link href="#features" className="main-nav__a" data-scroll-to>
          Features
         </Link>
        </Li>
        <Li className="main-nav__li">
-        <Link href="#" className="main-nav__a">
+        <Link href="#solution" className="main-nav__a" data-scroll-to>
          Solution
         </Link>
        </Li>
        <Li className="main-nav__li">
-        <Link href="#" className="main-nav__a">
+        <Link href="#testimonials" className="main-nav__a" data-scroll-to>
          Testimonials
         </Link>
        </Li>
        <Li className="main-nav__li">
-        <Link href="#" className="main-nav__a">
+        <Link href="#get-started" className="main-nav__a" data-scroll-to>
          Get Started
         </Link>
        </Li>

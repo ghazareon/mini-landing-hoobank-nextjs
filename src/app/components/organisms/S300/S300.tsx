@@ -31,12 +31,13 @@ export interface IS300 {
 
 export const S300: FC<IS300> = ({ data }) => {
  return (
-  <Section className="s-300">
+  <Section className="s-300" id="features">
    <Div className="s-300__fix fix">
     <Div className="grid-300">
      {data.posts.map((it, i) => {
       return (
        <Fragment key={it.id}>
+        {/* data-scroll data-scroll-speed={i} */}
         <Div className="info-caption">
          <Div className="info-caption__i">
           {removeHtmlTagsFromStr(it.title.rendered)}
